@@ -1,0 +1,144 @@
+#container {
+  padding: 0 10px;
+}
+
+// Character Top
+.character-top {
+  position     : relative;
+  overflow     : hidden;
+  border       : 1px solid #ddd;
+  margin-top   : 10px;
+  margin-bottom: 10px;
+
+  .character-name {
+    position        : relative;
+    padding         : 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .character-image {
+    position: absolute;
+    height  : 500px;
+    top     : 5px;
+    right   : 5px;
+  }
+}
+
+// Tags Section
+.tags-section {
+  position: relative;
+  padding : 12px;
+
+  .tag .image {
+    margin-right: .2em;
+  }
+}
+
+// Section Title
+.section-title {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  margin-top         : 20px !important;
+  margin-bottom      : 10px !important;
+
+  &.is-defender {
+    border-color: green;
+  }
+}
+
+// Rank Skills
+.rank-title {
+  font-weight  : bold;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.media {
+  .skill-image {
+    border       : 3px solid #ddd;
+    border-radius: 999px;
+  }
+
+  .media-content {
+    p {
+      .red {
+        color: crimson;
+      }
+
+      .gold {
+        color: goldenrod;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .image.is-16x16 {
+        margin-bottom: -4px;
+      }
+    }
+
+    .tag .image.is-16x16 {
+      margin-bottom: 0;
+      margin-right : 0.2em;
+    }
+  }
+
+  .table td:last-child {
+    text-align: right;
+  }
+
+  .range-image {
+    border: 3px solid goldenrod;
+  }
+}
+
+
+// Attributes Section
+.attrs-section .table {
+  border: 1px solid #ddd;
+
+  tr td {
+    text-align: center;
+
+    &:first-child {
+      width     : 100%;
+      text-align: left;
+    }
+  }
+
+  .image {
+    margin-bottom: -3px;
+  }
+}
+
+.ri-rotate-90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform   : rotate(90deg);
+  -ms-transform    : rotate(90deg);
+  -o-transform     : rotate(90deg);
+  transform        : rotate(90deg);
+  display          : inline-block;
+}
+
+.ri-rotate-180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform   : rotate(180deg);
+  -ms-transform    : rotate(180deg);
+  -o-transform     : rotate(180deg);
+  transform        : rotate(180deg);
+  display          : inline-block;
+}
+
+.ri-rotate-270 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform   : rotate(270deg);
+  -ms-transform    : rotate(270deg);
+  -o-transform     : rotate(270deg);
+  transform        : rotate(270deg);
+  display          : inline-block;
+}

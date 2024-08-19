@@ -1,0 +1,158 @@
+<html data-theme="light">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>socdb</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="container" class="container is-family-monospace">
+    <div class="character-top">
+      <img class="character-image" src="images/skin/#{slug(name)}.webp" />
+      <div class="character-name">
+        <div class="title">#{name}</div>
+        <div class="subtitle">#{subName}</div>
+      </div>
+      <section class="tags-section">
+        <div class="tags">
+          <a href="#" class="tag">
+            <img class="image is-inline-block is-16x16" src="images/rarity/#{slug(rarity)}.webp" />
+            | #{rarity}
+          </a>
+          <a href="#" class="tag">
+            <img class="image is-inline-block is-16x16" src="images/role/#{slug(role)}.webp" />
+            | #{role}
+          </a>
+          each faction in factions
+            <a href="#" class="tag">
+              <img class="image is-inline-block is-16x16" src="images/faction/#{slug(faction)}.webp" />
+              | #{faction}
+            </a>
+        </div>
+      </section>
+    </div>
+
+    <section class="skills-section">
+      <h5 class="section-title is-defender title is-5">Skills</h5>
+      each rankedSkill in skillsByRank
+        <h6 class="rank-title is-size-7">#{rankedSkill.rank}</h6>
+        <div class="grid is-col-min-16">
+          each skill in rankedSkill.skills
+            <div class="cell">
+              <article class="media">
+                <figure class="media-left">
+                  if skill.name
+                    <img class="skill-image image is-48x48" src="images/skill/#{slug(skill.name)}.png" />
+                  else
+                    <p class="image is-48x48"></p>
+                  //- end if skill.name
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <span class="tag is-warning">#{skill.type}</span>
+                    if skill.name
+                      <strong>&nbsp;#{skill.name}</strong>
+                    //- end if skill.name
+                    <p class="is-size-7">
+                      | !{skill.description}
+                    </p>
+                    if skill.cost > 0
+                      <span class="tag">Cost:&nbsp;
+                        - var n = 0
+                        while n++ < skill.cost
+                          <i class="ri-gemini-fill"></i>
+                      </span>&nbsp;
+                    //- end if skill.cost
+                    if skill.cooldown > 0
+                      <span class="tag">Cooldown:&nbsp;
+                        - var n = 0
+                        while n++ < skill.cooldown
+                          <i class="ri-hourglass-fill"></i>
+                      </span>
+                    //- end if skill.cooldown
+                  </div>
+                  if skill.range
+                    <article class="media">
+                      <figure class="media-left">
+                        <img class="range-image image is-64x64" src="images/range/#{slug(skill.range)}.png" />
+                      </figure>
+                      if skill.height
+                        <div class="media-content is-size-7">
+                          <div class="content">
+                            <table class="table is-narrow">
+                              <tbody>
+                                <tr>
+                                  <td>Range</td>
+                                  <td>#{skill.range}</td>
+                                </tr>
+                                <tr>
+                                  <td>Height Range</td>
+                                  <td><i class="ri-arrow-down-fill"></i>#{skill.height.low} - <i class="ri-arrow-up-fill"></i>#{skill.height.high}</td>
+                                </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      //- end if skill.height
+                    </article>
+                  //- end if skill.range
+                </div>
+              </article>
+            </div>
+          //- end each skills
+        </div>
+      //- end each skillsByRank
+    </section>
+    
+    <section class="attrs-section">
+      <h5 class="section-title is-defender title is-5">Attributes</h5>
+      <table class="table is-narrow is-striped">
+        <tbody>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/hp.png" /> HP</td>
+            <td>#{attributes.hp[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.hp[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/patk.png" /> P.ATK</td>
+            <td>#{attributes.patk[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.patk[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/matk.png" /> M.ATK</td>
+            <td>#{attributes.matk[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.matk[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/pdef.png" /> P.DEF</td>
+            <td>#{attributes.pdef[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.pdef[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/mdef.png" /> M.DEF</td>
+            <td>#{attributes.mdef[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.mdef[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/spd.png" /> SPD</td>
+            <td colspan="3">#{attributes.spd}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/mov.png" /> MOV</td>
+            <td colspan="3">#{attributes.mov}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

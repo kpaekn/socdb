@@ -1,0 +1,221 @@
+[
+  {
+    "name": "Maitha",
+    "subName": "Mercenary Girl",
+    "rarity": "Legendary",
+    "role": "Defender",
+    "factions": [
+      "Iria",
+      "Sword of Convallaria"
+    ],
+    "skillsByRank": [
+      {
+        "isTrait": true,
+        "rank": "Trait",
+        "skills": [
+          {
+            "name": "Shield of Convallaria",
+            "type": "Trait Lv.1",
+            "description": "Maitha possesses [[Block]], and her DMG taken is decreased by <<8%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP."
+          },
+          {
+            "type": "Trait Lv.2",
+            "description": "Maitha possesses [[Block]], and her DMG taken is decreased by <<12%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP."
+          },
+          {
+            "type": "Trait Lv.3",
+            "description": "Maitha possesses [[Block]], and her DMG taken is decreased by <<15%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP."
+          },
+          {
+            "type": "Trait Lv.4",
+            "description": "Maitha possesses [[Block]], and her DMG taken is decreased by <<15%>>. At the end of the turn, she heals the <<2>> allies with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP."
+          },
+          {
+            "type": "Trait Lv.5",
+            "description": "Maitha possesses [[Block]], and her DMG taken is decreased by <<20%>>. At the end of the turn, she heals the <<2>> allies with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP."
+          }
+        ]
+      },
+      {
+        "rank": "Innate",
+        "skills": [
+          {
+            "name": "Slash",
+            "type": "Basic Attack",
+            "description": "Deals <<100%>> P.DMG.",
+            "range": "1 - 1",
+            "height": {
+              "low": 2,
+              "high": 2
+            }
+          },
+          {
+            "name": "Leg Slam",
+            "type": "Skill",
+            "description": "Deals <<120%>> P.DMG, knocks the target back <<2>> tiles, and inflicts [[-Move 1]] for <<1>> turn.",
+            "cost": 2,
+            "cooldown": 2,
+            "range": "1 - 1",
+            "height": {
+              "low": 2,
+              "high": 2
+            }
+          }
+        ]
+      },
+      {
+        "rank": "Rank 11",
+        "skills": [
+          {
+            "name": "Maitha's Combo",
+            "type": "Skill",
+            "description": "Deals <<20%>> P.DMG <<1>> time, <<50%>> P.DMG <<3>> times, and knocks the target back <<2>> tiles.",
+            "cost": 2,
+            "cooldown": 4,
+            "range": "1 - 1",
+            "height": {
+              "low": 2,
+              "high": 2
+            }
+          },
+          {
+            "name": "Invulnerable",
+            "type": "Skill",
+            "description": "(Support) Gains [[DMG Reduction IV]], [[Mind's Eye]], and [[Immunity to Disrupt]] for <<3>> turns.",
+            "cost": 1,
+            "cooldown": 5,
+            "range": "self"
+          }
+        ]
+      },
+      {
+        "rank": "Rank 9",
+        "skills": [
+          {
+            "name": "Armor-Piercing Strike",
+            "type": "Basic Attack",
+            "description": "Deals <<100%>> P.DMG and inflicts [[-P.DEF I]] and [[-M.DEF I]] on the target, for <<2>> turns.",
+            "range": "1 - 1",
+            "height": {
+              "low": 2,
+              "high": 2
+            }
+          },
+          {
+            "name": "Powerful Attack",
+            "type": "Basic Attack",
+            "description": "Deals <<110%>> P.DMG.",
+            "range": "1 - 1",
+            "height": {
+              "low": 2,
+              "high": 2
+            }
+          }
+        ]
+      },
+      {
+        "rank": "Rank 7",
+        "skills": [
+          {
+            "name": "Battle Flag of Convallaria",
+            "type": "Skill",
+            "description": "(Leader's Aura) Increase all \"Sword of Convallaria\" allies' ATK by <<10%>> and DEF by <<20%>>."
+          },
+          {
+            "name": "Bandage",
+            "type": "Skill",
+            "description": "(Healing) [[Instant]] Heals <<+30%>> HP.",
+            "cooldown": 3,
+            "range": "0 - 1",
+            "height": {
+              "low": 2,
+              "high": 2
+            }
+          }
+        ]
+      },
+      {
+        "rank": "Rank 5",
+        "skills": [
+          {
+            "name": "Endurance Activation",
+            "type": "Reaction",
+            "description": "(Reaction) When receiving healing, gain [[DMG Reduction II]] for <<2>> turns."
+          },
+          {
+            "name": "Block Counter",
+            "type": "Reaction",
+            "description": "(Reaction) When receiving a melee attack from the [front or side], there is a <<100%>> chance to trigger [[Block]]. This leads to a [[Strike Back]] with a basic attack, dealing <<70%>> P.DMG to the attacker. Can be triggered <<1>> time per round."
+          }
+        ]
+      },
+      {
+        "rank": "Rank 3",
+        "skills": [
+          {
+            "name": "Come On, Everybody!",
+            "type": "Skill",
+            "description": "(Support) Restores <<+20%>> HP and grants [[+ATK I]] and [[+P.DEF I]] to all allies within a <<3>> tile radius. Takes [physical attacks] from the enemy for allies within a <<2>> tile radius for <<2>> turns.",
+            "cost": 3,
+            "range": "3",
+            "height": {
+              "low": 2,
+              "high": 2
+            }
+          },
+          {
+            "name": "Maitha's Charge",
+            "type": "Skill",
+            "description": "Charges at <<1>> enemy within a cross-shaped range, dealling <<130%>> P.DMG and knocking the target back by <<2>> tiles.",
+            "cost": 1,
+            "cooldown": 5,
+            "range": "1 - 3",
+            "height": {
+              "low": 1,
+              "high": 1
+            }
+          }
+        ]
+      },
+      {
+        "rank": "Rank 1",
+        "skills": [
+          {
+            "name": "Guard",
+            "type": "Skill",
+            "description": "(Passive) Takes [physical attacks] for allies within a <<2>> tile radius. When triggered, DEF is increased by <<20%>>. Can be triggered <<1>> time per round."
+          },
+          {
+            "name": "Co-Defense",
+            "type": "Skill",
+            "description": "(Passive) For each ally within a <<2>> tile radius, DEF increases by <<10%>>, up to <<40%>>."
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "hp": [
+        417,
+        3701
+      ],
+      "patk": [
+        417,
+        3701
+      ],
+      "matk": [
+        200,
+        1321
+      ],
+      "pdef": [
+        93,
+        615
+      ],
+      "mdef": [
+        58,
+        385
+      ],
+      "spd": 243,
+      "mov": 3
+    }
+  }
+]
