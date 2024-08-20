@@ -41,13 +41,32 @@
   &.is-defender {
     border-color: green;
   }
+
+  &.is-breaker {
+    border-color: crimson;
+  }
+
+  &.is-seeker {
+    border-color: royalblue;
+  }
+
+  &.is-destroyer {
+    border-color: purple;
+  }
+
+  &.is-watcher {
+    border-color: gold;
+  }
 }
 
-// Rank Skills
-.rank-title {
-  font-weight: bold;
-  border-bottom: 1px solid #ddd;
+.skills-section {
   margin-bottom: 10px;
+
+  .rank-title {
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
 }
 
 .media {

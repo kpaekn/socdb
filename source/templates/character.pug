@@ -36,9 +36,55 @@
         </div>
       </section>
     </div>
+    
+    <section class="attrs-section">
+      <h5 class="section-title is-#{slug(role)} title is-5">Attributes</h5>
+      <table class="table is-narrow is-striped">
+        <tbody>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/hp.png" /> HP</td>
+            <td>#{attributes.hp[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.hp[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/patk.png" /> P.ATK</td>
+            <td>#{attributes.patk[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.patk[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/matk.png" /> M.ATK</td>
+            <td>#{attributes.matk[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.matk[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/pdef.png" /> P.DEF</td>
+            <td>#{attributes.pdef[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.pdef[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/mdef.png" /> M.DEF</td>
+            <td>#{attributes.mdef[0]}</td>
+            <td><i class="ri-arrow-right-double-line"></i></td>
+            <td>#{attributes.mdef[1]}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/spd.png" /> SPD</td>
+            <td colspan="3">#{attributes.spd}</td>
+          </tr>
+          <tr>
+            <td><img class="image is-inline-block is-16x16" src="images/attr/mov.png" /> MOV</td>
+            <td colspan="3">#{attributes.mov}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
     <section class="skills-section">
-      <h5 class="section-title is-defender title is-5">Skills</h5>
+      <h5 class="section-title is-#{slug(role)} title is-5">Skills</h5>
       each rankedSkill in skillsByRank
         <h6 class="rank-title is-size-6">#{rankedSkill.rank}</h6>
         <div class="grid is-col-min-16">
@@ -107,52 +153,6 @@
           //- end each skills
         </div>
       //- end each skillsByRank
-    </section>
-    
-    <section class="attrs-section">
-      <h5 class="section-title is-defender title is-5">Attributes</h5>
-      <table class="table is-narrow is-striped">
-        <tbody>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/hp.png" /> HP</td>
-            <td>#{attributes.hp[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.hp[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/patk.png" /> P.ATK</td>
-            <td>#{attributes.patk[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.patk[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/matk.png" /> M.ATK</td>
-            <td>#{attributes.matk[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.matk[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/pdef.png" /> P.DEF</td>
-            <td>#{attributes.pdef[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.pdef[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/mdef.png" /> M.DEF</td>
-            <td>#{attributes.mdef[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.mdef[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/spd.png" /> SPD</td>
-            <td colspan="3">#{attributes.spd}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/mov.png" /> MOV</td>
-            <td colspan="3">#{attributes.mov}</td>
-          </tr>
-        </tbody>
-      </table>
     </section>
   </div>
 </body>
