@@ -13,7 +13,7 @@
 <body>
   <div id="container" class="container is-family-monospace">
     <div class="character-top">
-      <img class="character-image" src="images/skin/#{slug(name)}.webp" />
+      <img class="character-image" src="images/skin/#{slug(name)}.webp" style="width: #{image.width}px; top: #{image.top}px; right: #{image.right}px" />
       <div class="character-name">
         <div class="title">#{name}</div>
         <div class="subtitle">#{subName}</div>
@@ -40,7 +40,7 @@
     <section class="skills-section">
       <h5 class="section-title is-defender title is-5">Skills</h5>
       each rankedSkill in skillsByRank
-        <h6 class="rank-title is-size-7">#{rankedSkill.rank}</h6>
+        <h6 class="rank-title is-size-6">#{rankedSkill.rank}</h6>
         <div class="grid is-col-min-16">
           each skill in rankedSkill.skills
             <div class="cell">
@@ -54,13 +54,14 @@
                 </figure>
                 <div class="media-content">
                   <div class="content">
-                    <span class="tag is-warning">#{skill.type}</span>
-                    if skill.name
-                      <strong>&nbsp;#{skill.name}</strong>
-                    //- end if skill.name
-                    <p class="is-size-7">
-                      | !{skill.description}
+                    <p>
+                      if skill.name
+                        <strong>#{skill.name}</strong>
+                        <br/>
+                      //- end if skill.name
+                      <span class="tag is-dark">#{skill.type}</span>
                     </p>
+                    <p class="is-size-7">!{skill.description}</p>
                     if skill.cost > 0
                       <span class="tag">Cost:&nbsp;
                         - var n = 0
@@ -84,7 +85,7 @@
                       if skill.height
                         <div class="media-content is-size-7">
                           <div class="content">
-                            <table class="table is-narrow">
+                            <table class="table is-narrow is-size-7">
                               <tbody>
                                 <tr>
                                   <td>Range</td>
@@ -92,7 +93,7 @@
                                 </tr>
                                 <tr>
                                   <td>Height Range</td>
-                                  <td><i class="ri-arrow-down-fill"></i>#{skill.height.low} - <i class="ri-arrow-up-fill"></i>#{skill.height.high}</td>
+                                  <td><i class="ri-arrow-down-fill"></i>#{skill.height[0]} - <i class="ri-arrow-up-fill"></i>#{skill.height[1]}</td>
                                 </tr>
                             </tbody>
                           </table>

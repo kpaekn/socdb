@@ -6,7 +6,7 @@ var rename = require('gulp-rename');
 var data = require('./source/data');
 
 var slugFn = (text) => {
-  return text.toLowerCase().replaceAll(/['"!,]/g, '').replaceAll(/[\s-]+/g, '-');
+  return text.toLowerCase().replaceAll(/['"!\(\),]/g, '').replaceAll(/[\s-]+/g, '-');
 };
 
 // template
