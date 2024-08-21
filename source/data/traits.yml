@@ -1,0 +1,14 @@
+Shield of Convallaria:
+  description:
+  - Maitha possesses [[Block]], and her DMG taken is decreased by <<8%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP.
+  - Maitha possesses [[Block]], and her DMG taken is decreased by <<12%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP.
+  - Maitha possesses [[Block]], and her DMG taken is decreased by <<15%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP.
+  - Maitha possesses [[Block]], and her DMG taken is decreased by <<15%>>. At the end of the turn, she heals the <<2>> allies with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP.
+  - Maitha possesses [[Block]], and her DMG taken is decreased by <<20%>>. At the end of the turn, she heals the <<2>> allies with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP.
+Bottoms Up:
+  description:
+  - Increase Rawiyah's DMG by <<8%>>. At the start of the turn or before a strike back, there is a <<50%>> chance to recover <<+30%>> of her lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
+  - Increase Rawiyah's DMG by <<12%>>. At the start of the turn or before a strike back, there is a <<60%>> chance to recover <<+30%>> of her lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
+  - Increase Rawiyah's DMG by <<16%>>. At the start of the turn or before a strike back, there is a <<70%>> chance to recover <<+40%>> of her lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
+  - Increase Rawiyah's DMG by <<25%>>. At the start of the turn or before a strike back, there is a <<70%>> chance to recover <<+40%>> of her lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
+  - Increase Rawiyah's DMG by <<25%>>. At the start of the turn or before a strike back, there is a <<80%>> chance to recover <<+40%>> of her lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.

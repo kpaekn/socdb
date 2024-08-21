@@ -1,50 +1,85 @@
 var fs = require('fs');
-var characters = JSON.parse(fs.readFileSync(__dirname + '/data/characters.json'));
-var traits = JSON.parse(fs.readFileSync(__dirname + '/data/traits.json'));
-var skills = JSON.parse(fs.readFileSync(__dirname + '/data/skills.json'));
+var yaml = require('js-yaml');
+var characters = yaml.load(fs.readFileSync(__dirname + '/data/characters.yml'));
+var traits = yaml.load(fs.readFileSync(__dirname + '/data/traits.yml'));
+var skills = yaml.load(fs.readFileSync(__dirname + '/data/skills.yml'));
+var glossary = yaml.load(fs.readFileSync(__dirname + '/data/glossary.yml'));
+
+function getKeywords(text) {
+  var keywords = text.match(/\[\[.+?\]\]/g);
+  if (keywords) {
+    var obj = {};
+    keywords.forEach(keyword => {
+      var trimmed = keyword.replaceAll(/[\[\]]/g, '');
+      obj[decorate(keyword)] = decorate(glossary[trimmed]);
+    });
+    return obj;
+  }
+  return null;
+}
 
 function decorate(text) {
+  if (!text) {
+    return text;
+  }
   return text
-    .replaceAll(/\[\[\-(.+?)\]\]/g, '[<a class="gold bold"><i class="ri-arrow-down-double-line red"></i>$1</a>]')
-    .replaceAll(/\[\[\+(.+?)\]\]/g, '[<a class="gold bold"><i class="ri-arrow-up-double-line green"></i></i>$1</a>]')
-    .replaceAll(/\[\[(.+?)\]\]/g, '[<a class="gold bold">$1</a>]')
-    .replaceAll(/\<\<\+(.+?)\>\>/g, '<span class="green bold">$1</span>')
-    .replaceAll(/\<\<(.+?)\>\>/g, '<span class="red bold">$1</span>')
-    .replaceAll(/\((.+?)\)/g, '(<span class="bold">$1</span>)')
-    .replaceAll('P.DMG', '<img class="image is-inline-block is-16x16" src="images/attr/patk.png" />P.DMG')
-    .replaceAll('"Sword of Convallaria"', '"<img class="image is-inline-block is-16x16" src="images/faction/sword-of-convallaria.webp" />Sword of Convallaria"');
+    .replaceAll(/\[\[\+(.+?)\]\]/g, '<span class="is-inline-block">[<span class="gold bold"><i class="ri-arrow-up-double-line green"></i>$1</span>]</span>')
+    .replaceAll(/\[\[\-(.+?)\]\]/g, '<span class="is-inline-block">[<span class="gold bold"><i class="ri-arrow-down-double-line red"></i>$1</span>]</span>')
+    .replaceAll(/\[\[(.+?)\]\]/g, '<span class="is-inline-block">[<span class="gold bold">$1</span>]</span>')
+
+    .replaceAll(/\<\<\+(.+?)\>\>/g, '<span class="is-inline-block green bold">$1</span>')
+    .replaceAll(/\<\<(.+?)\>\>/g, '<span class="is-inline-block red bold">$1</span>')
+
+    .replaceAll(/\((.+?)\)/g, '<span class="is-inline-block">(<span class="is-inline-block bold">$1</span>)</span>')
+
+    .replaceAll(/(P.DMG|P.ATK)/g, '<span class="is-inline-block"><img class="image is-inline-block" src="images/attr/patk.png" />$1</span>')
+    .replaceAll(/(M.DMG|M.ATK)/g, '<span class="is-inline-block"><img class="image is-inline-block" src="images/attr/matk.png" />$1</span>')
+    .replaceAll(/ (P.DEF)/g, ' <span class="is-inline-block"><img class="image is-inline-block" src="images/attr/pdef.png" />$1</span>')
+    .replaceAll(/ (M.DEF)/g, ' <span class="is-inline-block"><img class="image is-inline-block" src="images/attr/mdef.png" />$1</span>')
+
+    .replaceAll('"Sword of Convallaria"', '<span class="is-inline-block">"<img class="image is-inline-block" src="images/faction/sword-of-convallaria.webp" />Sword of Convallaria"</span>');
 }
 
 // decorate skill/trait descriptions
 for (const key in traits) {
-  for (let i = 0; i < traits[key].length; i++) {
-    traits[key][i] = decorate(traits[key][i]);
+  for (let i = 0; i < traits[key].description.length; i++) {
+    if (i === 0) {
+      traits[key].keywords = getKeywords(traits[key].description[i]);
+    }
+    traits[key].description[i] = decorate(traits[key].description[i]);
   }
 }
 for (const key in skills) {
+  skills[key].keywords = getKeywords(skills[key].description);
   skills[key].description = decorate(skills[key].description);
 }
 
 // map trait/skill objects into characters object
 characters.forEach(character => {
-  character.skillsByRank.forEach(rankedSkill => {
-    if (rankedSkill.isTrait) {
-      rankedSkill.skills = traits[rankedSkill.skill].map((description, i) => {
-        var skillObj = {
-          type: "Trait Lv." + (i+1),
-          description
+  for (const rank in character.skills) {
+    if (rank === 'Trait') {
+      var traitName = character.skills[rank];
+      character.skills[rank] = traits[traitName].description.map((description, i) => {
+        return {
+          name: traitName,
+          type: 'Trait',
+          keywords: traits[traitName].keywords,
+          description,
+          tabs: ['Lv.1', 'Lv.2', 'Lv.3', 'Lv.4', 'Lv.5'],
+          tabId: 'Lv.' + (i + 1)
         };
-        if (i == 0) {
-          skillObj.name = rankedSkill.skill
-        }
-        return skillObj;
-      });
+      })
     } else {
-      rankedSkill.skills = rankedSkill.skills.map(skillName => {
-        return {...{name: skillName}, ...skills[skillName]};
+      character.skills[rank] = character.skills[rank].map(skillName => {
+        return {
+          ...{
+            name: skillName
+          },
+          ...skills[skillName]
+        };
       });
     }
-  });
+  }
 });
 
 module.exports.characters = characters;

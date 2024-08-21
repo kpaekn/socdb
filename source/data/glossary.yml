@@ -1,0 +1,78 @@
+Block: (Buff) <<50%>> chance to face the enemy when taking P.DMG from the [fron or side], decreasing DMG taken by <<20%>>.
+Mind's Eye: (Buff) Activates [block] once after taking a [back attack].
+Immunity to Disrupt: (Buff) Immune to disrupt debuffs.
+
+DMG Reduction I: (Buff) Decreases DMG taken by <<10%>>.
+DMG Reduction II: (Buff) Decreases DMG taken by <<20%>>.
+DMG Reduction III: (Buff) Decreases DMG taken by <<30%>>.
+DMG Reduction IV: (Buff) Decreases DMG taken by <<40%>>.
+
++ATK I: (Buff) Increases P.ATK and M.ATK by <<10%>>.
++ATK II: (Buff) Increases P.ATK and M.ATK by <<20%>>.
++ATK III: (Buff) Increases P.ATK and M.ATK by <<30%>>.
++ATK IV: (Buff) Increases P.ATK and M.ATK by <<40%>>.
+
++P.ATK I: (Buff) Increases P.ATK by <<10%>>.
++P.ATK II: (Buff) Increases P.ATK by <<20%>>.
++P.ATK III: (Buff) Increases P.ATK by <<30%>>.
++P.ATK IV: (Buff) Increases P.ATK by <<40%>>.
+
++M.ATK I: (Buff) Increases M.ATK by <<10%>>.
++M.ATK II: (Buff) Increases M.ATK by <<20%>>.
++M.ATK III: (Buff) Increases M.ATK by <<30%>>.
++M.ATK IV: (Buff) Increases M.ATK by <<40%>>.
+
++DEF I: (Buff) Increases P.DEF and M.DEF by <<20%>>.
++DEF II: (Buff) Increases P.DEF and M.DEF by <<40%>>.
++DEF III: (Buff) Increases P.DEF and M.DEF by <<60%>>.
++DEF IV: (Buff) Increases P.DEF and M.DEF by <<80%>>.
+
++P.DEF I: (Buff) Increases P.DEF by <<20%>>.
++P.DEF II: (Buff) Increases P.DEF by <<40%>>.
++P.DEF III: (Buff) Increases P.DEF by <<60%>>.
++P.DEF IV: (Buff) Increases P.DEF by <<80%>>.
+
++M.DEF I: (Buff) Increases M.DEF by <<20%>>.
++M.DEF II: (Buff) Increases M.DEF by <<40%>>.
++M.DEF III: (Buff) Increases M.DEF by <<60%>>.
++M.DEF IV: (Buff) Increases M.DEF by <<80%>>.
+
+-ATK I: (Debuff) Decreases P.ATK and M.ATK by <<10%>>.
+-ATK II: (Debuff) Decreases P.ATK and M.ATK by <<20%>>.
+-ATK III: (Debuff) Decreases P.ATK and M.ATK by <<30%>>.
+-ATK IV: (Debuff) Decreases P.ATK and M.ATK by <<40%>>.
+
+-P.ATK I: (Debuff) Decreases P.ATK by <<10%>>.
+-P.ATK II: (Debuff) Decreases P.ATK by <<20%>>.
+-P.ATK III: (Debuff) Decreases P.ATK by <<30%>>.
+-P.ATK IV: (Debuff) Decreases P.ATK by <<40%>>.
+
+-M.ATK I: (Debuff) Decreases M.ATK by <<10%>>.
+-M.ATK II: (Debuff) Decreases M.ATK by <<20%>>.
+-M.ATK III: (Debuff) Decreases M.ATK by <<30%>>.
+-M.ATK IV: (Debuff) Decreases M.ATK by <<40%>>.
+
+-DEF I: (Debuff) Decreases P.DEF and M.DEF by <<20%>>.
+-DEF II: (Debuff) Decreases P.DEF and M.DEF by <<40%>>.
+-DEF III: (Debuff) Decreases P.DEF and M.DEF by <<60%>>.
+-DEF IV: (Debuff) Decreases P.DEF and M.DEF by <<80%>>.
+
+-P.DEF I: (Debuff) Decreases P.DEF by <<20%>>.
+-P.DEF II: (Debuff) Decreases P.DEF by <<40%>>.
+-P.DEF III: (Debuff) Decreases P.DEF by <<60%>>.
+-P.DEF IV: (Debuff) Decreases P.DEF by <<80%>>.
+
+-M.DEF I: (Debuff) Decreases M.DEF by <<20%>>.
+-M.DEF II: (Debuff) Decreases M.DEF by <<40%>>.
+-M.DEF III: (Debuff) Decreases M.DEF by <<60%>>.
+-M.DEF IV: (Debuff) Decreases M.DEF by <<80%>>.
+
++Move I: (Buff) Increases Movement by <<1>> tile.
++Move II: (Buff) Increases Movement by <<2>> tile.
++Move III: (Buff) Increases Movement by <<3>> tile.
++Move IV: (Buff) Increases Movement by <<4>> tile.
+
+-Move I: (Debuff/Control/Disrupt) Reduces Movement by <<1>> tile.
+-Move II: (Debuff/Control/Disrupt) Reduces Movement by <<2>> tile.
+-Move III: (Debuff/Control/Disrupt) Reduces Movement by <<3>> tile.
+-Move IV: (Debuff/Control/Disrupt) Reduces Movement by <<4>> tile.

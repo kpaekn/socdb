@@ -1,0 +1,63 @@
+- name: Maitha
+  image: 
+    width: 240
+    top: -5
+    right: 0
+  subName: Mercenary Girl
+  rarity: Legendary
+  role: Defender
+  factions: [Iria, Sword of Convallaria]
+  skills:
+    # Tra: 
+    # - name: Shield of Convallaria
+    #   type: Trait
+    #   description: Maitha possesses [[Block]], and her DMG taken is decreased by <<8%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP.
+    #   keywords: [Block]
+    #   tabs: [Lv.1, Lv.2, Lv.3, Lv.4, Lv.5]
+    # - name: Shield of Convallaria
+    #   type: Trait
+    #   description: Maitha possesses [[Block]], and her DMG taken is decreased by <<12%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP.
+    #   keywords: [Block]
+    #   tabs: [Lv.1, Lv.2, Lv.3, Lv.4, Lv.5]
+    Trait: Shield of Convallaria
+    Innate: [Slash, Leg Slam]
+    Rank 1: [Guard, Co-Defense]
+    Rank 3: ["Come On, Everybody!", Maitha's Charge]
+    Rank 5: [Endurance Activation, Block Counter]
+    Rank 7: [Battle Flag of Convallaria, Bandage]
+    Rank 9: [Armor-Piercing Strike, Powerful Attack]
+    Rank 11: [Maitha's Combo, Invulnerable]
+  attributes: 
+    hp: [417, 3701]
+    patk: [200, 1321]
+    matk: [140, 926]
+    pdef: [93, 615]
+    mdef: [58, 385]
+    spd: 243
+    mov: 3
+- name: Rawiyah
+  image:
+    width: 480
+    top: -60
+    right: -40
+  subName: Claymore Warrior
+  rarity: Legendary
+  role: Breaker
+  factions: [Iria, Sword of Convallaria, Alacrity]
+  skills:
+    Trait: Bottoms Up
+    Innate: [Gash, Gale Breach, Tropical Cyclone]
+    Rank 1: [Co-Attack, Toughness]
+    Rank 3: [Piercing Bash, Another Pint!]
+    Rank 5: [Screw Off!, Guardian's Heart]
+    Rank 7: [Mania Smash, Sword of Convallaria]
+    Rank 9: [Fatal Attack, Dispelling Strike]
+    Rank 11: [Gale Spin Attack, Legacy of Comrades]
+  attributes:
+    hp: [404, 3594]
+    patk: [226, 1496]
+    matk: [158, 1048]
+    pdef: [70, 460]
+    mdef: [52, 352]
+    spd: 204
+    mov: 3
