@@ -12,32 +12,30 @@
 </head>
 
 <body>
-  <div id="container" class="container is-family-monospace">
+  <div id="container" class="container">
     <div class="character-top">
       <img class="character-image" src="images/skin/#{slug(name)}.webp" style="width: #{image.width}px; top: #{image.top}px; right: #{image.right}px" />
       <div class="character-name">
-        <div class="title">#{name}</div>
-        <div class="subtitle">#{subName}</div>
+        <img class="image is-pulled-left is-inline-block is-64x64" src="images/rarity/#{slug(rarity)}.webp" />
+        <div>
+          <div class="title">#{name}</div>
+          <div class="subtitle">
+            <img class="image is-inline-block is-24x24" src="images/role/#{slug(role)}.webp" />
+            | #{subName}
+          </div>
+        </div>
       </div>
       <section class="tags-section">
         <div class="tags">
-          <a href="#" class="tag">
-            <img class="image is-inline-block is-16x16" src="images/rarity/#{slug(rarity)}.webp" />
-            | #{rarity}
-          </a>
-          <a href="#" class="tag">
-            <img class="image is-inline-block is-16x16" src="images/role/#{slug(role)}.webp" />
-            | #{role}
-          </a>
           each faction in factions
-            <a href="#" class="tag">
+            <span class="tag">
               <img class="image is-inline-block is-16x16" src="images/faction/#{slug(faction)}.webp" />
               | #{faction}
-            </a>
+            </span>
         </div>
       </section>
     </div>
-    
+
     <section class="attrs-section">
       <h5 class="section-title is-#{slug(role)} title is-5">Attributes</h5>
       <table class="table is-narrow is-striped">
@@ -90,7 +88,7 @@
         h6.rank-title.is-size-6 #{rankName}
         <div class="grid is-col-min-16">
           each skill, skillIdx in skls
-            div(class="cell" class=(skillIdx > 0 ? 'is-hidden' : ''), data-tab=slug(skill.name) data-tab-id=skill.tabId)
+            div(class="cell" class=(skill.tabId && skillIdx > 0 ? 'is-hidden' : ''), data-tab=slug(skill.name) data-tab-id=skill.tabId)
               <article class="media">
                 <figure class="media-left">
                   if skill.name
@@ -116,13 +114,13 @@
                             else
                               <li><a onclick="openTab('#{slug(skill.name)}', '#{tab}')">#{tab}</a></li>
                             //- end if skill.tabId
-                          //- end each skill.tabs
+                            //- end each skill.tabs
                         </ul>
                       </div>
                     //- end if skill.tabs
                     <p>!{skill.description}</p>
                     if skill.keywords
-                      <article class="message">
+                      <article class="message is-small">
                         <p class="message-body">
                           each description, word in skill.keywords
                             | !{word}: !{description}
@@ -162,7 +160,7 @@
                                 </tr>
                                 <tr>
                                   <td>Height Range</td>
-                                  <td><i class="ri-arrow-down-fill"></i>#{skill.height} - <i class="ri-arrow-up-fill"></i>#{skill.height}</td>
+                                  <td><i class="ri-arrow-down-fill"></i>#{skill.height[0]} - <i class="ri-arrow-up-fill"></i>#{skill.height[1]}</td>
                                 </tr>
                             </tbody>
                           </table>
@@ -173,7 +171,7 @@
                 </div>
               </article>
             //- end div.cell
-          //- end each skls
+            //- end each skls
         </div>
       //- end each skills
     </section>

@@ -1,9 +1,9 @@
 var fs = require('fs');
 var yaml = require('js-yaml');
-var characters = yaml.load(fs.readFileSync(__dirname + '/data/characters.yml'));
-var traits = yaml.load(fs.readFileSync(__dirname + '/data/traits.yml'));
-var skills = yaml.load(fs.readFileSync(__dirname + '/data/skills.yml'));
-var glossary = yaml.load(fs.readFileSync(__dirname + '/data/glossary.yml'));
+var characters = yaml.load(fs.readFileSync(__dirname + '/data/characters.yaml'));
+var traits = yaml.load(fs.readFileSync(__dirname + '/data/traits.yaml'));
+var skills = yaml.load(fs.readFileSync(__dirname + '/data/skills.yaml'));
+var glossary = yaml.load(fs.readFileSync(__dirname + '/data/glossary.yaml'));
 
 function getKeywords(text) {
   var keywords = text.match(/\[\[.+?\]\]/g);

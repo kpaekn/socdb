@@ -2,21 +2,21 @@ Slash:
   type: Basic Attack
   description: (P.DMG) Deals <<100%>> P.DMG.
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Leg Slam:
   type: Skill
   description: (P.DMG) Deals <<120%>> P.DMG, knocks the target back <<2>> tiles, and inflicts [[-Move I]] for <<1>> turn.
   cost: 2
   cooldown: 2
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Maitha's Combo:
   type: Skill
   description: (P.DMG) Deals <<20%>> P.DMG <<1>> time, <<50%>> P.DMG <<3>> times, and knocks the target back <<2>> tiles.
   cost: 2
   cooldown: 4
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Invulnerable:
   type: Skill
   description: (Support) Gains [[DMG Reduction IV]], [[Mind's Eye]], and [[Immunity to Disrupt]] for <<3>> turns.
@@ -27,12 +27,12 @@ Armor-Piercing Strike:
   type: Basic Attack
   description: (P.DMG) Deals <<100%>> P.DMG and inflicts [[-P.DEF I]] and [[-M.DEF I]] on the target, for <<2>> turns.
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Powerful Attack:
   type: Basic Attack
   description: (P.DMG) Deals <<110%>> P.DMG.
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Battle Flag of Convallaria:
   type: Skill
   description: (Leader's Aura) For all "Sword of Convallaria" allies, increase their ATK by <<10%>> and DEF by <<20%>>.
@@ -41,7 +41,7 @@ Bandage:
   description: (Healing) [[Instant]] Heals <<+30%>> HP.
   cooldown: 3
   range: 0 - 1.5
-  height: 2
+  height: [2, 2]
 Endurance Activation:
   type: Reaction
   description: (Reaction) When receiving healing, gain [[DMG Reduction II]] for <<2>> turns.
@@ -53,14 +53,14 @@ Come On, Everybody!:
   description: (Support) Restores <<+20%>> HP and grants [[+ATK I]] and [[+P.DEF I]] to all allies within a <<3>>-tile radius. Takes [physical attacks] from the enemy for allies within a <<2>>-tile radius for <<2>> turns.
   cost: 3
   range: 0 - 3
-  height: 2
+  height: [2, 2]
 Maitha's Charge:
   type: Skill
   description: (P.DMG) Charges at <<1>> enemy within a cross-shaped range, dealling <<130%>> P.DMG and knocking the target back <<2>> tiles.
   cost: 1
   cooldown: 5
   range: (cross) 1 - 3
-  height: 1
+  height: [1, 1]
 Guard:
   type: Skill
   description: (Passive) Takes [physical attacks] for allies within a <<2>>-tile radius. When triggered, DEF is increased by <<20%>>. Can be triggered <<1>> time per round.
@@ -72,26 +72,26 @@ Gash:
   type: Basic Attack
   description: (P.DMG) Deals <<85%>> P.DMG and knocks the target back <<2>> tiles.
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Gale Breach:
   type: Skill
-  description: (P.DMG) [[Instant]] Charges at <<1>> enemy within a cross-shaped range, dealing <<30%>> [AoE P.DMG]. Afterward, the skill switches to [[Tropical Cyclone]] for <<2>> turns. When [[Tipsy]] is active, inflict [[-Reaction Skills]] on the target after the attack. This effect lasts for <<2>> turns.
+  description: (P.DMG) [[Instant]] Charges at <<1>> enemy within a cross-shaped range, dealing <<30%>> [AoE] P.DMG. Afterward, the skill switches to [Tropical Cyclone] for <<2>> turns. When [[Tipsy]] is active, inflict [[-Reaction Skills]] on the target after the attack for <<2>> turns.
   cost: 1
   cooldown: 3
   range: (cross) 1 - 3
-  height: 2
+  height: [2, 2]
 Tropical Cyclone:
   type: Skill
-  description: (P.DMG) Deals <<140%>> P.DMG. Increase DMG by <<10%>> for each [debuff] on the target. Afterward, the skill switches back to [[Gale Breach]].
+  description: (P.DMG) Deals <<140%>> P.DMG. Increase DMG by <<10%>> for each [debuff] on the target. Afterward, the skill switches back to [Gale Breach].
   cost: 2
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Gale Spin Attack:
   type: Skill
-  description: (P.DMG) Deals <<50%>> [AoE P.DMG] to all enemies within a <<2>>-tile radius around her. After dealing DMG, inflicts [[-P.DEF II]] on the target for <<2>> turns. Subsequent attacks deal an additional <<50%>> [AoE P.DMG].
+  description: (P.DMG) Deals <<50%>> [AoE] P.DMG to all enemies within a <<2>>-tile radius. After dealing DMG, inflicts [[-P.DEF II]] on the target for <<2>> turns. Then deals an additional <<50%>> [AoE] P.DMG to all enemies.
   cost: 4
   range: 0 - 2
-  height: 2
+  height: [2, 2]
 Legacy of Comrades:
   type: Skill
   description: (Passive) When an ally in battle is defeated, recovers <<+30%>> HP for the character, and the character gains [[+ATK II]], [[+P.DEF II]], and [[+M.DEF II]] for <<3>> turns
@@ -99,18 +99,18 @@ Fatal Attack:
   type: Basic Attack
   description: (P.DMG) Deals <<100%>> P.DMG and increases Crit DMG by <<15%>>.
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Dispelling Strike:
   type: Basic Attack
   description: (P.DMG) Deals <<100%>> P.DMG and dispels <<2>> [buffs] on the target.
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Mania Smash:
   type: Skill
   description: (P.DMG) Deals <<120%>> P.DMG. After attacking, gains <<+40%>> [Life Steal].
   cost: 3
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Sword of Convallaria:
   type: Skill
   description: (Leader's Aura) For all "Sword of Convallaria" allies, increase their ATK by <<10%>>, DEF by <<20%>>, and DMG dealt by <<8%>>, and decreases DMG taken by <<8%>>.
@@ -122,10 +122,10 @@ Guardian's Heart:
   description: (Reaction) Takes [physical attacks] for all other allies within <<1>> tile and performs a [Strike Back] on the attacker, dealing <<70%>> P.DMG and knocking them back <<1>> tile. This effect can be triggered <<1>> time per round.
 Piercing Bash:
   type: Skill
-  description: (P.DMG) Deals <<130%>> DMG. Before attacking, gains [[Armor Piercing]].
+  description: (P.DMG) Gains [[Armor Piercing]], then deals <<130%>> DMG.
   cooldown: 3
   range: 1 - 1
-  height: 2
+  height: [2, 2]
 Another Pint!:
   type: Skill
   description: (Healing) [[Instant]] Recovers <<+60%>> of lost HP and gains [[Tipsy]] for <<2>> turns.
@@ -138,3 +138,73 @@ Co-Attack:
 Toughness:
   type: Skill
   description: (Passive) Gains immunity to the effect of [[Injured]] and [[Dying]].
+
+Energy Wave:
+  type: Basic Attack
+  description: (M.DMG) Deals <<80%>> M.DMG.
+  range: 1 - 2
+  height: [5, 3]
+Chuu Chuu Chuu!:
+  type: Skill
+  description: (M.DMG) Gains [[Armor Piercing]], then deals <<50%>> M.DMG to the target <<3>> times.
+  cost: 3
+  range: 2 - 3
+  height: [5, 3]
+Wall of Flame:
+  type: Skill
+  description: (M.DMG) Select 1 spot within a cross-shaped range around the character. Deals <<70%>> [AoE] M.DMG to all enemies in a horizontal row of <<5>> tiles, and changes the tiles into [burning] for <<2>> turns.
+  cost: 3
+  range: (cross) 1 - 3
+  height: [8, 6]
+Casual Search:
+  type: Skill
+  description: (Support) [[Instant]] Gains <<1>> random [[Luxite Skill]]. The skill remains available for <<2>> turns.
+  cooldown: 3
+  range: self
+ATK Boost:
+  type: Skill
+  description: (Support) Grants [[+ATK II]] to all allies within the target location and grants immunity to [[Attack Attribute Debuff]] for <<2>> turns.
+  cost: 1
+  cooldown: 3
+  range: 0 - 2
+  height: [8, 8]
+NRG Restoration:
+  type: Skill
+  description: (Passive) At the end of the turn, recovers an additional <<+1>> NRG. If NGR is less than <<1>>, recovers another <<+1>> NGR.
+Firewalking:
+  type: Reaction
+  description: (Reaction) Become immune to [[Scorch]] and burning tiles. When on a burning tile, the DMG taken is decreased by <<10%>>. At the end of the turn, recovers <<+20%>> HP.
+Cutie:
+  type: Reaction
+  description: (Reaction) Decreases [Ranged DMG] taken by <<25%>> and [AoE] DMG taken by <<40%>>.
+Flaming Meteor:
+  type: Skill
+  description: (M.DMG) Prepares for 1 turn. Once casting the skill, deals <<140%>> fire [AoE] DMG to all enemies within <<3>> tiles around the target, and gains [[Stun]] for <<1>> turn.
+  cost: 4
+  range: 2 - 3
+  height: [8, 8]
+Try This!:
+  type: Skill
+  description: (Healing) Heals other allies within <<3>> tiles, restoring <<+10%>> HP and <<+2>> NRG.
+  cost: 2
+  cooldown: 4
+  range: 2 - 3
+  height: [8, 8]
+Scorching Attack:
+  type: Basic Attack
+  description: (M.DMG) Deals <<80%>> M.DMG and inflicts [[Scorch]] on the target for <<2>> turns.
+Bang!:
+  type: Basic Attack
+  description: (P.DMG) Beryl deals P.DMG equal to <<80%>> of her M.ATK. There is a <<30%>> chance to inflict [[Stun]] for <<1>> turn.
+BOOOOOM!:
+  type: Skill
+  description: (M.DMG) Prepares for 1 turn. Deals M.DMG to enemies within <<2>> tiles <<5>> times, with hits randomly divided amongst those within range. Every hit deals <<30%>> fire [AoE] M.DMG to all enemies within <<1>> tile of the target, with a <<50%>> chance of inflicting [[Scorch]].
+  cost: 5
+  range: 3 - 5
+  height: [5, 3]
+First Aid:
+  type: Skill
+  description: (Healing) Heals <<+80%>> HP.
+  cost: 2
+  range: 0 - 1.5
+  height: [2, 2]

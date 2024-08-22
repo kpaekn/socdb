@@ -1,3 +1,29 @@
+- name: Beryl
+  image: 
+    width: 340
+    top: -45
+    right: 0
+  subName: Genius Sorceress
+  rarity: Legendary
+  role: Destroyer
+  factions: [Papal States, Sword of Convallaria, Aggression]
+  skills:
+    Trait: I'm a Genius!
+    Innate: [Energy Wave, Chuu Chuu Chuu!]
+    Rank 1: [Wall of Flame, Casual Search]
+    Rank 3: [ATK Boost, NRG Restoration]
+    Rank 5: [Firewalking, Cutie]
+    Rank 7: [Flaming Meteor, Try This!]
+    Rank 9: [Scorching Attack, Bang!]
+    Rank 11: [BOOOOOM!, First Aid]
+  attributes: 
+    hp: [365, 3239]
+    patk: [169, 1115]
+    matk: [241, 1599]
+    pdef: [67, 449]
+    mdef: [100, 660]
+    spd: 122
+    mov: 3
 - name: Maitha
   image: 
     width: 240
@@ -8,17 +34,6 @@
   role: Defender
   factions: [Iria, Sword of Convallaria]
   skills:
-    # Tra: 
-    # - name: Shield of Convallaria
-    #   type: Trait
-    #   description: Maitha possesses [[Block]], and her DMG taken is decreased by <<8%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP.
-    #   keywords: [Block]
-    #   tabs: [Lv.1, Lv.2, Lv.3, Lv.4, Lv.5]
-    # - name: Shield of Convallaria
-    #   type: Trait
-    #   description: Maitha possesses [[Block]], and her DMG taken is decreased by <<12%>>. At the end of the turn, she heals the ally with the <<lowest>> HP percentage in battle, restoring <<+20%>> of their lost HP.
-    #   keywords: [Block]
-    #   tabs: [Lv.1, Lv.2, Lv.3, Lv.4, Lv.5]
     Trait: Shield of Convallaria
     Innate: [Slash, Leg Slam]
     Rank 1: [Guard, Co-Defense]

@@ -7,13 +7,21 @@
   position: relative;
   overflow: hidden;
   border: 1px solid #ddd;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 1em 0;
 
   .character-name {
     position: relative;
-    padding: 12px;
+    margin: 1em;
     background-color: rgba(255, 255, 255, 0.2);
+
+    >.image {
+      margin-right: 0.5em;
+    }
+
+    .subtitle .image {
+      margin-right: 0.25em;
+      margin-bottom: -0.2em;
+    }
   }
 
   .character-image {
@@ -24,10 +32,10 @@
 // Tags Section
 .tags-section {
   position: relative;
-  padding: 12px;
+  margin: 1em;
 
   .tag .image {
-    margin-right: .2em;
+    margin-right: 0.2em;
   }
 }
 
@@ -35,8 +43,7 @@
 .section-title {
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  margin-top: 20px !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 0.5em !important;
 
   &.is-defender {
     border-color: green;
@@ -60,12 +67,12 @@
 }
 
 .skills-section {
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 
   .rank-title {
     font-weight: bold;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
   }
 }
 
@@ -77,17 +84,18 @@
 
   .media-content .content {
     .tabs {
-      margin-bottom: 8px;
+      margin-bottom: 0.5em;
 
       ul {
         margin-inline-start: 0;
       }
     }
 
-    >p, >.message {
-      margin-bottom: 8px;
+    >p,
+    >.message {
+      margin-bottom: 0.5em;
     }
-    
+
     p {
       .red {
         color: crimson;
@@ -113,7 +121,12 @@
     }
 
     .message .message-body {
-      padding: 8px;
+      padding: 1em;
+
+      .image {
+        width: 16px;
+        height: 16px;
+      }
     }
 
     .tag .image.is-16x16 {
@@ -134,7 +147,7 @@
 
 // Attributes Section
 .attrs-section {
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 
   .table {
     border: 1px solid #ddd;

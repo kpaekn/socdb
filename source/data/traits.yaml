@@ -12,3 +12,10 @@ Bottoms Up:
   - Increase Rawiyah's DMG by <<16%>>. At the start of the turn or before a strike back, there is a <<70%>> chance to recover <<+40%>> of her lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
   - Increase Rawiyah's DMG by <<25%>>. At the start of the turn or before a strike back, there is a <<70%>> chance to recover <<+40%>> of her lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
   - Increase Rawiyah's DMG by <<25%>>. At the start of the turn or before a strike back, there is a <<80%>> chance to recover <<+40%>> of her lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
+I'm a Genius!:
+  description:
+  - Increases Beryl's M.ATK by <<8%>>. At the start of the turn, she has a <<50%>> chance to gain a random [[Level 2 Buff]], which lasts for <<2>> turns. She additionally recovers <<1>> NRG.
+  - Increases Beryl's M.ATK by <<12%>>. At the start of the turn, she has a <<60%>> chance to gain a random [[Level 2 Buff]], which lasts for <<2>> turns. She additionally recovers <<1>> NRG.
+  - Increases Beryl's M.ATK by <<16%>>. At the start of the turn, she has a <<70%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. She additionally recovers <<1>> NRG.
+  - Increases Beryl's M.ATK by <<20%>>. At the start of the turn, she has a <<80%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. She additionally recovers <<1>> NRG.
+  - Increases Beryl's M.ATK by <<25%>>. At the start of the turn, she has a <<100%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. She additionally recovers <<1>> NRG.
