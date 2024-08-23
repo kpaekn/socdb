@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div id="container" class="container">
+  <div id="container" class="container is-family-code">
     <div class="character-top">
       <img class="character-image" src="images/skin/#{slug(name)}.webp" style="width: #{image.width}px; top: #{image.top}px; right: #{image.right}px" />
       <div class="character-name">
@@ -105,6 +105,22 @@
                         <strong>#{skill.name}</strong>
                       //- end if skill.name
                     </p>
+                    <p>
+                      if skill.cost > 0
+                        <span class="tag is-warning">Cost:&nbsp;
+                          - var n = 0
+                          while n++ < skill.cost
+                            <i class="ri-gemini-fill"></i>
+                        </span>&nbsp;
+                      //- end if skill.cost
+                      if skill.cooldown > 0
+                        <span class="tag is-warning">Cooldown:&nbsp;
+                          - var n = 0
+                          while n++ < skill.cooldown
+                            <i class="ri-hourglass-2-fill"></i>
+                        </span>
+                      //- end if skill.cooldown
+                    </p>
                     if skill.tabs
                       <div class="tabs is-small is-toggle is-dark">
                         <ul>
@@ -120,39 +136,28 @@
                     //- end if skill.tabs
                     <p>!{skill.description}</p>
                     if skill.keywords
-                      <article class="message is-small">
-                        <p class="message-body">
-                          each description, word in skill.keywords
-                            | !{word}: !{description}
-                            <br />
-                          //- end each skill.keywords
-                        </p>
+                      <article class="keywords message">
+                        each description, word in skill.keywords
+                          <div class="message-body">
+                            <p>
+                              | !{word}
+                              <br />
+                              | !{description}
+                            </p>
+                          </div>
+                        //- end each skill.keywords
                       </article>
                     //- end if skill.keywords
-                    if skill.cost > 0
-                      <span class="tag">Cost:&nbsp;
-                        - var n = 0
-                        while n++ < skill.cost
-                          <i class="ri-gemini-fill"></i>
-                      </span>&nbsp;
-                    //- end if skill.cost
-                    if skill.cooldown > 0
-                      <span class="tag">Cooldown:&nbsp;
-                        - var n = 0
-                        while n++ < skill.cooldown
-                          <i class="ri-hourglass-2-fill"></i>
-                      </span>
-                    //- end if skill.cooldown
                   </div>
                   if skill.range
                     <article class="media">
                       <figure class="media-left">
-                        <img class="range-image image is-64x64" src="images/range/#{slug(skill.range)}.png" />
+                        <img class="range-image image is-64x64" src="images/range/#{slug(skill.range)}.jpg" />
                       </figure>
                       if skill.height
                         <div class="media-content">
                           <div class="content">
-                            <table class="table is-narrow">
+                            <table class="range-table table is-fullwidth is-narrow is-size-7">
                               <tbody>
                                 <tr>
                                   <td>Range</td>
@@ -162,6 +167,12 @@
                                   <td>Height Range</td>
                                   <td><i class="ri-arrow-down-fill"></i>#{skill.height[0]} - <i class="ri-arrow-up-fill"></i>#{skill.height[1]}</td>
                                 </tr>
+                                if skill.height2
+                                  <tr>
+                                    <td>AoE Height</td>
+                                    <td><i class="ri-arrow-down-fill"></i>#{skill.height2[0]} - <i class="ri-arrow-up-fill"></i>#{skill.height2[1]}</td>
+                                  </tr>
+                                //- end if skill.height2
                             </tbody>
                           </table>
                         </div>

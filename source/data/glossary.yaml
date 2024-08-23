@@ -63,6 +63,16 @@ DMG Reduction IV: (Buff) Decreases DMG taken by <<40%>>.
 -M.DEF III: (Debuff) Decreases M.DEF by <<60%>>.
 -M.DEF IV: (Debuff) Decreases M.DEF by <<80%>>.
 
++Crit I: (Buff) Incresses Crit by <<15%>>.
++Crit II: (Buff) Incresses Crit by <<30%>>.
++Crit III: (Buff) Incresses Crit by <<45%>>.
++Crit IV: (Buff) Incresses Crit by <<60%>>.
+
+-Crit I: (Debuff) Decresses Crit by <<15%>>.
+-Crit II: (Debuff) Decresses Crit by <<30%>>.
+-Crit III: (Debuff) Decresses Crit by <<45%>>.
+-Crit IV: (Debuff) Decresses Crit by <<60%>>.
+
 +Move I: (Buff) Increases Movement by <<1>> tile.
 +Move II: (Buff) Increases Movement by <<2>> tile.
 +Move III: (Buff) Increases Movement by <<3>> tile.
@@ -73,16 +83,22 @@ DMG Reduction IV: (Buff) Decreases DMG taken by <<40%>>.
 -Move III: (Debuff/Control/Disrupt) Reduces Movement by <<3>> tile.
 -Move IV: (Debuff/Control/Disrupt) Reduces Movement by <<4>> tile.
 
--Reaction Skills: (Debuff/Disrupt) Disables all [Reaction] skills.
+xDodge: (Debuff/Control/Disrupt) Nullifies [[Dodge]].
+xReaction Skills: (Debuff/Disrupt) Disables all [Reaction] skills.
 
+Alert: Guards a certain area, casting skills at enemies that move into range.
 Attack Attribute Debuff: "(Debuff) Applies the following: [[-DMG]], [[-Crit]], and [[-Crit DMG]]."
 Armor Piercing: (Buff) Ignores <<40%>> of the target's DEF when attacking.
 Block: (Buff) <<50%>> chance to face the enemy when taking P.DMG from the [fron or side], decreasing DMG taken by <<20%>>.
+Climb: (Buff) Ignores debuffs that affect movement when moving to tiles higher in altitude.
+Curved Shot: A  projectile fired at a curved trajectory which ignores the effects of some obstacles.
 Dying: When HP is below <<+30%>>, reduces DMG dealt by <<30%>> and increases DMG taken by <<30%>>.
 Immunity to Disrupt: (Buff) Immune to disrupt debuffs.
 Injured: When HP is below <<+70%>>, reduces DMG dealt by <<20%>> and increases DMG taken by <<20%>>.
 Instant: After casting this skill, the character can inherit their remaning mobility and continue their action.
+Jump: (Buff) <<Triples>> the character's jump power and allows them to traverse over gaps.
 Level 2 Buff: "(Buff) Includes the following buffs: [[+ATK II]], [[+Crit II]], [[+P.DEF II]], [[+M.DEF II]], [[+MOV I]], [[+Healing II]], and [Immune to Attribute Debuff]."
+Level 2 Debuff: "(Debuff) Includes: [[-ATK II]], [[-Crit Hit II]], [[-P.DEF II]], [[-M.DEF II]], [[xPassive Skill]], [[xReaction Skill]], [[xHealing]], [[xAttribute Buff]]."
 Luxite Skill: Includes [It's Gonna Blow!], [Fiery Luxite], [Healing Luxite], [Freeze Luxite], and other skills.
 Mind's Eye: (Buff) Activates [block] once when taking a [back attack].
 Scorch: (Debuff) Lose <<10%>> HP at the end of each turn. This effect cannot be stacked, and if it is applied again, the character will immediatly take DMG <<1>> time.

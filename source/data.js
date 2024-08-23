@@ -1,6 +1,7 @@
 var fs = require('fs');
 var yaml = require('js-yaml');
 var characters = yaml.load(fs.readFileSync(__dirname + '/data/characters.yaml'));
+var attributes = yaml.load(fs.readFileSync(__dirname + '/data/attributes.yaml'));
 var traits = yaml.load(fs.readFileSync(__dirname + '/data/traits.yaml'));
 var skills = yaml.load(fs.readFileSync(__dirname + '/data/skills.yaml'));
 var glossary = yaml.load(fs.readFileSync(__dirname + '/data/glossary.yaml'));
@@ -11,7 +12,8 @@ function getKeywords(text) {
     var obj = {};
     keywords.forEach(keyword => {
       var trimmed = keyword.replaceAll(/[\[\]]/g, '');
-      obj[decorate(keyword)] = decorate(glossary[trimmed]);
+      var decoratedThenTrimmed = decorate(keyword).replaceAll(/[\[\]]/g, '');
+      obj[decoratedThenTrimmed] = decorate(glossary[trimmed]);
     });
     return obj;
   }
@@ -23,8 +25,9 @@ function decorate(text) {
     return text;
   }
   return text
-    .replaceAll(/\[\[\+(.+?)\]\]/g, '<span class="is-inline-block">[<span class="gold bold"><i class="ri-arrow-up-double-line green"></i>$1</span>]</span>')
-    .replaceAll(/\[\[\-(.+?)\]\]/g, '<span class="is-inline-block">[<span class="gold bold"><i class="ri-arrow-down-double-line red"></i>$1</span>]</span>')
+    .replaceAll(/\[\[\+(.+?)\]\]/g, '<span class="is-inline-block">[<i class="ri-arrow-up-double-line green"></i><span class="gold bold">$1</span>]</span>')
+    .replaceAll(/\[\[\-(.+?)\]\]/g, '<span class="is-inline-block">[<i class="ri-arrow-down-double-line red"></i><span class="gold bold">$1</span>]</span>')
+    .replaceAll(/\[\[\x(.+?)\]\]/g, '<span class="is-inline-block">[<i class="ri-forbid-2-line red"></i><span class="gold bold">$1</span>]</span>')
     .replaceAll(/\[\[(.+?)\]\]/g, '<span class="is-inline-block">[<span class="gold bold">$1</span>]</span>')
 
     .replaceAll(/\<\<\+(.+?)\>\>/g, '<span class="is-inline-block green bold">$1</span>')
@@ -56,6 +59,7 @@ for (const key in skills) {
 
 // map trait/skill objects into characters object
 characters.forEach(character => {
+  character.attributes = attributes[character.name];
   for (const rank in character.skills) {
     if (rank === 'Trait') {
       var traitName = character.skills[rank];

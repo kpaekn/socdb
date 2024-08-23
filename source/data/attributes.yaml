@@ -1,0 +1,32 @@
+Beryl:
+  hp: [365, 3239]
+  patk: [169, 1115]
+  matk: [241, 1599]
+  pdef: [67, 449]
+  mdef: [100, 660]
+  spd: 122
+  mov: 3
+Faycal:
+  hp: [317, 2814]
+  patk: [200, 1321]
+  matk: [140, 926]
+  pdef: [58, 385]
+  mdef: [70, 460]
+  spd: 105
+  mov: 3
+Maitha:
+  hp: [417, 3701]
+  patk: [200, 1321]
+  matk: [140, 926]
+  pdef: [93, 615]
+  mdef: [58, 385]
+  spd: 243
+  mov: 3
+Rawiyah:
+  hp: [404, 3594]
+  patk: [226, 1496]
+  matk: [158, 1048]
+  pdef: [70, 460]
+  mdef: [52, 352]
+  spd: 204
+  mov: 3

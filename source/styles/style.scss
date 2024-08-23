@@ -96,7 +96,8 @@
       margin-bottom: 0.5em;
     }
 
-    p {
+    p,
+    .keyword-table.table {
       .red {
         color: crimson;
       }
@@ -120,27 +121,39 @@
       }
     }
 
-    .message .message-body {
-      padding: 1em;
+    .keywords.message .message-body {
+      border-bottom: 1px solid #ddd;
+      border-radius: 0;
+      padding: 0.25em 0.5em;
 
-      .image {
-        width: 16px;
-        height: 16px;
+      &:first-child {
+        padding-top: 0.5em;
       }
+
+      &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0.5em;
+      }
+      // padding: 1em;
+
+      // .image {
+      //   width: 16px;
+      //   height: 16px;
+      // }
     }
 
     .tag .image.is-16x16 {
       margin-bottom: 0;
       margin-right: 0.2em;
     }
-  }
-
-  .table td:last-child {
-    text-align: right;
-  }
-
-  .range-image {
-    border: 3px solid goldenrod;
+  
+    .range-table.table td:last-child {
+      text-align: right;
+    }
+  
+    .range-image {
+      border: 3px solid goldenrod;
+    }
   }
 }
 
