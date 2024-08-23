@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div id="container" class="container is-family-code">
+  <div id="container" class="container">
     <div class="character-top">
       <img class="character-image" src="images/skin/#{slug(name)}.webp" style="width: #{image.width}px; top: #{image.top}px; right: #{image.right}px" />
       <div class="character-name">
@@ -136,7 +136,7 @@
                     //- end if skill.tabs
                     <p>!{skill.description}</p>
                     if skill.keywords
-                      <article class="keywords message">
+                      <article class="keywords message is-small">
                         each description, word in skill.keywords
                           <div class="message-body">
                             <p>

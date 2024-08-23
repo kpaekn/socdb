@@ -98,6 +98,10 @@
 
     p,
     .keyword-table.table {
+      .keyword {
+        font-weight: bold;
+      }
+
       .red {
         color: crimson;
       }
@@ -134,23 +138,22 @@
         border-bottom: 0;
         padding-bottom: 0.5em;
       }
-      // padding: 1em;
 
-      // .image {
-      //   width: 16px;
-      //   height: 16px;
-      // }
+      .image {
+        width: 16px;
+        height: 16px;
+      }
     }
 
     .tag .image.is-16x16 {
       margin-bottom: 0;
       margin-right: 0.2em;
     }
-  
+
     .range-table.table td:last-child {
       text-align: right;
     }
-  
+
     .range-image {
       border: 3px solid goldenrod;
     }

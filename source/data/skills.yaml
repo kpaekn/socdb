@@ -1,5 +1,5 @@
 Slash:
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Deals <<100%>> P.DMG.
   range: 1 - 1
   height: [2, 2]
@@ -34,7 +34,7 @@ Endurance Activation:
   description: (Reaction) When receiving healing, gain [[DMG Reduction II]] for <<2>> turns.
 Block Counter:
   type: Reaction
-  description: (Reaction) When receiving a melee attack from the [front or side], there is a <<100%>> chance to trigger [[Block]]. This leads to a [[Strike Back]] with a basic attack, dealing <<70%>> P.DMG to the attacker. Can be triggered <<1>> time per round.
+  description: (Reaction) When receiving a melee attack from the [front or side], there is a <<100%>> chance to trigger [[Block]], followed by a [[Strike Back]], dealing <<70%>> P.DMG to the attacker. Can be triggered <<1>> time per round.
 Battle Flag of Convallaria:
   type: Skill
   description: (Leader's Aura) For all "Sword of Convallaria" allies, increase their ATK by <<10%>> and DEF by <<20%>>.
@@ -45,12 +45,12 @@ Bandage:
   range: 0 - 1.5
   height: [2, 2]
 Armor-Piercing Strike:
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Deals <<100%>> P.DMG and inflicts [[-P.DEF I]] and [[-M.DEF I]] on the target, for <<2>> turns.
   range: 1 - 1
   height: [2, 2]
 Powerful Attack:
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Deals <<110%>> P.DMG.
   range: 1 - 1
   height: [2, 2]
@@ -69,7 +69,7 @@ Invulnerable:
   range: self
 
 Gash:
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Deals <<85%>> P.DMG and knocks the target back <<2>> tiles.
   range: 1 - 1
   height: [2, 2]
@@ -120,12 +120,12 @@ Sword of Convallaria:
   type: Skill
   description: (Leader's Aura) For all "Sword of Convallaria" allies, increase their ATK by <<10%>>, DEF by <<20%>>, and DMG dealt by <<8%>>, and decreases DMG taken by <<8%>>.
 Fatal Attack (Melee):
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Deals <<100%>> P.DMG and increases Crit DMG by <<15%>>.
   range: 1 - 1
   height: [2, 2]
 Dispelling Strike:
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Deals <<100%>> P.DMG and dispels <<2>> [buffs] on the target.
   range: 1 - 1
   height: [2, 2]
@@ -140,7 +140,7 @@ Legacy of Comrades:
   description: (Passive) When an ally in battle is defeated, recovers <<+30%>> HP for the character, and the character gains [[+ATK II]], [[+P.DEF II]], and [[+M.DEF II]] for <<3>> turns
 
 Energy Wave:
-  type: Basic Attack
+  type: Attack
   description: (M.DMG) Deals <<80%>> M.DMG.
   range: 1 - 2
   height: [5, 3]
@@ -191,10 +191,10 @@ Try This!:
   range: 2 - 3
   height: [8, 8]
 Scorching Attack:
-  type: Basic Attack
+  type: Attack
   description: (M.DMG) Deals <<80%>> M.DMG and inflicts [[Scorch]] on the target for <<2>> turns.
 Bang!:
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Beryl deals P.DMG equal to <<80%>> of her M.ATK. There is a <<30%>> chance to inflict [[Stun]] for <<1>> turn.
 BOOOOOM!:
   type: Skill
@@ -210,7 +210,7 @@ First Aid:
   height: [2, 2]
 
 Curved Shot:
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Fires a [[Curved Shot]] which deals <<85%>> P.DMG.
   range: (curved) 2 - 3
   height: [8, 6]
@@ -257,12 +257,12 @@ Alert Shot:
   range: (area) 1 - 3
   height: [5, 5]
 Rapid Fire:
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Performs <<2>> consecutive attacks, each dealing <<55%>> P.DMG.
   range: 2 - 3
   height: [5, 3]
 Fatal Attack (Ranged):
-  type: Basic Attack
+  type: Attack
   description: (P.DMG) Fires a [[Curved Shot]] which deals <<85%>> P.DMG and increases Crit DMG by <<15%>>.
   range: (curved) 2 - 3
   height: [8, 6]

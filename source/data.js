@@ -25,10 +25,10 @@ function decorate(text) {
     return text;
   }
   return text
-    .replaceAll(/\[\[\+(.+?)\]\]/g, '<span class="is-inline-block">[<i class="ri-arrow-up-double-line green"></i><span class="gold bold">$1</span>]</span>')
-    .replaceAll(/\[\[\-(.+?)\]\]/g, '<span class="is-inline-block">[<i class="ri-arrow-down-double-line red"></i><span class="gold bold">$1</span>]</span>')
-    .replaceAll(/\[\[\x(.+?)\]\]/g, '<span class="is-inline-block">[<i class="ri-forbid-2-line red"></i><span class="gold bold">$1</span>]</span>')
-    .replaceAll(/\[\[(.+?)\]\]/g, '<span class="is-inline-block">[<span class="gold bold">$1</span>]</span>')
+    .replaceAll(/\[\[\+(.+?)\]\]/g, '<span class="keyword"><i class="ri-arrow-up-double-line green"></i>$1</span>')
+    .replaceAll(/\[\[\-(.+?)\]\]/g, '<span class="keyword"><i class="ri-arrow-down-double-line red"></i>$1</span>')
+    .replaceAll(/\[\[\x(.+?)\]\]/g, '<span class="keyword"><i class="ri-forbid-2-line red"></i>$1</span>')
+    .replaceAll(/\[\[(.+?)\]\]/g, '<span class="keyword">$1</span>')
 
     .replaceAll(/\<\<\+(.+?)\>\>/g, '<span class="is-inline-block green bold">$1</span>')
     .replaceAll(/\<\<(.+?)\>\>/g, '<span class="is-inline-block red bold">$1</span>')
