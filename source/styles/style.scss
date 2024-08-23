@@ -1,5 +1,5 @@
 #container {
-  padding: 0 10px;
+  padding: 0 1em;
 }
 
 // Character Top
@@ -29,14 +29,12 @@
   }
 }
 
-// Tags Section
-.tags-section {
-  position: relative;
+section {
   margin: 1em;
+}
 
-  .tag .image {
-    margin-right: 0.2em;
-  }
+.tag .image {
+  margin-right: 0.2em;
 }
 
 // Section Title
@@ -67,8 +65,6 @@
 }
 
 .skills-section {
-  margin-bottom: 1em;
-
   .rank-title {
     font-weight: bold;
     border-bottom: 1px solid #ddd;
@@ -77,11 +73,6 @@
 }
 
 .media {
-  .skill-image {
-    border: 3px solid #ddd;
-    border-radius: 999px;
-  }
-
   .media-content .content {
     .tabs {
       margin-bottom: 0.5em;
@@ -100,14 +91,11 @@
     .keyword-table.table {
       .keyword {
         font-weight: bold;
+        color: goldenrod;
       }
 
       .red {
         color: crimson;
-      }
-
-      .gold {
-        color: goldenrod;
       }
 
       .green {
@@ -145,19 +133,20 @@
       }
     }
 
-    .tag .image.is-16x16 {
-      margin-bottom: 0;
-      margin-right: 0.2em;
-    }
-
-    .range-table.table td:last-child {
-      text-align: right;
-    }
-
-    .range-image {
-      border: 3px solid goldenrod;
-    }
   }
+}
+
+.skill-image {
+  border: 3px solid #ddd;
+  border-radius: 999px;
+}
+
+.range-image {
+  border: 3px solid goldenrod;
+}
+
+.range-table.table td:last-child {
+  text-align: right;
 }
 
 

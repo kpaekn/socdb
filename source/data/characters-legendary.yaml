@@ -1,5 +1,5 @@
 - name: Beryl
-  image: 
+  image:
     width: 340
     top: -45
     right: 0

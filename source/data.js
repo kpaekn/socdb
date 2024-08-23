@@ -1,6 +1,11 @@
 var fs = require('fs');
 var yaml = require('js-yaml');
-var characters = yaml.load(fs.readFileSync(__dirname + '/data/characters.yaml'));
+var charactersLegendary = yaml.load(fs.readFileSync(__dirname + '/data/characters-legendary.yaml'));
+var charactersEpic = yaml.load(fs.readFileSync(__dirname + '/data/characters-epic.yaml'));
+var charactersRare = yaml.load(fs.readFileSync(__dirname + '/data/characters-rare.yaml'));
+var charactersCommon = yaml.load(fs.readFileSync(__dirname + '/data/characters-common.yaml'));
+console.log(charactersLegendary, charactersEpic);
+var characters = [].concat(...charactersLegendary, ...charactersEpic, ...charactersRare, ...charactersCommon);
 var attributes = yaml.load(fs.readFileSync(__dirname + '/data/attributes.yaml'));
 var traits = yaml.load(fs.readFileSync(__dirname + '/data/traits.yaml'));
 var skills = yaml.load(fs.readFileSync(__dirname + '/data/skills.yaml'));
@@ -63,16 +68,18 @@ characters.forEach(character => {
   for (const rank in character.skills) {
     if (rank === 'Trait') {
       var traitName = character.skills[rank];
-      character.skills[rank] = traits[traitName].description.map((description, i) => {
-        return {
-          name: traitName,
-          type: 'Trait',
-          keywords: traits[traitName].keywords,
-          description,
-          tabs: ['Lv.1', 'Lv.2', 'Lv.3', 'Lv.4', 'Lv.5'],
-          tabId: 'Lv.' + (i + 1)
-        };
-      })
+      if (traits[traitName]) {
+        character.skills[rank] = traits[traitName].description.map((description, i) => {
+          return {
+            name: traitName,
+            type: 'Trait',
+            keywords: traits[traitName].keywords,
+            description,
+            tabs: ['Lv.1', 'Lv.2', 'Lv.3', 'Lv.4', 'Lv.5'],
+            tabId: 'Lv.' + (i + 1)
+          };
+        })
+      }
     } else {
       character.skills[rank] = character.skills[rank].map(skillName => {
         return {

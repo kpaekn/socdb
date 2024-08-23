@@ -1,0 +1,150 @@
+- name: Darklight Ice Priest
+  subName: Darklight Ice Priest
+  rarity: Rare
+  role: Destroyer
+  factions: [Drifter]
+  skills: 
+    Trait: Ice of Despair
+    Innate: [Energy Wave, Ice Lance]
+    Rank 1: [Ice Cone, Defense Enhancement]
+    Rank 3: [NRG Restoration, Ice Armor]
+    Rank 5: [Counterattack, Defense (Physical)]
+    Rank 7: [Flash Freezing, Icy Shield]
+- name: Darklight Fire Priest
+  subName: Darklight Fire Priest
+  rarity: Rare
+  role: Destroyer
+  factions: [Drifter]
+  skills: 
+    Trait: Flame of Despair
+    Innate: [Energy Wave, Fireball]
+    Rank 1: [Flame Shock, Ignite]
+    Rank 3: [Perfect Shield, Healer's Bane]
+    Rank 5: [Defense (AoE), Firewalking]
+    Rank 7: [Flaming Meteor, Burnout]
+    
+- name: K.A. Archer
+  subName: K.A. Archer
+  rarity: Rare
+  role: Watcher
+  factions: [Iria]
+  skills: 
+    Trait: Focused Shot
+    Innate: [Curved Shot, Cloud-Piercing Arrow]
+    Rank 1: [Full Draw, Critical Enhancement]
+    Rank 3: [Dharana, Legacy of Comrades]
+    Rank 5: [Defense (AoE), Defender]
+    Rank 7: [Eagle Eye, Covering Shot]
+- name: K.A. Fire Conjurer
+  subName: K.A. Fire Conjurer
+  rarity: Rare
+  role: Destroyer
+  factions: [Iria]
+  skills: 
+    Trait: Flame of Comrade
+    Innate: [Energy Wave, Fireball]
+    Rank 1: [Fire Pillar, ATK Boost]
+    Rank 3: [Inspiration of Comrades, Blazing]
+    Rank 5: [Defender, Endure]
+    Rank 7: [Battle Flag of Iria, Potential Burst]
+- name: K.A. Guard
+  subName: K.A. Guard
+  rarity: Rare
+  role: Defender
+  factions: [Iria]
+  skills: 
+    Trait: Shield of Comrade
+    Innate: [Slash, Leg Slam]
+    Rank 1: [Soul Mate, Hoplite Attack]
+    Rank 3: [Guard, Co-Defense]
+    Rank 5: [Endurance Activation, Front Defense]
+    Rank 7: [Resolve, Forced March]
+- name: K.A. Light Conjurer
+  subName: K.A. Light Conjurer
+  rarity: Rare
+  role: Watcher
+  factions: [Iria]
+  skills: 
+    Trait: Love Wings
+    Innate: [Energy Wave, Healing Spell]
+    Rank 1: [Purify, Sanction]
+    Rank 3: [Regenerate, Damage Enhancement]
+    Rank 5: [Defender, Endure]
+    Rank 7: [Light of Purification, Legacy of Comrades]
+- name: K.A. Pikeman
+  subName: K.A. Pikeman
+  rarity: Rare
+  role: Breaker
+  factions: [Iria]
+  skills: 
+    Trait: Spear of Unity
+    Innate: [Slash, Shieldbreak Jab]
+    Rank 1: [Legacy of Comrades, Insightful Bash]
+    Rank 3: [Perfect Shield, Co-Attack]
+    Rank 5: [Preempt, Weak Spot Protection]
+    Rank 7: [Knockback Pursuit, Charge Pursuit]
+
+- name: Knighted Guard
+  subName: Knighted Guard
+  rarity: Rare
+  role: Defender
+  factions: [Union]
+  skills: 
+    Trait: Focused Defense
+    Innate: [Slash, Global Guard]
+    Rank 1: [Weakening Attack, Offensive Stance]
+    Rank 3: [Heavy Armor, Knight's Glory]
+    Rank 5: [Strength Activation, Spiky Shield]
+    Rank 7: [Knock-Out Blow, Crushing Bash]
+- name: Knighted Pikeman
+  subName: Knighted Pikeman
+  rarity: Rare
+  role: Breaker
+  factions: [Union]
+  skills: 
+    Trait: Chargin Spear
+    Innate: [Slash, Crescendo Combo]
+    Rank 1: [Insight, Pursuit]
+    Rank 3: [Parry, Knightly Spirit]
+    Rank 5: [Physical Relection, Preempt]
+    Rank 7: [Shield, Last Stand]
+
+- name: Papal Guard
+  subName: Papal Guard
+  rarity: Rare
+  role: Defender
+  factions: [Papal States]
+  skills: 
+    Trait: Blessed Shield
+    Innate: [Slash, Hoplite Attack]
+    Rank 1: [Defensive Stance, Leg Slam]
+    Rank 3: [Heavy Armor, Guard]
+    Rank 5: [Endurance Activation, Defense (Ranged)]
+    Rank 7: [Unvulnerable, Flagellant]
+- name: Papal Ice Priest
+  subName: Papal Ice Priest
+  rarity: Rare
+  role: Watcher
+  factions: [Papal States]
+  skills: 
+    Trait: Ice of Sanctuary
+    Innate: [Energy Wave, Ice Cone]
+    Rank 1: [Ice Lance, Defense Boost]
+    Rank 3: [Icy Blast, Field]
+    Rank 5: [Defense (Physical), Hardening]
+    Rank 7: [Ice Shock, Ice Age]
+- name: Papal Pikeman
+  subName: Papal Pikeman
+  rarity: Rare
+  role: Breaker
+  factions: [Papal States]
+  skills: 
+    Trait: Blessed Spear
+    Innate: [Slash, Powerful Throw]
+    Rank 1: [Crumbling Smash, High Alert]
+    Rank 3: [Insight, The Protected]
+    Rank 5: [Rage, Strength Activation]
+    Rank 7: [Draconic Flash Step, Pursuit]
+
+
+

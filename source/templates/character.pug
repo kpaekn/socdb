@@ -14,7 +14,9 @@
 <body>
   <div id="container" class="container">
     <div class="character-top">
-      <img class="character-image" src="images/skin/#{slug(name)}.webp" style="width: #{image.width}px; top: #{image.top}px; right: #{image.right}px" />
+      if image
+        <img class="character-image" src="images/skin/#{slug(name)}.webp" style="width: #{image.width}px; top: #{image.top}px; right: #{image.right}px" />
+      //- end if image
       <div class="character-name">
         <img class="image is-pulled-left is-inline-block is-64x64" src="images/rarity/#{slug(rarity)}.webp" />
         <div>
@@ -25,6 +27,7 @@
           </div>
         </div>
       </div>
+
       <section class="tags-section">
         <div class="tags">
           each faction in factions
@@ -36,51 +39,53 @@
       </section>
     </div>
 
-    <section class="attrs-section">
-      <h5 class="section-title is-#{slug(role)} title is-5">Attributes</h5>
-      <table class="table is-narrow is-striped">
-        <tbody>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/hp.png" /> HP</td>
-            <td>#{attributes.hp[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.hp[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/patk.png" /> P.ATK</td>
-            <td>#{attributes.patk[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.patk[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/matk.png" /> M.ATK</td>
-            <td>#{attributes.matk[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.matk[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/pdef.png" /> P.DEF</td>
-            <td>#{attributes.pdef[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.pdef[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/mdef.png" /> M.DEF</td>
-            <td>#{attributes.mdef[0]}</td>
-            <td><i class="ri-arrow-right-double-line"></i></td>
-            <td>#{attributes.mdef[1]}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/spd.png" /> SPD</td>
-            <td colspan="3">#{attributes.spd}</td>
-          </tr>
-          <tr>
-            <td><img class="image is-inline-block is-16x16" src="images/attr/mov.png" /> MOV</td>
-            <td colspan="3">#{attributes.mov}</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    if attributes
+      <section class="attrs-section">
+        <h5 class="section-title is-#{slug(role)} title is-5">Attributes</h5>
+        <table class="table is-narrow is-striped">
+          <tbody>
+            <tr>
+              <td><img class="image is-inline-block is-16x16" src="images/attr/hp.png" /> HP</td>
+              <td>#{attributes.hp[0]}</td>
+              <td><i class="ri-arrow-right-double-line"></i></td>
+              <td>#{attributes.hp[1]}</td>
+            </tr>
+            <tr>
+              <td><img class="image is-inline-block is-16x16" src="images/attr/patk.png" /> P.ATK</td>
+              <td>#{attributes.patk[0]}</td>
+              <td><i class="ri-arrow-right-double-line"></i></td>
+              <td>#{attributes.patk[1]}</td>
+            </tr>
+            <tr>
+              <td><img class="image is-inline-block is-16x16" src="images/attr/matk.png" /> M.ATK</td>
+              <td>#{attributes.matk[0]}</td>
+              <td><i class="ri-arrow-right-double-line"></i></td>
+              <td>#{attributes.matk[1]}</td>
+            </tr>
+            <tr>
+              <td><img class="image is-inline-block is-16x16" src="images/attr/pdef.png" /> P.DEF</td>
+              <td>#{attributes.pdef[0]}</td>
+              <td><i class="ri-arrow-right-double-line"></i></td>
+              <td>#{attributes.pdef[1]}</td>
+            </tr>
+            <tr>
+              <td><img class="image is-inline-block is-16x16" src="images/attr/mdef.png" /> M.DEF</td>
+              <td>#{attributes.mdef[0]}</td>
+              <td><i class="ri-arrow-right-double-line"></i></td>
+              <td>#{attributes.mdef[1]}</td>
+            </tr>
+            <tr>
+              <td><img class="image is-inline-block is-16x16" src="images/attr/spd.png" /> SPD</td>
+              <td colspan="3">#{attributes.spd}</td>
+            </tr>
+            <tr>
+              <td><img class="image is-inline-block is-16x16" src="images/attr/mov.png" /> MOV</td>
+              <td colspan="3">#{attributes.mov}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    //- end if attributes
 
     <section class="skills-section">
       h5.section-title.title.is-5(class='is-'+slug(role)) Skills
@@ -88,101 +93,103 @@
         h6.rank-title.is-size-6 #{rankName}
         <div class="grid is-col-min-16">
           each skill, skillIdx in skls
-            div(class="cell" class=(skill.tabId && skillIdx > 0 ? 'is-hidden' : ''), data-tab=slug(skill.name) data-tab-id=skill.tabId)
-              <article class="media">
-                <figure class="media-left">
-                  if skill.name
-                    <img class="skill-image image is-48x48" src="images/skill/#{slug(skill.name)}.png" />
-                  else
-                    <p class="image is-48x48"></p>
-                  //- end if skill.name
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <span class="tag is-dark">#{skill.type}</span>&nbsp;
-                      if skill.name
-                        <strong>#{skill.name}</strong>
-                      //- end if skill.name
-                    </p>
-                    <p>
-                      if skill.cost > 0
-                        <span class="tag is-warning">Cost:&nbsp;
-                          - var n = 0
-                          while n++ < skill.cost
-                            <i class="ri-gemini-fill"></i>
-                        </span>&nbsp;
-                      //- end if skill.cost
-                      if skill.cooldown > 0
-                        <span class="tag is-warning">Cooldown:&nbsp;
-                          - var n = 0
-                          while n++ < skill.cooldown
-                            <i class="ri-hourglass-2-fill"></i>
-                        </span>
-                      //- end if skill.cooldown
-                    </p>
-                    if skill.tabs
-                      <div class="tabs is-small is-toggle is-dark">
-                        <ul>
-                          each tab in skill.tabs
-                            if skill.tabId == tab
-                              <li><a class="has-background-dark has-text-light">#{tab}</a></li>
-                            else
-                              <li><a onclick="openTab('#{slug(skill.name)}', '#{tab}')">#{tab}</a></li>
-                            //- end if skill.tabId
-                            //- end each skill.tabs
-                        </ul>
-                      </div>
-                    //- end if skill.tabs
-                    <p>!{skill.description}</p>
-                    if skill.keywords
-                      <article class="keywords message is-small">
-                        each description, word in skill.keywords
-                          <div class="message-body">
-                            <p>
-                              | !{word}
-                              <br />
-                              | !{description}
-                            </p>
-                          </div>
-                        //- end each skill.keywords
-                      </article>
-                    //- end if skill.keywords
-                  </div>
-                  if skill.range
-                    <article class="media">
-                      <figure class="media-left">
-                        <img class="range-image image is-64x64" src="images/range/#{slug(skill.range)}.jpg" />
-                      </figure>
-                      if skill.height
-                        <div class="media-content">
-                          <div class="content">
-                            <table class="range-table table is-fullwidth is-narrow is-size-7">
-                              <tbody>
-                                <tr>
-                                  <td>Range</td>
-                                  <td>#{skill.range}</td>
-                                </tr>
-                                <tr>
-                                  <td>Height Range</td>
-                                  <td><i class="ri-arrow-down-fill"></i>#{skill.height[0]} - <i class="ri-arrow-up-fill"></i>#{skill.height[1]}</td>
-                                </tr>
-                                if skill.height2
-                                  <tr>
-                                    <td>AoE Height</td>
-                                    <td><i class="ri-arrow-down-fill"></i>#{skill.height2[0]} - <i class="ri-arrow-up-fill"></i>#{skill.height2[1]}</td>
-                                  </tr>
-                                //- end if skill.height2
-                            </tbody>
-                          </table>
+            if skill.name
+              div(class="cell" class=(skill.tabId && skillIdx > 0 ? 'is-hidden' : ''), data-tab=slug(skill.name) data-tab-id=skill.tabId)
+                <article class="media">
+                  <figure class="media-left">
+                    if skill.name
+                      <img class="skill-image image is-48x48" src="images/skill/#{slug(skill.name)}.png" />
+                    else
+                      <p class="image is-48x48"></p>
+                    //- end if skill.name
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <span class="tag is-dark">#{skill.type}</span>&nbsp;
+                        if skill.name
+                          <strong>#{skill.name}</strong>
+                        //- end if skill.name
+                      </p>
+                      <p>
+                        if skill.cost > 0
+                          <span class="tag is-warning">Cost:&nbsp;
+                            - var n = 0
+                            while n++ < skill.cost
+                              <i class="ri-gemini-fill"></i>
+                          </span>&nbsp;
+                        //- end if skill.cost
+                        if skill.cooldown > 0
+                          <span class="tag is-warning">Cooldown:&nbsp;
+                            - var n = 0
+                            while n++ < skill.cooldown
+                              <i class="ri-hourglass-2-fill"></i>
+                          </span>
+                        //- end if skill.cooldown
+                      </p>
+                      if skill.tabs
+                        <div class="tabs is-small is-toggle is-dark">
+                          <ul>
+                            each tab in skill.tabs
+                              if skill.tabId == tab
+                                <li><a class="has-background-dark has-text-light">#{tab}</a></li>
+                              else
+                                <li><a onclick="openTab('#{slug(skill.name)}', '#{tab}')">#{tab}</a></li>
+                              //- end if skill.tabId
+                              //- end each skill.tabs
+                          </ul>
                         </div>
-                      //- end if skill.height
-                    </article>
-                  //- end if skill.range
-                </div>
-              </article>
-            //- end div.cell
-            //- end each skls
+                      //- end if skill.tabs
+                      <p>!{skill.description}</p>
+                      if skill.keywords
+                        <article class="keywords message is-small">
+                          each description, word in skill.keywords
+                            <div class="message-body">
+                              <p>
+                                | !{word}
+                                <br />
+                                | !{description}
+                              </p>
+                            </div>
+                          //- end each skill.keywords
+                        </article>
+                      //- end if skill.keywords
+                    </div>
+                    if skill.range
+                      <article class="media">
+                        <figure class="media-left">
+                          <img class="range-image image is-64x64" src="images/range/#{slug(skill.range)}.jpg" />
+                        </figure>
+                        if skill.height
+                          <div class="media-content">
+                            <div class="content">
+                              <table class="range-table table is-fullwidth is-narrow is-size-7">
+                                <tbody>
+                                  <tr>
+                                    <td>Range</td>
+                                    <td>#{skill.range}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Height Range</td>
+                                    <td><i class="ri-arrow-down-fill"></i>#{skill.height[0]} - <i class="ri-arrow-up-fill"></i>#{skill.height[1]}</td>
+                                  </tr>
+                                  if skill.height2
+                                    <tr>
+                                      <td>AoE Height</td>
+                                      <td><i class="ri-arrow-down-fill"></i>#{skill.height2[0]} - <i class="ri-arrow-up-fill"></i>#{skill.height2[1]}</td>
+                                    </tr>
+                                  //- end if skill.height2
+                              </tbody>
+                            </table>
+                          </div>
+                        //- end if skill.height
+                      </article>
+                    //- end if skill.range
+                  </div>
+                </article>
+              //- end div.cell
+            //- end if skill
+          //- end each skls
         </div>
       //- end each skills
     </section>

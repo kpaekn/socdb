@@ -1,10 +1,10 @@
 Bottoms Up:
   description:
-  - Rawiyah's DMG delt is increased by <<8%>>. At the start of the turn and before a [[Strike Back]], there is a <<50%>> chance to recover <<+30%>> of lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
-  - Rawiyah's DMG delt is increased by <<12%>>. At the start of the turn and before a [[Strike Back]], there is a <<60%>> chance to recover <<+30%>> of lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
-  - Rawiyah's DMG delt is increased by <<16%>>. At the start of the turn and before a [[Strike Back]], there is a <<70%>> chance to recover <<+40%>> of lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
-  - Rawiyah's DMG delt is increased by <<25%>>. At the start of the turn and before a [[Strike Back]], there is a <<70%>> chance to recover <<+40%>> of lost HP and gain [[Tipsy]]. This can activate up to <<1>> time per round.
-  - Rawiyah's DMG delt is increased by <<25%>>. At the start of the turn and before a [[Strike Back]], there is a <<80%>> chance to recover <<+40%>> of lost HP and gain [[Tipsy]]. This can activate up to <<2>> time per round.
+  - Rawiyah's DMG delt is increased by <<8%>>. At the start of the turn and before a [[Strike Back]], there is a <<50%>> chance to recover <<+30%>> of lost HP and gain <<1>> stack of [[Tipsy]]. This can activate up to <<1>> time per round.
+  - Rawiyah's DMG delt is increased by <<12%>>. At the start of the turn and before a [[Strike Back]], there is a <<60%>> chance to recover <<+30%>> of lost HP and gain <<1>> stack of [[Tipsy]]. This can activate up to <<1>> time per round.
+  - Rawiyah's DMG delt is increased by <<16%>>. At the start of the turn and before a [[Strike Back]], there is a <<70%>> chance to recover <<+40%>> of lost HP and gain <<1>> stack of [[Tipsy]]. This can activate up to <<1>> time per round.
+  - Rawiyah's DMG delt is increased by <<25%>>. At the start of the turn and before a [[Strike Back]], there is a <<70%>> chance to recover <<+40%>> of lost HP and gain <<1>> stack of [[Tipsy]]. This can activate up to <<1>> time per round.
+  - Rawiyah's DMG delt is increased by <<25%>>. At the start of the turn and before a [[Strike Back]], there is a <<80%>> chance to recover <<+40%>> of lost HP and gain <<1>> stack of [[Tipsy]]. This can activate up to <<2>> time per round.
 I'm a Genius!:
   description:
   - Beryl's M.ATK is increased by <<8%>>. At the start of the turn, there is a <<50%>> chance to gain a random [[Level 2 Buff]], which lasts for <<2>> turns. Also recovers <<1>> NRG.

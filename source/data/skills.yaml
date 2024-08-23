@@ -31,10 +31,10 @@ Maitha's Charge:
   height: [1, 1]
 Endurance Activation:
   type: Reaction
-  description: (Reaction) When receiving healing, gain [[DMG Reduction II]] for <<2>> turns.
+  description: When receiving healing, gain [[DMG Reduction II]] for <<2>> turns.
 Block Counter:
   type: Reaction
-  description: (Reaction) When receiving a melee attack from the [front or side], there is a <<100%>> chance to trigger [[Block]], followed by a [[Strike Back]], dealing <<70%>> P.DMG to the attacker. Can be triggered <<1>> time per round.
+  description: When receiving a [melee] attack from the [front or side], <<100%>> chance to [[Block]] and [[Strike Back]], dealing <<70%>> P.DMG. Can be triggered <<1>> time per round.
 Battle Flag of Convallaria:
   type: Skill
   description: (Leader's Aura) For all "Sword of Convallaria" allies, increase their ATK by <<10%>> and DEF by <<20%>>.
@@ -106,10 +106,10 @@ Another Pint!:
   range: self
 Screw Off!:
   type: Reaction
-  description: (Reaction) When hit by an active attack, perform a [[Strike Back]], dealing <<70%>> P.DMG to the enemy. When [[Tipsy]] is active, knock the enemy back <<2>> tiles. This effect can be triggered up to <<1>> time per round.
+  description: When hit by an active attack, perform a [[Strike Back]], dealing <<70%>> P.DMG to the enemy. When [[Tipsy]] is active, knock the enemy back <<2>> tiles. This effect can be triggered up to <<1>> time per round.
 Guardian's Heart:
   type: Reaction
-  description: (Reaction) Takes [physical attacks] for all other allies within <<1>> tile and performs a [Strike Back] on the attacker, dealing <<70%>> P.DMG and knocking them back <<1>> tile. This effect can be triggered <<1>> time per round.
+  description: Takes [physical attacks] for all other allies within <<1>> tile and performs a [Strike Back] on the attacker, dealing <<70%>> P.DMG and knocking them back <<1>> tile. This effect can be triggered <<1>> time per round.
 Mania Smash:
   type: Skill
   description: (P.DMG) Deals <<120%>> P.DMG. After attacking, gains <<+40%>> [Life Steal].
@@ -173,10 +173,10 @@ NRG Restoration:
   description: (Passive) At the end of the turn, recovers an additional <<+1>> NRG. If NGR is less than <<1>>, recovers another <<+1>> NGR.
 Firewalking:
   type: Reaction
-  description: (Reaction) Become immune to [[Scorch]] and burning tiles. When on a burning tile, the DMG taken is decreased by <<10%>>. At the end of the turn, recovers <<+20%>> HP.
+  description: Become immune to [[Scorch]] and burning tiles. When on a burning tile, the DMG taken is decreased by <<10%>>. At the end of the turn, recovers <<+20%>> HP.
 Cutie:
   type: Reaction
-  description: (Reaction) Decreases [Ranged DMG] taken by <<25%>> and [AoE] DMG taken by <<40%>>.
+  description: Decreases [Ranged DMG] taken by <<25%>> and [AoE] DMG taken by <<40%>>.
 Flaming Meteor:
   type: Skill
   description: (M.DMG) Prepares for 1 turn. Once casting the skill, deals <<140%>> fire [AoE] DMG to all enemies within <<3>> tiles around the target, and gains [[Stun]] for <<1>> turn.
@@ -240,10 +240,10 @@ Arrow of Guardian Convallaria:
   height: [5, 5]
 Eye for an Eye:
   type: Reaction
-  description: (Reaction) When attacked from the [front or side] by enemies who are not on adjacent tiles, perform a [[Strike Back]], dealing <<100%>> P.DMG.
+  description: When attacked from the [front or side] by enemies who are not on adjacent tiles, [[Strike Back]], dealing <<100%>> P.DMG.
 Fleeing Hare:
   type: Reaction
-  description: (Reaction) When hit by an active attack, the DMG taken is decreased by <<8%>>. After being attacked, gain [[+Move II]] for <<2>> turns.
+  description: When hit by an active attack, reduce the DMG taken by <<8%>>. After being attacked, gain [[+Move II]] for <<2>> turns.
 Cloud-Piercing Arrow:
   type: Skill
   description: (P.DMG) Fires a [[Curved Shot]] which deals <<140%>> P.DMG.

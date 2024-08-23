@@ -100,7 +100,7 @@ Jump: (Buff) <<Triples>> the character's jump power and allows them to traverse 
 Level 2 Buff: "(Buff) Includes the following buffs: [[+ATK II]], [[+Crit II]], [[+P.DEF II]], [[+M.DEF II]], [[+MOV I]], [[+Healing II]], and [Immune to Attribute Debuff]."
 Level 2 Debuff: "(Debuff) Includes: [[-ATK II]], [[-Crit Hit II]], [[-P.DEF II]], [[-M.DEF II]], [[xPassive Skill]], [[xReaction Skill]], [[xHealing]], [[xAttribute Buff]]."
 Luxite Skill: Includes [It's Gonna Blow!], [Fiery Luxite], [Healing Luxite], [Freeze Luxite], and other skills.
-Mind's Eye: (Buff) Activates [block] once when taking a [back attack].
+Mind's Eye: (Buff) Activates [[Block]] once when taking a [back attack].
 Scorch: (Debuff) Lose <<10%>> HP at the end of each turn. This effect cannot be stacked, and if it is applied again, the character will immediatly take DMG <<1>> time.
 Strike Back: Strikes back when taking single-target attacks from enemies within the attack range.
 Stun: (Debuff) Unable to perform any actions.

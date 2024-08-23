@@ -1,0 +1,13 @@
+- name: Angel
+  subName: Radiant maidservant
+  rarity: Epic
+  role: Watcher
+  factions: [Papal States, Aggression]
+  skills:
+    Trait: Angel
+    Innate: [Energy Wave, Healing Spell]
+    Rank 1: [Sanction, Light of Healing]
+    Rank 3: [Flagellant, Regenerate]
+    Rank 5: [Endurance Activation, Protection of Light]
+    Rank 7: [M.DEF Command, The Protected]
+    Rank 9: [Dispelling Strike, Merciful Strike]
