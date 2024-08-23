@@ -109,7 +109,7 @@ Screw Off!:
   description: When hit by an active attack, perform a [[Strike Back]], dealing <<70%>> P.DMG to the enemy. When [[Tipsy]] is active, knock the enemy back <<2>> tiles. This effect can be triggered up to <<1>> time per round.
 Guardian's Heart:
   type: Reaction
-  description: Takes [physical attacks] for all other allies within <<1>> tile and performs a [Strike Back] on the attacker, dealing <<70%>> P.DMG and knocking them back <<1>> tile. This effect can be triggered <<1>> time per round.
+  description: Takes [physical attacks] for all other allies within <<1>> tile and performs a [[Strike Back]] on the attacker, dealing <<70%>> P.DMG and knocking them back <<1>> tile. This effect can be triggered <<1>> time per round.
 Mania Smash:
   type: Skill
   description: (P.DMG) Deals <<120%>> P.DMG. After attacking, gains <<+40%>> [Life Steal].
@@ -276,3 +276,72 @@ Gale-Billow Volley:
 Heart of Alert:
   type: Skill
   description: (Passive) When it is not the character's turn, increases Crit by <<45%>> and Crit DMG by <<30%>>.
+
+Dual Blade Strike:
+  type: Attack
+  description: (P.DMG) Deals <<50%>> P.DMG <<2>> times.
+  range: 1 - 1
+  height: [2, 2]
+Flurry of Stabs:
+  type: Skill
+  description: (P.DMG) Deals <<45%>> P.DMG <<3>> times. Increases Crit by <<20%>>.
+  cost: 2
+  range: 1 - 1
+  height: [2, 2]
+Ambush:
+  type: Skill
+  description: (Passive) When attacking [[Unharmed]] targets, deal <<20%>> P.DMG. When performing a [back attack], inflict [[xPassive Skills]] for <<1>> turn.
+Shadow Gait:
+  type: Skill
+  description: (Support) [[Instant]] Teleport behind the target and steal 1 random [[Attribute Buff]].
+  cost: 1
+  cooldown: 3
+  range: 1 - 1.5
+  height: [2, 2]
+Assult:
+  type: Skill
+  description: (Support) [[Instant]] Gain [[+Crit I]], [[+Crit DMG I]], and [[+Move II]] for <<1>> turn.
+  cost: 1
+  cooldown: 3
+  range: self
+Mask:
+  type: Skill
+  description: (Healing) Dispel <<2>> debuffs, recover <<+25%>> HP, and gain [[Invisibility]] and [[+Crit V]] for <<1>> turh.
+  cost: 1
+  cooldown: 3
+  range: self
+Eerie Footwork:
+  type: Reaction
+  description: When [[Healthy]] and receiving a single-target attack, teleport behind the attacker and [[Strike Back]], dealing <<70%>> DMG. Then gain [[Dodge]] for <<1>> turn. When [[Injured]], trigger [[Dodge]].
+  cooldown: 3
+Counterattack:
+  type: Reaction
+  description: When attacked from the [front or side], [[Strike Back]], dealing <<70%>> DMG. This can activate up to <<1>> time per round.
+Perfect Assassin:
+  type: Skill
+  description: (Leader's Aura) For all "Alacrity" allies, increase their ATK by <<10%>>, DEF by <<20%>>, Crit by <<15%>>, and Crit DMG by <<15%>>.
+Omen of Death:
+  type: Skill
+  description: (Passive) When a character is defeated, gain [[Feverish Beast]] for <<3>> turns. When this character defeats an enemy, recover <<+2>> NRG.
+Hidden Thorn:
+  type: Attack
+  description: Deals <<100%>> DMG. When perfoming a [back attack], [[Ignore Assist]].
+  range: 1 - 1
+  height: [2, 2]
+Critical Strike:
+  type: Attack
+  description: Deals <<50%>> P.DMG <<2>> times. Increases Crit by <<15%>>.
+  range: 1 - 1
+  height: [2, 2]
+Wipe Out:
+  type: Skill
+  description: Deals <<60%>> P.DMG <<3>> times. When there are no allies within a <<2>>-tile radius, [[Ignore Assist]]. When defeating a target, gain [[Dodge]] for <<1>> turn.
+  cost: 4
+  range: 1 - 1
+  height: [2, 2]
+Traceless Shadow:
+  type: Skill
+  description: (Support) Gain [[Dodge]] for <<1>> turn. After a successful [[Dodge]], teleport behind the attacker and deal <<100%>> DMG, then gain [[Dodge]] for <<1>> turn.
+  cost: 2
+  cooldown: 5
+  range: self

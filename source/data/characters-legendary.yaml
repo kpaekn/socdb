@@ -16,6 +16,24 @@
     Rank 7: [Flaming Meteor, Try This!]
     Rank 9: [Scorching Attack, Bang!]
     Rank 11: [BOOOOOM!, First Aid]
+- name: Col
+  image:
+    width: 340
+    top: -35
+    right: 0
+  subName: Masked Assassin
+  rarity: Legendary
+  role: Seeker
+  factions: [Papal States, Drifter, Alacrity]
+  skills:
+    Trait: Killer Instinct
+    Innate: [Dual Blade Strike, Flurry of Stabs]
+    Rank 1: [Ambush, Shadow Gait]
+    Rank 3: [Assult, Mask]
+    Rank 5: [Eerie Footwork, Counterattack]
+    Rank 7: [Perfect Assassin, Omen of Death]
+    Rank 9: [Hidden Thorn, Critical Strike]
+    Rank 11: [Wipe Out, Traceless Shadow]
 - name: Faycal
   image: 
     width: 380

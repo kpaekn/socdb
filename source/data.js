@@ -65,6 +65,7 @@ for (const key in skills) {
 // map trait/skill objects into characters object
 characters.forEach(character => {
   character.attributes = attributes[character.name];
+  character.factions = character.factions.sort((a, b) => (a < b) ? -1 : 1);
   for (const rank in character.skills) {
     if (rank === 'Trait') {
       var traitName = character.skills[rank];
