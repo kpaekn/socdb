@@ -120,6 +120,7 @@ Level 2 Debuff: "(Debuff) Includes: [[-ATK II]], [[-Crit Hit II]], [[-P.DEF II]]
 Luxite Skill: Includes [It's Gonna Blow!], [Fiery Luxite], [Healing Luxite], [Freeze Luxite], and other skills.
 Mind's Eye: (Buff) Activates [[Block]] once when taking a [back attack].
 Scorch: (Debuff) Lose <<10%>> HP at the end of each turn. This effect cannot be stacked, and if it is applied again, the character will immediatly take DMG <<1>> time.
+Skips the Turn: (Debuff/Bound) Cannot take any action in this turn.
 Strike Back: Strikes back when taking single-target attacks from enemies within the attack range.
 Stun: (Debuff) Unable to perform any actions.
 Tipsy: (Buff) Increases Crit by <<30%>> and decreases DMG taken by <<10%>>. This ability can be stacked.

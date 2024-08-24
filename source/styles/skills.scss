@@ -1,0 +1,67 @@
+.skill-group {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  padding: 1em;
+
+  .ui.grid .column.is-hidden {
+    display: none;
+  }
+
+  .skill-image.ui.image {
+    position: relative;
+
+    &,
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    img.skill-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .ui.message {
+    .ui.top.left.attached.tiny.label {
+      background-color: goldenrod;
+      color: black;
+    }
+
+    .ui.tiny.labels {
+      position: absolute;
+      top: 0.5em;
+      right: 0;
+    }
+
+    h5 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .ui.menu {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    img {
+      margin-bottom: -3px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &.is-trait {
+      .ui.top.left.attached.tiny.label {
+        display: none;
+      }
+
+      h5 {
+        margin-top: 0;
+      }
+    }
+  }
+
+}

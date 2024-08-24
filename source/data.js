@@ -4,9 +4,8 @@ var charactersLegendary = yaml.load(fs.readFileSync(__dirname + '/data/character
 var charactersEpic = yaml.load(fs.readFileSync(__dirname + '/data/characters-epic.yaml'));
 var charactersRare = yaml.load(fs.readFileSync(__dirname + '/data/characters-rare.yaml'));
 var charactersCommon = yaml.load(fs.readFileSync(__dirname + '/data/characters-common.yaml'));
-console.log(charactersLegendary, charactersEpic);
-var characters = [].concat(...charactersLegendary, ...charactersEpic, ...charactersRare, ...charactersCommon);
-var attributes = yaml.load(fs.readFileSync(__dirname + '/data/attributes.yaml'));
+var characters = [].concat(...charactersLegendary);
+var stats = yaml.load(fs.readFileSync(__dirname + '/data/stats.yaml'));
 var traits = yaml.load(fs.readFileSync(__dirname + '/data/traits.yaml'));
 var skills = yaml.load(fs.readFileSync(__dirname + '/data/skills.yaml'));
 var glossary = yaml.load(fs.readFileSync(__dirname + '/data/glossary.yaml'));
@@ -30,22 +29,54 @@ function decorate(text) {
     return text;
   }
   return text
-    .replaceAll(/\[\[\+(.+?)\]\]/g, '<span class="keyword"><i class="ri-arrow-up-double-line green"></i>$1</span>')
-    .replaceAll(/\[\[\-(.+?)\]\]/g, '<span class="keyword"><i class="ri-arrow-down-double-line red"></i>$1</span>')
-    .replaceAll(/\[\[\x(.+?)\]\]/g, '<span class="keyword"><i class="ri-forbid-2-line red"></i>$1</span>')
-    .replaceAll(/\[\[(.+?)\]\]/g, '<span class="keyword">$1</span>')
+    .replaceAll(/\[\[\+(.+?)\]\]/g, '<span class="keyword">[<span class="green">▲</span>$1]</span>')
+    .replaceAll(/\[\[\-(.+?)\]\]/g, '<span class="keyword">[<span class="red">▼</span>$1]</span>')
+    .replaceAll(/\[\[\x(.+?)\]\]/g, '<span class="keyword">[<i class="ri-forbid-2-line red"></i>$1]</span>')
+    .replaceAll(/\[\[(.+?)\]\]/g, '<span class="keyword">[$1]</span>')
 
     .replaceAll(/\<\<\+(.+?)\>\>/g, '<span class="is-inline-block green bold">$1</span>')
     .replaceAll(/\<\<(.+?)\>\>/g, '<span class="is-inline-block red bold">$1</span>')
 
-    .replaceAll(/\((.+?)\)/g, '<span class="is-inline-block">(<span class="is-inline-block bold">$1</span>)</span>')
+    // .replaceAll(/\((.+?)\)/g, '<span class="is-inline-block">(<span class="is-inline-block bold">$1</span>)</span>')
 
-    .replaceAll(/(P.DMG|P.ATK)/g, '<span class="is-inline-block"><img class="image is-inline-block" src="images/attr/patk.png" />$1</span>')
-    .replaceAll(/(M.DMG|M.ATK)/g, '<span class="is-inline-block"><img class="image is-inline-block" src="images/attr/matk.png" />$1</span>')
-    .replaceAll(/ (P.DEF)/g, ' <span class="is-inline-block"><img class="image is-inline-block" src="images/attr/pdef.png" />$1</span>')
-    .replaceAll(/ (M.DEF)/g, ' <span class="is-inline-block"><img class="image is-inline-block" src="images/attr/mdef.png" />$1</span>')
+    // .replaceAll(/(P.DMG|P.ATK)/g, '<span class="is-inline-block"><img class="image is-inline-block" src="images/attr/patk.png" />$1</span>')
+    // .replaceAll(/(M.DMG|M.ATK)/g, '<span class="is-inline-block"><img class="image is-inline-block" src="images/attr/matk.png" />$1</span>')
+    // .replaceAll(/ (P.DEF)/g, ' <span class="is-inline-block"><img class="image is-inline-block" src="images/attr/pdef.png" />$1</span>')
+    // .replaceAll(/ (M.DEF)/g, ' <span class="is-inline-block"><img class="image is-inline-block" src="images/attr/mdef.png" />$1</span>')
 
     .replaceAll('"Sword of Convallaria"', '<span class="is-inline-block">"<img class="image is-inline-block" src="images/faction/sword-of-convallaria.webp" />Sword of Convallaria"</span>');
+}
+
+function getSkillRarity(skillName) {
+  if (charactersHaveSkill(charactersCommon, skillName)) {
+    return 'Common';
+  } else if (charactersHaveSkill(charactersRare, skillName)) {
+    return 'Rare';
+  } else if (charactersHaveSkill(charactersEpic, skillName)) {
+    return 'Epic';
+  } else if (charactersHaveSkill(charactersLegendary, skillName)) {
+    return 'Legendary';
+  }
+  return 'Unknown';
+}
+
+function charactersHaveSkill(characters, skillName) {
+  for (let i = 0; i < characters.length; i++) {
+    for (const rank in characters[i].skills) {
+      if (rank === 'Trait') {
+        if (characters[i].skills[rank] === skillName) {
+          return true;
+        }
+      } else {
+        for (let j = 0; j < characters[i].skills[rank].length; j++) {
+          if (characters[i].skills[rank][j] === skillName) {
+            return true;
+          }
+        }
+      }
+    }
+  }
+  return false;
 }
 
 // decorate skill/trait descriptions
@@ -57,14 +88,15 @@ for (const key in traits) {
     traits[key].description[i] = decorate(traits[key].description[i]);
   }
 }
-for (const key in skills) {
-  skills[key].keywords = getKeywords(skills[key].description);
-  skills[key].description = decorate(skills[key].description);
+for (const skillName in skills) {
+  skills[skillName].keywords = getKeywords(skills[skillName].description);
+  skills[skillName].description = decorate(skills[skillName].description);
+  // skills[skillName].rarity = getSkillRarity(skillName);
 }
 
 // map trait/skill objects into characters object
 characters.forEach(character => {
-  character.attributes = attributes[character.name];
+  character.stats = stats[character.name];
   character.factions = character.factions.sort((a, b) => (a < b) ? -1 : 1);
   for (const rank in character.skills) {
     if (rank === 'Trait') {
@@ -75,6 +107,7 @@ characters.forEach(character => {
             name: traitName,
             type: 'Trait',
             keywords: traits[traitName].keywords,
+            rarity: 'epic',
             description,
             tabs: ['Lv.1', 'Lv.2', 'Lv.3', 'Lv.4', 'Lv.5'],
             tabId: 'Lv.' + (i + 1)

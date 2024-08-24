@@ -1,0 +1,25 @@
+.chara-top
+  img.chara-image(src='images/skin/' + slug(name) + '.webp', style=image)
+  .chara-name-container
+    img.rarity-image(src='images/rarity/' + slug(rarity) + '.webp')
+    div
+      .chara-name #{name}
+      .chara-title
+        img.role-image(src='images/role/' + slug(role) + '.webp')
+        | #{title}
+  .factions
+    each faction in factions
+      .ui.image.label
+        img(src='images/faction/' + slug(faction) + '.webp')
+        | #{faction}
+
+  if stats
+    .chara-stats
+      h4
+        i.gold.ri-gemini-fill
+        | &nbsp;Stats
+      each value, stat in stats
+        .ui.basic.image.label
+          img(src='images/stat/'+ slug(stat) +'.png')
+          | #{stat}
+          .detail #{value}

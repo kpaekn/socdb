@@ -5,20 +5,6 @@ Bottoms Up:
   - Rawiyah's DMG delt is increased by <<16%>>. At the start of the turn and before a [[Strike Back]], there is a <<70%>> chance to recover <<+40%>> of lost HP and gain <<1>> stack of [[Tipsy]]. This can activate up to <<1>> time per round.
   - Rawiyah's DMG delt is increased by <<25%>>. At the start of the turn and before a [[Strike Back]], there is a <<70%>> chance to recover <<+40%>> of lost HP and gain <<1>> stack of [[Tipsy]]. This can activate up to <<1>> time per round.
   - Rawiyah's DMG delt is increased by <<25%>>. At the start of the turn and before a [[Strike Back]], there is a <<80%>> chance to recover <<+40%>> of lost HP and gain <<1>> stack of [[Tipsy]]. This can activate up to <<2>> time per round.
-I'm a Genius!:
-  description:
-  - Beryl's M.ATK is increased by <<8%>>. At the start of the turn, there is a <<50%>> chance to gain a random [[Level 2 Buff]], which lasts for <<2>> turns. Also recovers <<1>> NRG.
-  - Beryl's M.ATK is increased by <<12%>>. At the start of the turn, there is a <<60%>> chance to gain a random [[Level 2 Buff]], which lasts for <<2>> turns. Also recovers <<1>> NRG.
-  - Beryl's M.ATK is increased by <<16%>>. At the start of the turn, there is a <<70%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. Also recovers <<1>> NRG.
-  - Beryl's M.ATK is increased by <<20%>>. At the start of the turn, there is a <<80%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. Also recovers <<1>> NRG.
-  - Beryl's M.ATK is increased by <<25%>>. At the start of the turn, there is a <<100%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. Also recovers <<1>> NRG.
-Shield of Convallaria:
-  description:
-  - Maitha has [[Block]] and her DMG taken is reduced by <<8%>>. At the end of the turn, heal the ally with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
-  - Maitha has [[Block]] and her DMG taken is reduced by <<12%>>. At the end of the turn, heal the ally with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
-  - Maitha has [[Block]] and her DMG taken is reduced by <<15%>>. At the end of the turn, heal the ally with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
-  - Maitha has [[Block]] and her DMG taken is reduced by <<15%>>. At the end of the turn, heal <<2>> allies with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
-  - Maitha has [[Block]] and her DMG taken is reduced by <<20%>>. At the end of the turn, heal <<2>> allies with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
 Faycal's Obsession:
   description:
   - Faycal's ATK and DEF is increased by <<5%>>. When dealing DMG, there is a <<70%>> chance to inflict <<1>> random [[Level 2 Debuff]] to the target for <<2>> turns.
@@ -26,3 +12,24 @@ Faycal's Obsession:
   - Faycal's ATK and DEF is increased by <<10%>>. When dealing DMG, there is a <<70%>> chance to inflict <<1>> random [[Level 2 Debuff]] to the target for <<2>> turns.
   - Faycal's ATK and DEF is increased by <<15%>>. When dealing DMG, there is a <<100%>> chance to inflict <<1>> random [[Level 2 Debuff]] to the target for <<2>> turns.
   - Faycal's ATK and DEF is increased by <<15%>>. When dealing DMG, there is a <<100%>> chance to inflict <<1>> random [[Level 2 Debuff]] to the target for <<2>> turns. When attacking, increases Crit by <<10%>> for each [debuff] the target has.
+I'm a Genius!:
+  description:
+  - Beryl's M.ATK is increased by <<8%>>. At the start of the turn, there is a <<50%>> chance to gain a random [[Level 2 Buff]], which lasts for <<2>> turns. Also recovers <<1>> NRG.
+  - Beryl's M.ATK is increased by <<12%>>. At the start of the turn, there is a <<60%>> chance to gain a random [[Level 2 Buff]], which lasts for <<2>> turns. Also recovers <<1>> NRG.
+  - Beryl's M.ATK is increased by <<16%>>. At the start of the turn, there is a <<70%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. Also recovers <<1>> NRG.
+  - Beryl's M.ATK is increased by <<20%>>. At the start of the turn, there is a <<80%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. Also recovers <<1>> NRG.
+  - Beryl's M.ATK is increased by <<25%>>. At the start of the turn, there is a <<100%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. Also recovers <<1>> NRG.
+Killer Instinct:
+  description:
+  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<5%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<3>> turns.
+  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<10%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<3>> turns.
+  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<10%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<2>> turns.
+  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<15%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<2>> turns.
+  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<15%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<1>> turns.
+Shield of Convallaria:
+  description:
+  - Maitha has [[Block]] and her DMG taken is reduced by <<8%>>. At the end of the turn, heal the ally with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
+  - Maitha has [[Block]] and her DMG taken is reduced by <<12%>>. At the end of the turn, heal the ally with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
+  - Maitha has [[Block]] and her DMG taken is reduced by <<15%>>. At the end of the turn, heal the ally with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
+  - Maitha has [[Block]] and her DMG taken is reduced by <<15%>>. At the end of the turn, heal <<2>> allies with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
+  - Maitha has [[Block]] and her DMG taken is reduced by <<20%>>. At the end of the turn, heal <<2>> allies with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.

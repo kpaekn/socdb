@@ -1,9 +1,11 @@
-function openTab(tabGroup, tabId) {
-    var group = document.querySelectorAll('[data-tab="' + tabGroup + '"]');
-    var tab = document.querySelector('[data-tab-id="' + tabId + '"]');
-
-    group.forEach(el => {
-        el.className += ' is-hidden';
+$(document).ready(function () {
+    console.log('ready');
+    $('.menu .item').click(function (e) {
+        var tab = $(e.currentTarget).data('tab');
+        var tabGroup = $(e.currentTarget).data('tab-group');
+        if (tab && tabGroup) {
+            $('[data-tab-group="' + tabGroup + '"]').addClass('is-hidden');
+            $('[data-tab="' + tab + '"]').removeClass('is-hidden');
+        }
     });
-    tab.className = tab.className.replaceAll('is-hidden', '').trim();
-}
+});

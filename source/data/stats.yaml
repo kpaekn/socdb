@@ -1,0 +1,40 @@
+Beryl:
+  P.ATK: 1115
+  M.ATK: 1599
+  P.DEF: 449
+  M.DEF: 660
+  HP: 3239
+  SPD: 122
+  MOV: 3
+Col:
+  P.ATK: 1415
+  M.ATK: 991
+  P.DEF: 449
+  M.DEF: 498
+  HP: 3151
+  SPD: 163
+  MOV: 3
+Faycal:
+  P.ATK: 1321
+  M.ATK: 926
+  P.DEF: 385
+  M.DEF: 460
+  HP: 2814
+  SPD: 105
+  MOV: 3
+Maitha:
+  P.ATK: 1321
+  M.ATK: 926
+  P.DEF: 615
+  M.DEF: 385
+  HP: 3701
+  SPD: 243
+  MOV: 3
+Rawiyah:
+  P.ATK: 1496
+  M.ATK: 1048
+  P.DEF: 460
+  M.DEF: 352
+  HP: 3594
+  SPD: 204
+  MOV: 3

@@ -2,10 +2,14 @@ var gulp = require('gulp');
 var pug = require('gulp-pug');
 var sass = require('gulp-sass')(require('sass'));
 var rename = require('gulp-rename');
+var concat = require('gulp-concat');
 
 var data = require('./source/data');
 
 var slugFn = (text) => {
+  if (!text) {
+    return 'slug-unknown';
+  }
   return text.toLowerCase().replaceAll(/['"!\(\),]/g, '').replaceAll(/[\s-]+/g, '-');
 };
 
@@ -16,10 +20,11 @@ var templateTasks = data.characters.map((character) => {
   var tmp = {
     [fnName]: () => {
       character.slug = slugFn;
-      return gulp.src('./source/templates/character.pug')
+      return gulp.src('./source/templates/chara.pug')
         .pipe(
           pug({
-            locals: character
+            locals: character,
+            basedir: './source/templates'
           })
         )
         .pipe(rename(fileName))
@@ -41,13 +46,14 @@ exports.static = static;
 function style() {
   return gulp.src('./source/styles/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(concat('app.css'))
     .pipe(gulp.dest('./dist'));
 }
 exports.style = style;
 
 // watch
 function watch() {
-  gulp.watch('./source/templates/character.pug', gulp.series(...templateTasks));
+  gulp.watch('./source/templates/**/*.pug', gulp.series(...templateTasks));
   gulp.watch('./source/static/**/*', static);
   gulp.watch('./source/styles/**/*.scss', style);
 }
