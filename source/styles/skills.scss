@@ -25,7 +25,8 @@
     }
   }
 
-  .ui.message {
+  .ui.segment {
+
     .ui.top.left.attached.tiny.label {
       background-color: goldenrod;
       color: black;
@@ -64,4 +65,19 @@
     }
   }
 
+  .skill-range {
+    .range-image {
+      margin-right: 0.5em;
+      width: 64px;
+      height: 64px;
+    }
+
+    table.ui.table {
+      tr {
+        td:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
 }

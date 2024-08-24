@@ -29,3 +29,15 @@ body {
 .bold {
   font-weight: bold;
 }
+
+.flex-box {
+  display: flex;
+
+  .flex-box-left {
+    flex-grow: 1;
+  }
+
+  .flex-box-right {
+    flex-grow: 99;
+  }
+}

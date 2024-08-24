@@ -1,10 +1,12 @@
 var fs = require('fs');
 var yaml = require('js-yaml');
+
 var charactersLegendary = yaml.load(fs.readFileSync(__dirname + '/data/characters-legendary.yaml'));
 var charactersEpic = yaml.load(fs.readFileSync(__dirname + '/data/characters-epic.yaml'));
 var charactersRare = yaml.load(fs.readFileSync(__dirname + '/data/characters-rare.yaml'));
 var charactersCommon = yaml.load(fs.readFileSync(__dirname + '/data/characters-common.yaml'));
 var characters = [].concat(...charactersLegendary);
+
 var stats = yaml.load(fs.readFileSync(__dirname + '/data/stats.yaml'));
 var traits = yaml.load(fs.readFileSync(__dirname + '/data/traits.yaml'));
 var skills = yaml.load(fs.readFileSync(__dirname + '/data/skills.yaml'));
@@ -13,11 +15,17 @@ var glossary = yaml.load(fs.readFileSync(__dirname + '/data/glossary.yaml'));
 function getKeywords(text) {
   var keywords = text.match(/\[\[.+?\]\]/g);
   if (keywords) {
-    var obj = {};
+    var obj = null;
     keywords.forEach(keyword => {
       var trimmed = keyword.replaceAll(/[\[\]]/g, '');
-      var decoratedThenTrimmed = decorate(keyword).replaceAll(/[\[\]]/g, '');
-      obj[decoratedThenTrimmed] = decorate(glossary[trimmed]);
+      var name = decorate(keyword);
+      var description = decorate(glossary[trimmed]);
+      if (description) {
+        if (!obj) {
+          obj = {};
+        }
+        obj[name] = description;
+      }
     });
     return obj;
   }
@@ -29,13 +37,13 @@ function decorate(text) {
     return text;
   }
   return text
-    .replaceAll(/\[\[\+(.+?)\]\]/g, '<span class="keyword">[<span class="green">▲</span>$1]</span>')
-    .replaceAll(/\[\[\-(.+?)\]\]/g, '<span class="keyword">[<span class="red">▼</span>$1]</span>')
-    .replaceAll(/\[\[\x(.+?)\]\]/g, '<span class="keyword">[<i class="ri-forbid-2-line red"></i>$1]</span>')
-    .replaceAll(/\[\[(.+?)\]\]/g, '<span class="keyword">[$1]</span>')
+    .replaceAll(/\[\[\+(.+?)\]\]/g, '<b>[<span class="green">▲</span><b class="gold">$1</b>]</b>')
+    .replaceAll(/\[\[\-(.+?)\]\]/g, '<b>[<span class="red">▼</span><b class="gold">$1</b>]</b>')
+    .replaceAll(/\[\[\x(.+?)\]\]/g, '<b>[<i class="ri-forbid-2-line red"></i><b class="gold">$1</b>]</b>')
+    .replaceAll(/\[\[(.+?)\]\]/g, '<b>[<b class="gold">$1</b>]</b>')
 
-    .replaceAll(/\<\<\+(.+?)\>\>/g, '<span class="is-inline-block green bold">$1</span>')
-    .replaceAll(/\<\<(.+?)\>\>/g, '<span class="is-inline-block red bold">$1</span>')
+    .replaceAll(/\<\<\+(.+?)\>\>/g, '<b class="green">$1</b>')
+    .replaceAll(/\<\<(.+?)\>\>/g, '<b class="red">$1</b>')
 
     // .replaceAll(/\((.+?)\)/g, '<span class="is-inline-block">(<span class="is-inline-block bold">$1</span>)</span>')
 

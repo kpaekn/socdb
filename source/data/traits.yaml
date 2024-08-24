@@ -21,11 +21,11 @@ I'm a Genius!:
   - Beryl's M.ATK is increased by <<25%>>. At the start of the turn, there is a <<100%>> chance to gain a random [[Level 2 Buff]], which lasts for <<3>> turns. Also recovers <<1>> NRG.
 Killer Instinct:
   description:
-  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<5%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<3>> turns.
-  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<10%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<3>> turns.
-  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<10%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<2>> turns.
-  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<15%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<2>> turns.
-  - Col possess [[Junp]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<15%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<1>> turns.
+  - Col possess [[Jump]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<5%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<3>> turns.
+  - Col possess [[Jump]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<10%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<3>> turns.
+  - Col possess [[Jump]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<10%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<2>> turns.
+  - Col possess [[Jump]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<15%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<2>> turns.
+  - Col possess [[Jump]]. If there are no allies within <<2>> tiles around Col, her P.ATK and Crit increases by <<15%>>. She can [[Act Again]] after launching an active attack on an enemy from the [[Side or Behind]] and defeating them with a cooldown of <<1>> turns.
 Shield of Convallaria:
   description:
   - Maitha has [[Block]] and her DMG taken is reduced by <<8%>>. At the end of the turn, heal the ally with the <<lowest>> HP percentage, restoring <<+20%>> of their lost HP.
