@@ -4,7 +4,7 @@ var sass = require('gulp-sass')(require('sass'));
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 
-var data = require('./source/data');
+var data = require('./source/data/data');
 
 var slugFn = (text) => {
   if (!text) {

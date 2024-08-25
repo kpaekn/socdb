@@ -14,6 +14,7 @@
     Rank 7: [Flaming Meteor, Try This!]
     Rank 9: [Scorching Attack, Bang!]
     Rank 11: [BOOOOOM!, First Aid]
+
 - name: Col
   image:
     width: 250
@@ -30,6 +31,7 @@
     Rank 7: [Perfect Assassin, Omen of Death]
     Rank 9: [Hidden Thorn, Critical Strike]
     Rank 11: [Wipe Out, Traceless Shadow]
+
 - name: Faycal
   image: 
     width: 380
@@ -46,6 +48,43 @@
     Rank 7: [Cloud-Piercing Arrow, Alert Shot]
     Rank 9: [Rapid Fire, Fatal Attack (Ranged)]
     Rank 11: [Gale-Billow Volley, Heart of Alert]
+
+- name: Gloria
+  image: 
+    width: 480
+    top: -100
+  title: Paladin
+  rarity: Legendary
+  role: Watcher
+  factions: [The Union, Fortitude]
+  skills:
+    Trait: Flag of Justice
+    Innate: [Slash, Longinus - Thrust, Sword - Gale]
+    Rank 1: [Knightly Spirit, Solemnity]
+    Rank 3: [Longinus - Brilliance, Lance of Longinus, Sword - Full Moon, Longinus - Flag Waving]
+    Rank 5: [Front Defense, Counterattack]
+    Rank 7: [Counterattack Mode, Vow of Justice]
+    Rank 9: [Lance of Justice, Silencing Attack, Sword of Justice]
+    Rank 11: [Fair Duel, Knight's Glory]
+
+- name: LilyWill
+  image: 
+    width: 360
+    top: -80
+  title: Gale Archer
+  rarity: Legendary
+  role: Watcher
+  factions: [Vlder, Alacrity]
+  skills:
+    Trait: Vltar Guardian
+    Innate: [Curved Shot, Cloud-Piercing Arrow]
+    Rank 1: [Guerrilla, Aim]
+    Rank 3: [Arrow of Aeolus, Windwalking]
+    Rank 5: [Gale Footwork, Survival Master]
+    Rank 7: [Shooting Stars, Resonance of Blood]
+    Rank 9: [Infectious Attack, Gale Shooting]
+    Rank 11: [Arrow of Aeolus - Gale Break, Marksman]
+
 - name: Maitha
   image: 
     width: 240
@@ -62,6 +101,7 @@
     Rank 7: [Battle Flag of Convallaria, Bandage]
     Rank 9: [Armor-Piercing Strike, Powerful Attack]
     Rank 11: [Maitha's Combo, Invulnerable]
+
 - name: Rawiyah
   image:
     width: 530

@@ -1,40 +1,75 @@
-Beryl:
-  P.ATK: 1115
-  M.ATK: 1599
-  P.DEF: 449
-  M.DEF: 660
-  HP: 3239
-  SPD: 122
-  MOV: 3
-Col:
-  P.ATK: 1415
-  M.ATK: 991
-  P.DEF: 449
-  M.DEF: 498
-  HP: 3151
-  SPD: 163
-  MOV: 3
-Faycal:
-  P.ATK: 1321
-  M.ATK: 926
-  P.DEF: 385
-  M.DEF: 460
-  HP: 2814
-  SPD: 105
-  MOV: 3
-Maitha:
-  P.ATK: 1321
-  M.ATK: 926
-  P.DEF: 615
-  M.DEF: 385
-  HP: 3701
-  SPD: 243
-  MOV: 3
-Rawiyah:
-  P.ATK: 1496
-  M.ATK: 1048
-  P.DEF: 460
-  M.DEF: 352
-  HP: 3594
-  SPD: 204
-  MOV: 3
+# legendary P.ATK M.ATK P.DEF M.DEF HP    SPD
+Alexei:     1434, 1002, 573,  407,  3505, 228
+Beryl:      1115, 1599, 449,  660,  3239, 122
+Col:        1415, 991,  449,  498,  3151, 163
+Dantalion:  1609, 1123, 573,  504,  3683, 175
+Edda:       1330, 936,  420,  485,  2661, 93
+Faycal:     1321, 926,  385,  460,  2814, 105
+Garcia:     1396, 979,  460,  395,  3215, 176
+Gloria:     1341, 942,  474,  385,  3395, 215
+Guzman:     1609, 1125, 583,  405,  3859, 180
+Iggy:       1496, 1048, 485,  460,  3438, 187
+Inanna:     1341, 1321, 332,  553,  3150, 65
+Leonide:    1420, 996,  485,  407,  3683, 195
+LilyWill:   1266, 894,  420,  441,  2814, 118
+Maitha:     1321, 926,  615,  385,  3701, 243
+Miguel:     1255, 883,  441,  460,  2796, 111
+Momo:       1081, 1542, 366,  728,  3438, 132
+Nergal:     1453, 1017, 640,  431,  3239, 232
+NonoWill:   1335, 948,  449,  449,  3368, 159
+Nungal:     1562, 1093, 441,  539,  3104, 106
+Magnus:     1420, 995,  669,  420,  3284, 231
+Rawiyah:    1496, 1048, 460,  352,  3594, 204
+Samantha:   866,  1233, 395,  640,  2924, 78
+Teadon:     1330, 933,  681,  295,  3660, 235
+Xavier:     1496, 1048, 528,  385,  3460, 193
+
+# epic
+Abyss:                  934,  1334, 373,  747,  3050, 270
+Agile Eye:              0,    0,    0,    0,    0,    0
+Angel:                  934,  1334, 373,  747,  3050, 270
+Ballista:               1270, 911,  382,  382,  2724, 94
+Blade:                  1334, 934,  406,  470,  3261, 153
+Butterfly:              0,    0,    0,    0,    0,    0
+Candlelight:            0,    0,    0,    0,    0,    0
+Crimson Falcon:         1343, 939,  426,  426,  3287, 156
+Divine Grace:           1207, 863,  394,  491,  2751, 94
+Enforcer:               1548, 1079, 554,  445,  3609, 182
+Flame Sorceress:        1047, 1493, 354,  671,  3050, 119
+Flare:                  0,    0,    0,    0,    0,    0
+Lash:                   1015, 1448, 482,  648,  3324, 127
+Lightning:              0,    0,    0,    0,    0,    0
+Might:                  1439, 1006, 535,  341,  3480, 198
+Nighingale:             0,    0,    0,    0,    0,    0
+Night Raven:            964,  1375, 417,  631,  3394, 121
+Stinger:                1323, 923,  426,  426,  3287, 155
+Stormbreaker:           1460, 1021, 482,  361,  3394, 202
+Suppression:            1298, 911,  482,  459,  3583, 236
+Tempest:                1439, 1006, 511,  394,  3329, 191
+
+# rare
+Darklight Ice Priest:   0,    0,    0,    0,    0,    130
+Darklight Fire Priest:  0,    0,    0,    0,    0,    120
+K.A. Archer:            0,    0,    0,    0,    0,    98
+K.A. Fire Conjurer:     1012, 1443, 420,  617,  3075, 119
+K.A. Guard:             0,    0,    0,    0,    0,    239
+K.A. Light Conjurer:    0,    0,    0,    0,    0,    79
+K.A. Pikeman:           0,    0,    0,    0,    0,    188
+Knighted Guard:         0,    0,    0,    0,    0,    236
+Knighted Pikeman:       0,    0,    0,    0,    0,    186
+Papal Guard:            0,    0,    0,    0,    0,    244
+Papal Ice Priest:       0,    0,    0,    0,    0,    270
+Papal Pikeman:          0,    0,    0,    0,    0,    185
+Vlderian Scout:         0,    0,    0,    0,    0,    165
+
+# common
+Outlaw Archer:          1144, 823,  337,  379,  2616, 102
+Outlaw Assassin:        0,    0,    0,    0,    0,    162
+Outlaw Axeman:          0,    0,    0,    0,    0,    205
+Outlaw Crossbowman:     0,    0,    0,    0,    0,    96
+Outlaw Guard:           0,    0,    0,    0,    0,    230
+Outlaw Pikeman:         0,    0,    0,    0,    0,    192
+Recruited Archer:       0,    0,    0,    0,    0,    100
+Recruited Assassin:     0,    0,    0,    0,    0,    160
+Recruited Guard:        0,    0,    0,    0,    0,    240
+Recruited Pikeman:      0,    0,    0,    0,    0,    190

@@ -145,6 +145,15 @@
     Rank 3: [Insight, The Protected]
     Rank 5: [Rage, Strength Activation]
     Rank 7: [Draconic Flash Step, Pursuit]
-
-
-
+- name: Vlderian Scout
+  subName: Vlderian Scout
+  rarity: Rare
+  role: Seeker
+  faction: [Vlder]
+  skills: 
+    Trait: Air Raid
+    Innate: [Dual Blade Strike, Dash]
+    Rank 1: [Luxite Shrapnel, Helmet Smash]
+    Rank 3: [Maneuver, Run-Up]
+    Rank 5: [Fleeing Hare, Curse]
+    Rank 7: [Mountain Tribes, Shapeless Lupine Blade]

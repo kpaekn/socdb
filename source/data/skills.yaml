@@ -26,7 +26,7 @@ Come On, Everybody!:
   description: (Support) Restores <<+20%>> HP and grants [[+ATK I]] and [[+P.DEF I]] to all allies within a <<3>>-tile radius. Takes [[Physical Attacks]] from the enemy for allies within a <<2>>-tile radius for <<2>> turns.
   cost: 3
   range: (Self AoE) 3
-  height: [2, 2]
+  height2: [2, 2]
 Maitha's Charge:
   type: Skill
   rarity: legendary
@@ -416,3 +416,164 @@ Traceless Shadow:
   cost: 2
   cooldown: 5
   range: self
+
+Guerrilla:
+  type: Skill
+  rarity: rare
+  description: (Passive) ATK increases by <<5%>>. After attacking, move again by <<2>> tiles.
+  cooldown: 2
+Aim:
+  type: Skill
+  rarity: rare
+  description: (Support) [[Instant]] Gains [[+Crit II]] and [[Ignore Dodge]] for <<1>> turn.
+  cooldown: 2
+  range: self
+Arrow of Aeolus:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG) Single-target attack. Deals <<60%>> DMG with [[Curved Shot]]. Deals Magical DMG equal to <<-40%>> of her P.ATK to all enemies within <<1>> tile around the target, inflicting <<3>> stacks of [[Infection]] if DMG is dealt.
+  cost: 2
+  cooldown: 3
+  range: (AoE 1.5) 2 - 3
+  height: [8, 6]
+Windwalking:
+  type: Skill
+  rarity: legendary
+  description: (Passive) Increases Crit DMG by <<10%>>. The maximum range of [[Ranged Skills]] increases by <<1>> tile.
+Gale Footwork:
+  type: Reaction
+  rarity: epic
+  description: (Reaction) When attacked by a melee attack from the [[Front or Side]], the character can interrupt the enemy's action, dealing <<50%>> Physical DMG and teleporting behind the closest ally within <<3>> tiles.
+  cooldown: 4
+Survival Master:
+  type: Reaction
+  rarity: rare
+  description: (Reaction) When hit by an active attack, the DMG taken is decreased by <<8%>>, and [[Environmental DMG]] taken is decreased by <<70%>>.
+Shooting Stars:
+  type: Skill
+  rarity: epic
+  description: (Physical DMG) Deals <<75%>> [[AoE]] DMG to all enemies within a <<2>>-tile radius of the target and inflicts [[-P.DEF II]] for <<2>> turns.
+  cost: 2
+  cooldown: 4
+  range: (AoE) 1 - 3
+  height: [8, 8]
+  heightAoE: [2, 2]
+Resonance of Blood:
+  type: Skill
+  rarity: legendary
+  description: (Leader's Aura) For all "Vlder" allies, increase their ATK by <<10%>>, DEF by <<20%>>, and Movement by <<1>> tile.
+Infectious Attack:
+  type: Basic Attack
+  rarity: common
+  description: (Basic Attack) Fires a [[Curved Shot]] which deals <<85%>> Physical DMG and infliicts <<1>> stack of [[Infection]] on the target.
+  range: 2 - 3
+  height: [8, 6]
+Gale Shooting:
+  type: Basic Attack
+  rarity: epic
+  description: (Basic Attack) Single-target attack. Deals <<120%>> Physical DMG.
+  range: 2 - 3
+  height: [5, 3]
+Arrow of Aeolus - Gale Break:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG) Single-target attack. Deals <<150%>> DMG, inflicts <<2>> stacks of [[Infection]], which immediately triggers the [[Infection]] effect. Before attacking, gain [[Highland]] advantage.
+  cost: 3
+  cooldown: 4
+  range: 2 - 4
+  height: [8, 8]
+Marksman:
+  type: Skill
+  rarity: legendary
+  description: (Passive) All skills ignore [[Obstinate]]. Increases ATK by <<12%>> and inflicts [[xAssit]] on the target after the attack.
+
+Longinus - Thrust:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG) Select <<1>> enemy within a cross-shaped range from herself, charging at them, dealing <<120%>> DMG and knocking the enemy back by <<2>> tiles. If there is no [[Flag Waving]] aura, the skill switches to [[Sword - Gale]].
+  cost: 2
+  range: (Cross) 1-3
+  height: [1, 1]
+Sword - Gale:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG) Deals <<120%>> DMG to an enemy within the cross-shaped range around the character. Before attacking, DMG is increased by <<10%>> for every tile passed, up to <<50%>>.
+  cost: 2
+  range: (Cross) 1 - 2
+  height: [1, 1]
+Knightly Spirit:
+  type: Skill
+  rarity: rare
+  description: (Passive) Increases ATK by <<20%>> when attacking enemies from the [[Front]]. Increases DEF by <<40%>> when being attacked from the [[Front]];
+Solemnity:
+  type: Skill
+  rarity: rare
+  description: (Aura) Decreases ATK of all enemies within the character's <<2>>-tile radius by <<10%>>.
+Longinus - Brilliance:
+  type: Skill
+  rarity: legendary
+  description: (Support) Gloria grants all allies within <<3>> tiles of her [[+ATK I]] and [[DMG Reduction II]] for <<2>> turns, and restores <<+1>> NRG. If there is no [[Flag Waving]] aura on Gloria, the skill switches to [[Sword - Full Moon]].
+  range: (Self AoE) 3
+  height2: [2, 2]
+Lance of Longinus:
+  type: skill
+  rarity: legendary
+  description: (Physical DMG) Deals <<80%>> [[AoE]] DMG to all enemies within <<2>> tiles around the target [[empty tile]]. Summons a [[Flag]] at the cost of the [[Flag Waving]] aura. If there is no [[Flag Waving]] aura, the skill switches to [[Longinus - Flag Waving]]
+  cost: 1
+  cooldown: 4
+  range: (AoE) 2 - 3
+  height: [4, 4]
+  height2: [2, 2]
+Longinus - Flag Waving:
+  type: skill
+  rarity: legendary
+  description: (Support) [[Instant]]. Grants [[+Move I]] to all other allies within <<3>> tiles of the character for <<2>> turns. Granst the character [[Flag Waving]] aura, and switches the skill to [[Lance of Longinus]].
+  cost: 1
+  cooldown: 2
+  range: (Self AoE) 3
+  height2: [2, 2]
+Front Defense:
+  type: Reaction
+  rarity: rare
+  description: (Reaction) When hit by an active attack from the [[Front]], the DMG taken is decreased by <<30%>>.
+Counterattack Mode:
+  type: Skill
+  rarity: rare
+  description: (Support) Adds <<20%>> of P.ATK to P.DEF and M.DEF, increases [[Strike Back]] DMG by <<50%>>, gains [[Preempt]], and increases [[Strike Back]] Range by <<2>> tiles, lasting for <<2>> turns.
+  cooldown: 4
+  range: self
+Vow of Justice:
+  type: Skill
+  rarity: legendary
+  description: (Leader's Aura) For all "The Union" allies, increases their ATK by <<10%>> and DEF by <<20%>>. When performing an active attack, DMG is increased by <<12%>>. When being [[Strike Back]], DMG taken is decreased by <<24%>>.
+Lance of Justice:
+  type: Basic Attack
+  rarity: legendary
+  description: (Basic Attack) Deals <<70%>> Physical DMG to all enemies within <<1>> tile of the target. If there is no [[Flag Waving]] aura on Gloria, the skill switches to [[Sword of Justice]].
+  range: (AoE) 1 - 1
+  height: [2, 2]
+  height2: [2, 2]
+Sword of Justice:
+  type: Basic Attack
+  rarity: legendary
+  description: (Basic Attack) Single-target attack. Deals <<100%>> Physical DMG. When attacking from the [[Front]] increases DMG dealt to <<130%>>.
+  range: 1 - 1
+  height: [2, 2]
+Silencing Attack:
+  type: Basic Attack
+  rarity: legendary
+  description: (Basic Attack) Deals <<100%>> physical DMG and inflicts [[xActive Skills]] on [[Injured]] targets before attacking, lasting for 2 turns.
+  range: 1 - 1
+  height: [2, 2]
+Fair Duel:
+  type: Skill
+  rarity: epic
+  description: (Physical DMG) Single-target attack. Deals <<180%>> DMG. Before attacking, dispels all [[Debuffs]] on the character and all [[Buffs]] on the target.
+  range: 1 - 1
+  height: [2, 2]
+Knight's Glory:
+  type: Skill
+  rarity: epic
+  description: (Support) [[Instant]] Grants the target [[+ATK II]] for <<2>> turns. When the targets are from "the Union", the character gains an additional [[Physical Shield]] with value equal to <<20%>> of HP.
+  range: 0 - 2
+  height: [8, 6]

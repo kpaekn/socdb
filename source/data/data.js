@@ -1,16 +1,26 @@
 var fs = require('fs');
 var yaml = require('js-yaml');
 
-var charactersLegendary = yaml.load(fs.readFileSync(__dirname + '/data/characters-legendary.yaml'));
-var charactersEpic = yaml.load(fs.readFileSync(__dirname + '/data/characters-epic.yaml'));
-var charactersRare = yaml.load(fs.readFileSync(__dirname + '/data/characters-rare.yaml'));
-var charactersCommon = yaml.load(fs.readFileSync(__dirname + '/data/characters-common.yaml'));
+var charactersLegendary = yaml.load(fs.readFileSync(__dirname + '/charas.yaml'));
+var charactersEpic = yaml.load(fs.readFileSync(__dirname + '/charas-epic.yaml'));
+var charactersRare = yaml.load(fs.readFileSync(__dirname + '/charas-rare.yaml'));
+var charactersCommon = yaml.load(fs.readFileSync(__dirname + '/charas-common.yaml'));
 var characters = [].concat(...charactersLegendary);
 
-var stats = yaml.load(fs.readFileSync(__dirname + '/data/stats.yaml'));
-var traits = yaml.load(fs.readFileSync(__dirname + '/data/traits.yaml'));
-var skills = yaml.load(fs.readFileSync(__dirname + '/data/skills.yaml'));
-var glossary = yaml.load(fs.readFileSync(__dirname + '/data/glossary.yaml'));
+var stats = yaml.load(fs.readFileSync(__dirname + '/stats.yaml'));
+var traits = yaml.load(fs.readFileSync(__dirname + '/traits.yaml'));
+var skills = yaml.load(fs.readFileSync(__dirname + '/skills.yaml'));
+var glossary = yaml.load(fs.readFileSync(__dirname + '/glossary.yaml'));
+
+function getStats(character) {
+  var arr = stats[character.name].split(/\s*,\s*/);
+  arr.push((character.role == 'Seeker') ? 5 : 3);
+  var result = {};
+  ['P.ATK', 'M.ATK', 'P.DEF', 'M.DEF', 'HP', 'SPD', 'MOV'].forEach((name, idx) => {
+    result[name] = arr[idx];
+  });
+  return result;
+}
 
 function getKeywords(text) {
   var keywords = text.match(/\[\[.+?\]\]/g);
@@ -104,17 +114,18 @@ for (const skillName in skills) {
 
 // map trait/skill objects into characters object
 characters.forEach(character => {
-  character.stats = stats[character.name];
+  character.stats = getStats(character);
+
   character.factions = character.factions.sort((a, b) => (a < b) ? -1 : 1);
   for (const rank in character.skills) {
     if (rank === 'Trait') {
-      var traitName = character.skills[rank];
-      if (traits[traitName]) {
-        character.skills[rank] = traits[traitName].description.map((description, i) => {
+      var trait = traits[character.name];
+      if (trait) {
+        character.skills[rank] = trait.description.map((description, i) => {
           return {
-            name: traitName,
+            name: trait.name,
             type: 'Trait',
-            keywords: traits[traitName].keywords,
+            keywords: trait.keywords,
             rarity: 'epic',
             description,
             tabs: ['Lv.1', 'Lv.2', 'Lv.3', 'Lv.4', 'Lv.5'],
