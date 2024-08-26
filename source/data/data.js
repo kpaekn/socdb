@@ -179,6 +179,9 @@ characters.forEach(character => {
         if (!skillName) {
           return null;
         }
+        if (!skills[skillName]) {
+          console.log('missing skill:', skillName);
+        }
         return {
           ...{
             name: skillName

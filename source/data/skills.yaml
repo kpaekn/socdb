@@ -582,3 +582,77 @@ Knight's Glory:
   description: (Support) [Instant] Grants the target [+ATK II] for 2 turns. When the targets are from "the Union", the character gains an additional [Physical Shield] with value equal to 20% of HP.
   range: 0 - 2
   height: [8, 6]
+
+Knockback Combo:
+  type: Skill
+  rarity: rare
+  description: (Physical DMG) Single-target attack. Deals 30% DMG. Then, performs [Pursuit] and deals DMG equal to 200% of the character's P.DEF, up to 150% of P.ATK. Knocks the target back by 2 tiles.
+  cost: 3
+  range: 1 - 1
+  height: [2, 2]
+Fast Cover:
+  type: Skill
+  rarity: legendary
+  description: (Support) [Instant] Nergal swaps positions with a target ally, granting both of them [Physical Shield] with value equal to 50% of his P.ATK. Nergal takes [Physical Attacks] for all allies within 1 tile. All effects last for 2 turns.
+  cost: 2
+  cooldown: 2
+  range: 1 - 3
+  height: [8, 8]
+Crippling Blow:
+  type: Skill
+  rarity: rare
+  description: (Physical DMG) Single-target attack. Deals 130% DMG and inflicts [-SPD II] for 2 turns.
+  cooldown: 3
+  range: 1 - 1
+  height: [2, 2]
+Mark Illumination:
+  type: Skill
+  rarity: legendary
+  description: (Debuff) [Instant] Nergal inflicts [The Hanged Men's Mark], [-ATK II], and [Vuneralble II] on all enemies in a straight line of 5 tiles in the target diraction. The effect lasts for 2 turns.
+  cooldown: 4
+  range: (Area) 1 - 5
+  height: [2, 2]
+  height2: [2, 2]
+Charged Bayonet:
+  type: Skill
+  rarity: legendary
+  description: (Passive) At the start of the turn, if the character is not within the enemy's [Threat Range], gains [Bayonet Charge]. When [Bayonet Charge] is active and the character lands a single-target attack on enemies with [The Hanged Men's Mark], increases DMG by 30% and gains 30% [Life Steal].
+Critical Moment:
+  type: Reaction
+  rarity: epic
+  description: (Reaction) When the character is [Dying], [Dodges] all single-target attacks for 1 turn. At the start of the turn, recovers +50% HP.
+  cooldown: 7
+Alacrity:
+  type: Skill
+  rarity: epic
+  description: (Leader's Aura) For all "Alacrity" allies, increase their ATK by 10%, DEF by 20%, and Crit by 15%.
+Burning Bridges:
+  type: Skill
+  rarity: epic
+  description: (Physical DMG) Single-target attack. Deals 150% DMG. Before attacking, gains [Offensive Stance] for 2 turns.
+  cost: 3
+  cooldown: 2
+  range: 1 - 1
+  height: [2, 2]
+Fatal Attack:
+  type: Basic Attack
+  rarity: rare
+  description: (Basic Attack) Deals 100% physical DMG and increases Crit DMG by 15%.
+  range: 1 - 1
+  height: [2, 2]
+Absolute Domain:
+  type: Skill
+  rarity: epic
+  description: (Support) Performs [Alert] on a 1-tile radius around the character, dealing 70% DMG and interrupting actions once an enemy enters this area. Can be activated up to 2 times per round.
+  cost: 2
+  cooldown: 5
+  range: (Area) 1 - 1
+  height2: [2, 2]
+Close Quarter Release:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG) Single-target attack. Nergal deals 110% DMG and knocks the target back by 4 tiles. Then, he deals 50% [AoE] DMG to all enemies withing a 3x3 area in the target direction, and inflicts [-SPD I] for 1 turn.
+  cost: 3
+  cooldown: 5
+  range: (AoE) 1 - 1
+  height: [2, 2]

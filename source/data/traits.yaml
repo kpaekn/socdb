@@ -53,6 +53,15 @@ Maitha:
   - Maitha has [Block] and her DMG taken is reduced by 15%. At the end of the turn, heal 2 allies with the lowest HP percentage, restoring +20% of their lost HP.
   - Maitha has [Block] and her DMG taken is reduced by 20%. At the end of the turn, heal 2 allies with the lowest HP percentage, restoring +20% of their lost HP.
 
+Nergal:
+  name: Luxite Gauntlet
+  description:
+  - Mergal possesses [Block]. At the end of the turn, he gains [Shield Charge]. After performing a [Block], he gains [Bayonet Charge].
+  - Mergal possesses [Block]. At the end of the turn, he gains [Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge].
+  - Mergal possesses [Block]. At the end of the turn, he gains [Powerful Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge].
+  - Mergal possesses [Block]. At the end of the turn, he gains [Powerful Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge], up to 2 stacks.
+  - Mergal possesses [Block]. At the end of the turn, he gains [Powerful Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge], up to 2 stacks. The first [Block] of each turn decreases the cooldown of all skills by 1 turn.
+
 Rawiyah:
   name: Bottoms Up
   description:

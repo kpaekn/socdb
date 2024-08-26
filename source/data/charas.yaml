@@ -94,6 +94,22 @@
     Rank 9: [Armor-Piercing Strike, Powerful Attack]
     Rank 11: [Maitha's Combo, Invulnerable]
 
+- name: Nergal
+  image: [14, 360]
+  title: H.M. Praetorian
+  rarity: Legendary
+  role: Defender
+  factions: [Iria, Alacrity]
+  skills:
+    Trait: Luxite Gauntlet
+    Innate: [Slash, Knockback Combo]
+    Rank 1: [Fast Cover, Crippling Blow]
+    Rank 3: [Mark Illumination, Charged Bayonet]
+    Rank 5: [Critical Moment, Counterattack]
+    Rank 7: [Alacrity, Burning Bridges]
+    Rank 9: [Silencing Attack, Fatal Attack]
+    Rank 11: [Absolute Domain, Close Quarter Release]
+
 - name: Rawiyah
   image: [-107, 800]
   title: Claymore Warrior
