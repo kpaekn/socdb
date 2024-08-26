@@ -1,9 +1,10 @@
 .chara-top {
-  background-color: white;
+  background-color: #e5e0d4;
   position: relative;
   overflow: hidden;
-  border: 1px solid #ddd;
+  border: 2px solid #cdc2ab;
   border-radius: 0.5em;
+  box-shadow: 0 0 0px 2px #e5e0d4;
   margin: 1em 0;
 
   .chara-image {
@@ -18,7 +19,7 @@
   .chara-name-container {
     display: inline-block;
     white-space: nowrap;
-    background-color: rgba(255, 255, 255, 0.4);
+    // background-color: rgba(255, 255, 255, 0.4);
     text-shadow: 0 0 1px black;
     position: relative;
     padding: 1rem;
@@ -53,10 +54,25 @@
   }
 
   .factions {
-    margin: 1em;
+    padding: 0.25em;
+    position: absolute;
+    top: 0;
+    right: 0;
 
-    .ui.label {
-      margin-bottom: 0.25em;
+    .faction {
+      font-size: 9pt;
+      font-weight: bold;
+      text-align: right;
+      margin-bottom: 0.2em;
+
+      img {
+        border: 2px solid #c2b67e;
+        border-radius: 99px;
+        margin-left: 0.25em;
+        width: 28px;
+        height: 28px;
+        vertical-align: middle;
+      }
     }
   }
 
@@ -80,8 +96,8 @@
     }
 
     .ui.image.label {
-      margin-top: 0.5em;
-      margin-right: 0.5em;
+      margin-top: 0.25em;
+      margin-right: 0.25em;
       width: 140px !important;
 
       .detail {
@@ -91,9 +107,12 @@
       }
     }
 
-    .ui.basic.image {
+    .ui.basic.image.label {
+      border-color: #cdc2ab;
+
       .detail {
-        color: black;
+        background-color: #343742;
+        color: wheat;
       }
     }
   }

@@ -59,7 +59,7 @@
   factions: [The Union, Fortitude]
   skills:
     Trait: Flag of Justice
-    Innate: [Slash, Longinus - Thrust, Sword - Gale]
+    Innate: [Slash, Longinus - Thrust, null, Sword - Gale]
     Rank 1: [Knightly Spirit, Solemnity]
     Rank 3: [Longinus - Brilliance, Lance of Longinus, Sword - Full Moon, Longinus - Flag Waving]
     Rank 5: [Front Defense, Counterattack]
@@ -111,7 +111,7 @@
   factions: [Iria, Sword of Convallaria, Alacrity]
   skills:
     Trait: Bottoms Up
-    Innate: [Gash, Gale Breach, Tropical Cyclone]
+    Innate: [Gash, Gale Breach, null, Tropical Cyclone]
     Rank 1: [Co-Attack, Toughness]
     Rank 3: [Piercing Bash, Another Pint!]
     Rank 5: [Screw Off!, Guardian's Heart]

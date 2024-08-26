@@ -29,11 +29,11 @@ Faycal:
 Gloria:
   name: Flag of Justice
   description:
-  - Gloria's ATK is increased by 5%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns. At the start of the battle, Gloria will use [Longinus -Flag Waving] which grants [Flag Waving] aura.
-  - Gloria's ATK is increased by 10%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns. At the start of the battle, Gloria will use [Longinus -Flag Waving] which grants [Flag Waving] aura.
-  - Gloria's ATK is increased by 15%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns and her Movement increases by 2 tiles. At the start of the battle, Gloria will use [Longinus -Flag Waving] which grants [Flag Waving] aura.
-  - Gloria's ATK is increased by 20%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns and her Movement increases by 2 tiles. At the start of the battle, Gloria will use [Longinus -Flag Waving] which grants [Flag Waving] aura.
-  - Gloria's ATK is increased by 20%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns, her Movement increases by 2 tiles, and she ignores 50% of the target's DEF. At the start of the battle, Gloria will use [Longinus -Flag Waving] which grants [Flag Waving] aura.
+  - Gloria's ATK is increased by 5%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns. At the start of the battle, Gloria will use [Longinus - Flag Waving] which grants [Flag Waving] aura.
+  - Gloria's ATK is increased by 10%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns. At the start of the battle, Gloria will use [Longinus - Flag Waving] which grants [Flag Waving] aura.
+  - Gloria's ATK is increased by 15%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns and her Movement increases by 2 tiles. At the start of the battle, Gloria will use [Longinus - Flag Waving] which grants [Flag Waving] aura.
+  - Gloria's ATK is increased by 20%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns and her Movement increases by 2 tiles. At the start of the battle, Gloria will use [Longinus - Flag Waving] which grants [Flag Waving] aura.
+  - Gloria's ATK is increased by 20%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns, her Movement increases by 2 tiles, and she ignores 50% of the target's DEF. At the start of the battle, Gloria will use [Longinus - Flag Waving] which grants [Flag Waving] aura.
 
 LilyWill:
   name: Vltar Guardian

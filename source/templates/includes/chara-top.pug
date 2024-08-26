@@ -7,11 +7,12 @@
       .chara-title
         img.role-image(src='images/role/' + slug(role) + '.webp')
         | #{title}
+
   .factions
     each faction in factions
-      .ui.image.label
-        img(src='images/faction/' + slug(faction) + '.webp')
+      .faction 
         | #{faction}
+        img(src='images/faction/' + slug(faction) + '.webp')
 
   if stats
     .chara-stats

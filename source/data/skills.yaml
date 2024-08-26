@@ -516,7 +516,7 @@ Longinus - Brilliance:
   range: (Self AoE) 3
   height2: [2, 2]
 Lance of Longinus:
-  type: skill
+  type: Skill
   rarity: legendary
   description: (Physical DMG) Deals 80% [AoE] DMG to all enemies within 2 tiles around the target [empty tile]. Summons a [Flag] at the cost of the [Flag Waving] aura. If there is no [Flag Waving] aura, the skill switches to [Longinus - Flag Waving]
   cost: 1
@@ -524,6 +524,11 @@ Lance of Longinus:
   range: (AoE) 2 - 3
   height: [4, 4]
   height2: [2, 2]
+Sword - Full Moon:
+  type: Skill
+  rarity: legendary
+  # TODO: incomplete data
+  description: (Physical DMG) Deals 90% [AoE] DMG to all enemies within 2 tiles around the character. DMG dealt is increased by 30% when the targets are [Injured]. Gain [DMG Reduction II] for 2 turns after performing this skill.
 Longinus - Flag Waving:
   type: skill
   rarity: legendary

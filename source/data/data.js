@@ -11,6 +11,9 @@ var stats = yaml.load(fs.readFileSync(__dirname + '/stats.yaml'));
 var traits = yaml.load(fs.readFileSync(__dirname + '/traits.yaml'));
 var skills = yaml.load(fs.readFileSync(__dirname + '/skills.yaml'));
 var glossary = yaml.load(fs.readFileSync(__dirname + '/glossary.yaml'));
+var blueKeywords = yaml.load(fs.readFileSync(__dirname + '/blue-keywords.yaml'));
+blueKeywords = blueKeywords.concat(Object.keys(skills));
+
 
 function getStats(character) {
   var arr = stats[character.name].split(/\s*,\s*/);
@@ -55,7 +58,7 @@ function decorateV2(text) {
       } else if (matchedGroup.startsWith('x')) {
         return `<b>[<i class="ri-forbid-2-line red"></i><b class="gold">${matchedGroup.substring(1)}</b>]</b>`;
       }
-      if (matchedGroup == 'Luxite Skill') {
+      if (blueKeywords.indexOf(matchedGroup) >= 0) {
         return `<b>[<b class="blue">${matchedGroup}</b>]</b>`;
       }
       return `<b>[<b class="gold">${matchedGroup}</b>]</b>`;
@@ -173,6 +176,9 @@ characters.forEach(character => {
       }
     } else {
       character.skills[rank] = character.skills[rank].map(skillName => {
+        if (!skillName) {
+          return null;
+        }
         return {
           ...{
             name: skillName
