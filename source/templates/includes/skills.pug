@@ -22,6 +22,18 @@
                     else
                       a(data-tab=`trait-${tab}`, data-tab-group=slug(skill.name))
                         i.ri-star-line
+              if skill.cost
+                .skill-cost
+                  span.label
+                    i.ri-gemini-fill 
+                    | Cost:
+                  span.value #{skill.cost}
+              if skill.cooldown 
+                .skill-cooldown
+                  span.label
+                    i.ri-hourglass-2-fill
+                    | Cooldown:
+                  span.value #{skill.cooldown}
               h3.skill-name
                 .skill-image
                   img(src='images/skill/' + slug(skill.name) + '.png')

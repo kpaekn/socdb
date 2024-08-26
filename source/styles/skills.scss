@@ -78,6 +78,30 @@
       }
     }
 
+    .skill-cost,
+    .skill-cooldown {
+      float: right;
+      background-color: #595d6e;
+      border-radius: 0.5em;
+      font-size: 9pt;
+      margin: 0.5em 0.5em 0 0;
+      padding: 0.15em 0.65em 0.1em 0.5em;
+
+      .label {
+        display: inline-block;
+        color: #e5cc80;
+        margin-right: 0.2em;
+
+        i {
+          margin-right: 0.2em;
+        }
+      }
+
+      .value {
+        font-weight: bold;
+      }
+    }
+
     .skill-name {
       background-color: rgba(194, 182, 126, 0.3);
       color: rgba(255, 255, 255, 0.9);
@@ -109,8 +133,8 @@
       padding: 0.5em;
 
       .range-image {
-        width: 72px;
-        height: 72px;
+        width: 88px;
+        height: 88px;
       }
 
       table {

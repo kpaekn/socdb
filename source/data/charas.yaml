@@ -1,6 +1,5 @@
 - name: Beryl
-  image:
-    width: 340
+  image: [-80, 660]
   title: Genius Sorceress
   rarity: Legendary
   role: Destroyer
@@ -16,8 +15,7 @@
     Rank 11: [BOOOOOM!, First Aid]
 
 - name: Col
-  image:
-    width: 250
+  image: [10, 470]
   title: Masked Assassin
   rarity: Legendary
   role: Seeker
@@ -33,8 +31,7 @@
     Rank 11: [Wipe Out, Traceless Shadow]
 
 - name: Faycal
-  image: 
-    width: 380
+  image: [25, 600]
   title: Mercenary Boy
   rarity: Legendary
   role: Watcher
@@ -50,9 +47,7 @@
     Rank 11: [Gale-Billow Volley, Heart of Alert]
 
 - name: Gloria
-  image: 
-    width: 480
-    top: -100
+  image: [-274, 800]
   title: Paladin
   rarity: Legendary
   role: Watcher
@@ -68,9 +63,7 @@
     Rank 11: [Fair Duel, Knight's Glory]
 
 - name: LilyWill
-  image: 
-    width: 360
-    top: -80
+  image: [-218, 600]
   title: Gale Archer
   rarity: Legendary
   role: Watcher
@@ -86,8 +79,7 @@
     Rank 11: [Arrow of Aeolus - Gale Break, Marksman]
 
 - name: Maitha
-  image: 
-    width: 240
+  image: [14, 360]
   title: Mercenary Girl
   rarity: Legendary
   role: Defender
@@ -103,8 +95,7 @@
     Rank 11: [Maitha's Combo, Invulnerable]
 
 - name: Rawiyah
-  image:
-    width: 530
+  image: [-107, 800]
   title: Claymore Warrior
   rarity: Legendary
   role: Breaker

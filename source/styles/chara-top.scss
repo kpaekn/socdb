@@ -7,6 +7,26 @@
   box-shadow: 0 0 0px 2px #e5e0d4;
   margin: 1em 0;
 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 10%;
+
+  .face-template {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid black;
+    display: block;
+    width: 200px;
+    height: 110px;
+    opacity: 0.2;
+
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .chara-image {
     position: absolute;
     top: 10px;
@@ -56,8 +76,8 @@
   .factions {
     padding: 0.25em;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1em;
+    right: 1em;
 
     .faction {
       font-size: 9pt;
@@ -109,10 +129,11 @@
 
     .ui.basic.image.label {
       border-color: #cdc2ab;
+      background-color: rgb(255 255 255 / 70%);
 
       .detail {
-        background-color: #343742;
-        color: wheat;
+        background-color: rgb(52 55 66 / 70%);
+        color: #e5e0d4;
       }
     }
   }

@@ -1,5 +1,9 @@
-.chara-top
-  img.chara-image(src='images/skin/' + slug(name) + '.webp', style=image)
+.chara-top(style={
+  'background-image':`url(images/skin/${slug(name)}.webp)`,
+  'background-position-y': `${image[0]}px`,
+  'background-size': `${image[1]}px`
+})
+  .face-template face
   .chara-name-container
     img.rarity-image(src='images/rarity/' + slug(rarity) + '.webp')
     div
