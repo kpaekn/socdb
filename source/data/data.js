@@ -42,6 +42,44 @@ function getKeywords(text) {
   return null;
 }
 
+function decorateV2(text) {
+  if (!text) return text;
+
+  // bold [keywords]
+  text = text.replaceAll(/\[+(.+?)\]+/g, (_, matchedGroup) => {
+    var replacement = (() => {
+      if (matchedGroup.startsWith('+')) {
+        return `<b>[<b class="green">▲</b><b class="gold">${matchedGroup.substring(1)}</b>]</b>`;
+      } else if (matchedGroup.startsWith('-')) {
+        return `<b>[<b class="red">▼</b><b class="gold">${matchedGroup.substring(1)}</b>]</b>`;
+      } else if (matchedGroup.startsWith('x')) {
+        return `<b>[<i class="ri-forbid-2-line red"></i><b class="gold">${matchedGroup.substring(1)}</b>]</b>`;
+      }
+      if (matchedGroup == 'Luxite Skill') {
+        return `<b>[<b class="blue">${matchedGroup}</b>]</b>`;
+      }
+      return `<b>[<b class="gold">${matchedGroup}</b>]</b>`;
+    })();
+    // prefix numbers with x.
+    // in the next replaceAll step, it will ignore numbers with x prefix
+    return replacement.replaceAll(/(\d+)/g, 'x$1');
+  });
+
+  // bold numbers
+  text = text.replaceAll(/[x+~]*\d+%*/g, (matchedWord) => {
+    if (matchedWord.startsWith('x')) {
+      return matchedWord.substring(1);
+    } else if (matchedWord.startsWith('+')) {
+      return `<b class="green">${matchedWord.substring(1)}</b>`;
+    } else if (matchedWord.startsWith('~')) {
+      return `<b class="purple">${matchedWord.substring(1)}</b>`;
+    }
+    return `<b class="red">${matchedWord}</b>`;
+  });
+
+  return text;
+}
+
 function decorate(text) {
   if (!text) {
     return text;
@@ -103,12 +141,12 @@ for (const key in traits) {
     if (i === 0) {
       traits[key].keywords = getKeywords(traits[key].description[i]);
     }
-    traits[key].description[i] = decorate(traits[key].description[i]);
+    traits[key].description[i] = decorateV2(traits[key].description[i]);
   }
 }
 for (const skillName in skills) {
   skills[skillName].keywords = getKeywords(skills[skillName].description);
-  skills[skillName].description = decorate(skills[skillName].description);
+  skills[skillName].description = decorateV2(skills[skillName].description);
   // skills[skillName].rarity = getSkillRarity(skillName);
 }
 
@@ -128,8 +166,8 @@ characters.forEach(character => {
             keywords: trait.keywords,
             rarity: 'epic',
             description,
-            tabs: ['Lv.1', 'Lv.2', 'Lv.3', 'Lv.4', 'Lv.5'],
-            tabId: 'Lv.' + (i + 1)
+            tabs: [1, 2, 3, 4, 5],
+            tabId: i + 1
           };
         })
       }

@@ -1,6 +1,6 @@
 $(document).ready(function () {
     console.log('ready');
-    $('.menu .item').click(function (e) {
+    $('a[data-tab]').click(function (e) {
         var tab = $(e.currentTarget).data('tab');
         var tabGroup = $(e.currentTarget).data('tab-group');
         if (tab && tabGroup) {
