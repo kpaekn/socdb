@@ -1,74 +1,89 @@
-.skill-section
-  each skillsByRank, rankName in skills
-    h4
-      i.gold.ri-gemini-fill
-      | &nbsp;#{rankName}
-    .ui.grid
-      each skill, skillIdx in skillsByRank
-        if !skill
-          .eight.wide.computer.only.column(class=isTrait)
-        else
-          - var isTrait = (rankName !== 'Trait' ? 'eight wide computer' : '')
-          - var isHidden = (skill.tabId && skillIdx > 0 ? 'is-hidden' : '')
-          .sixteen.wide.tablet.column(class=isTrait, class=isHidden, data-tab=`trait-${skill.tabId}`, data-tab-group=slug(skill.name))
-            .skill-container
-              .skill-type #{skill.type}
-              if skill.tabs
-                .skill-stars
-                  each tab in skill.tabs
-                    if tab <= skill.tabId
-                      a(data-tab=`trait-${tab}`, data-tab-group=slug(skill.name))
-                        i.ri-star-fill
-                    else
-                      a(data-tab=`trait-${tab}`, data-tab-group=slug(skill.name))
-                        i.ri-star-line
-              if skill.cost
-                .skill-cost
-                  span.label
-                    i.ri-gemini-fill 
-                    | Cost:
-                  span.value #{skill.cost}
-              if skill.cooldown 
-                .skill-cooldown
-                  span.label
-                    i.ri-hourglass-2-fill
-                    | Cooldown:
-                  span.value #{skill.cooldown}
-              h3.skill-name
-                .skill-image
+.flex-box
+  .flex-box-left
+    .skill-selection-menu.for-mobile
+      each skillsByRank, rankName in skills
+        h4
+          i.gold.ri-gemini-fill
+          | &nbsp;#{rankName}
+        - var isSelected = (rankName === 'Trait' ? 'is-selected' : '')
+        .skill-image-container(class=isSelected)
+          each skill, skillIdx in skillsByRank
+            if skill
+              if !skill.tabId || skillIdx == 0
+                a.skill-image(data-rank=rankName)
                   img(src='images/skill/' + slug(skill.name) + '.png')
                   img.skill-border(src='images/skill-border/' + skill.rarity + '.png')
-                | #{skill.name}
-              .skill-description
-                p !{skill.description}
-              if skill.range
-                .skill-range.flex-box
-                  .flex-box-left
-                    img.range-image(src='images/range/' + slug(skill.range.image) + '.png')
-                  .flex-box-right
-                    if skill.range.tags
-                      .skill-tags
-                        each tag in skill.range.tags
-                          .label #{tag}
-                    table
-                      tbody
-                        if skill.range.range
-                          tr
-                            td Range
-                            td #{skill.range.range}
-                        if skill.range.heightRange
-                          tr
-                            td Height Range
-                            td 
-                              i.ri-arrow-down-fill
-                              | #{skill.range.heightRange[0]} - 
-                              i.ri-arrow-up-fill
-                              | #{skill.range.heightRange[1]}
-                        if skill.range.effectHeight
-                          tr
-                            td Effect Height
-                            td 
-                              i.ri-arrow-down-fill
-                              | #{skill.range.effectHeight[0]} - 
-                              i.ri-arrow-up-fill
-                              | #{skill.range.effectHeight[1]}
+              if skillIdx == 1
+                br
+  .flex-box-right
+    .skill-details-section.for-mobile
+      each skillsByRank, rankName in skills
+        - var isHidden = (rankName !== 'Trait' ? 'is-hidden' : '')
+        .trait-group(class=isHidden, data-rank=rankName)
+          .ui.grid
+            each skill, skillIdx in skillsByRank
+              if !skill
+                .eight.wide.computer.only.column
+              else
+                - var isTrait = (rankName !== 'fTrait' ? 'eight wide computer' : '')
+                .sixteen.wide.tablet.column(class=isTrait, data-tab=`trait-${skill.tabId}`, data-tab-group=slug(skill.name))
+                  .skill-container
+                    .skill-type #{skill.type}
+                    if skill.tabs
+                      .skill-stars
+                        each tab in skill.tabs
+                          .star
+                            if tab <= skill.tabId
+                              i.ri-star-fill
+                            else
+                              i.ri-star-line
+                    if skill.cost
+                      .skill-cost
+                        span.label
+                          i.ri-gemini-fill 
+                          | Cost:
+                        span.value #{skill.cost}
+                    if skill.cooldown 
+                      .skill-cooldown
+                        span.label
+                          i.ri-hourglass-2-fill
+                          | Cooldown:
+                        span.value #{skill.cooldown}
+                    h3.skill-name
+                      .skill-image
+                        img(src='images/skill/' + slug(skill.name) + '.png')
+                        img.skill-border(src='images/skill-border/' + skill.rarity + '.png')
+                      | #{skill.name}
+                    .skill-description
+                      p !{skill.description}
+                    if skill.range
+                      .skill-range.flex-box
+                        .flex-box-left
+                          img.range-image(src='images/range/' + slug(skill.range.image) + '.png')
+                        .flex-box-right
+                          if skill.range.tags
+                            .skill-tags
+                              each tag in skill.range.tags
+                                .label #{tag}
+                          table
+                            tbody
+                              if skill.range.range
+                                tr
+                                  td Range
+                                  td #{skill.range.range}
+                              if skill.range.heightRange
+                                tr
+                                  td Height Range
+                                  td 
+                                    i.ri-arrow-down-fill
+                                    | #{skill.range.heightRange[0]} - 
+                                    i.ri-arrow-up-fill
+                                    | #{skill.range.heightRange[1]}
+                              if skill.range.effectHeight
+                                tr
+                                  td Effect Height
+                                  td 
+                                    i.ri-arrow-down-fill
+                                    | #{skill.range.effectHeight[0]} - 
+                                    i.ri-arrow-up-fill
+                                    | #{skill.range.effectHeight[1]}

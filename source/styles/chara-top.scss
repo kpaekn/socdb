@@ -1,3 +1,13 @@
+@media only screen and (max-width: 767px) {
+  .factions {
+    .faction {
+      .label {
+        display: none;
+      }
+    }
+  }
+}
+
 .chara-top {
   background-color: #e5e0d4;
   position: relative;
@@ -16,11 +26,11 @@
     border: 3px solid black;
     display: block;
     width: 200px;
-    height: 110px;
+    height: 30px;
     opacity: 0.2;
 
     position: absolute;
-    top: 45px;
+    top: 75px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -38,9 +48,9 @@
 
   .chara-name-container {
     display: inline-block;
+    font-weight: bold;
+    text-shadow: 0 0 1px #cdc2ab;
     white-space: nowrap;
-    // background-color: rgba(255, 255, 255, 0.4);
-    text-shadow: 0 0 1px black;
     position: relative;
     padding: 1rem;
     padding-right: 5.5rem;
@@ -56,7 +66,6 @@
       font-family: "Merriweather", serif;
       font-size: 24px;
       line-height: 2rem;
-      font-weight: bold;
     }
 
     .chara-title {
@@ -80,7 +89,7 @@
     right: 1em;
 
     .faction {
-      font-size: 9pt;
+      font-size: 10pt;
       font-weight: bold;
       text-align: right;
       margin-bottom: 0.2em;

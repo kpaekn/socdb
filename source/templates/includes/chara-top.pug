@@ -15,7 +15,7 @@
   .factions
     each faction in factions
       .faction 
-        | #{faction}
+        span.label #{faction}
         img(src='images/faction/' + slug(faction) + '.webp')
 
   if stats
