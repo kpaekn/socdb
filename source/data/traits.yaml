@@ -64,11 +64,11 @@ Gloria:
 LilyWill:
   name: Vltar Guardian
   description:
-  - LilyWill possesses [Jump] and she gains 5% bonus ATK. Ignores [Assisting Cover] when attacking from a [Hightland] position.
-  - LilyWill possesses [Jump] and she gains 10% bonus ATK. Ignores [Assisting Cover] when attacking from a [Hightland] position.
-  - LilyWill possesses [Jump] and she gains 10% bonus ATK. Ignores [Assisting Cover] and gains 30% bonus Crit when attacking from a [Hightland] position.
-  - LilyWill possesses [Jump] and she gains 15% bonus ATK. Ignores [Assisting Cover] and gains 30% bonus Crit when attacking from a [Hightland] position.
-  - LilyWill possesses [Jump] and she gains 15% bonus ATK. Ignores [Assisting Cover], gains 30% bonus Crit, and reduces skill cooldowns by 1 turn when attacking from a [Hightland] position.
+  - LilyWill possesses [Jump] and she gains 5% bonus ATK. Ignores [Assisting Cover] when attacking from a [Highland] position.
+  - LilyWill possesses [Jump] and she gains 10% bonus ATK. Ignores [Assisting Cover] when attacking from a [Highland] position.
+  - LilyWill possesses [Jump] and she gains 10% bonus ATK. Ignores [Assisting Cover] and gains 30% bonus Crit when attacking from a [Highland] position.
+  - LilyWill possesses [Jump] and she gains 15% bonus ATK. Ignores [Assisting Cover] and gains 30% bonus Crit when attacking from a [Highland] position.
+  - LilyWill possesses [Jump] and she gains 15% bonus ATK. Ignores [Assisting Cover], gains 30% bonus Crit, and reduces skill cooldowns by 1 turn when attacking from a [Highland] position.
 
 Maitha:
   name: Shield of Convallaria

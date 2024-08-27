@@ -3,6 +3,7 @@ var pug = require('gulp-pug');
 var sass = require('gulp-sass')(require('sass'));
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
+var clean = require('gulp-clean');
 
 var data = require('./source/data/data');
 
@@ -58,5 +59,11 @@ function watch() {
   gulp.watch('./source/styles/**/*.scss', style);
 }
 exports.watch = watch;
+
+function cleanDist() {
+  return gulp.src('./dist', {read: false})
+    .pipe(clean());
+}
+exports.clean = cleanDist;
 
 exports.default = gulp.series(...templateTasks, static, style, watch);
