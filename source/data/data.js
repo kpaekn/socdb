@@ -27,6 +27,7 @@ function getStats(character) {
 }
 
 function getKeywords(text) {
+  if (!text) return text;
   var keywords = text.match(/\[\[.+?\]\]/g);
   if (keywords) {
     var obj = null;

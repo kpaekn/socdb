@@ -1,3 +1,11 @@
+Alexei:
+  name: Brutebear Blood
+  description:
+  - Alexei possesses [Unlimited Resolve] and is immune to [xResolve]. His ATK is increased by 10% and he ignores the effects of [Frosty] tiles. When [Unlimited Resolve] activates, until the start of the next turn, his [Trait] attribute bonuses double. This effect has a 7 turn cooldown and cannot be dispelled or immunized.
+  - Alexei possesses [Unlimited Resolve] and is immune to [xResolve]. His ATK is increased by 15% and he ignores the effects of [Frosty] tiles. When [Unlimited Resolve] activates, until the start of the next turn, his [Trait] attribute bonuses double. This effect has a 7 turn cooldown and cannot be dispelled or immunized.
+  - Alexei possesses [Unlimited Resolve] and is immune to [xResolve]. His ATK is increased by 15% and he ignores the effects of [Frosty] tiles. When [Unlimited Resolve] activates, dispell 2 [Debuffs] and gain [Toughness]. Until the start of the next turn, his [Trait] attribute bonuses double. This effect has a 7 turn cooldown and cannot be dispelled or immunized.
+  - Alexei possesses [Unlimited Resolve] and is immune to [xResolve]. His ATK is increased by 20% and he ignores the effects of [Frosty] tiles. When [Unlimited Resolve] activates, dispell 2 [Debuffs] and gain [Toughness]. Until the start of the next turn, his [Trait] attribute bonuses double. This effect has a 7 turn cooldown and cannot be dispelled or immunized.
+  - Alexei possesses [Unlimited Resolve] and is immune to [xResolve]. His ATK is increased by 20% and he ignores the effects of [Frosty] tiles. When [Unlimited Resolve] activates, dispell 2 [Debuffs] and gain [Toughness]. Until the start of the next 2 turns, his [Trait] attribute bonuses double. This effect has a 7 turn cooldown and cannot be dispelled or immunized.
 
 Beryl:
   name: I'm a Genius!
@@ -17,6 +25,15 @@ Col:
   - Col possess [Jump]. If there are no allies within 2 tiles around Col, her P.ATK and Crit increases by 15%. She can [Act Again] after launching an active attack on an enemy from the [Side or Back] and defeating them with a cooldown of 2 turns.
   - Col possess [Jump]. If there are no allies within 2 tiles around Col, her P.ATK and Crit increases by 15%. She can [Act Again] after launching an active attack on an enemy from the [Side or Back] and defeating them with a cooldown of 1 turns.
 
+Dantalion:
+  name: Path of Kingship
+  description:
+  - Increases Dantalion's ATK and DEF by 5%. For every 1 character defeated in battle, he recovers +20% HP and +1 NRG.
+  - Increases Dantalion's ATK and DEF by 10%. For every 1 character defeated in battle, he recovers +20% HP and +1 NRG.
+  - Increases Dantalion's ATK and DEF by 10%. For every 1 character defeated in battle, he recovers +30% HP and +1 NRG.
+  - Increases Dantalion's ATK and DEF by 15%. For every 1 character defeated in battle, he recovers +30% HP and +1 NRG.
+  - Increases Dantalion's ATK and DEF by 15%. For every 1 character defeated in battle, he recovers +35% HP and +1 NRG.
+
 Faycal:
   name: Faycal's Obsession
   description:
@@ -25,6 +42,15 @@ Faycal:
   - Faycal's ATK and DEF is increased by 10%. When dealing DMG, there is a 70% chance to inflict 1 random [Level 2 Debuff] to the target for 2 turns.
   - Faycal's ATK and DEF is increased by 15%. When dealing DMG, there is a 100% chance to inflict 1 random [Level 2 Debuff] to the target for 2 turns.
   - Faycal's ATK and DEF is increased by 15%. When dealing DMG, there is a 100% chance to inflict 1 random [Level 2 Debuff] to the target for 2 turns. When attacking, increases Crit by 10% for each [debuff] the target has.
+
+Garcia:
+  name: Executioner
+  description:
+  - At the start of the turn, Garcia gains 1 stack of [Rotational Acceleration], up to 6 stacks. At 3 stacks, increase Crit by 15%.
+  - At the start of the turn, Garcia gains 1 stack of [Rotational Acceleration], up to 6 stacks. At 3 stacks, increase Crit by 30%. At the start of the battle, gain 1 stack of [Rotational Acceleration].
+  - At the start of the turn, Garcia gains 1 stack of [Rotational Acceleration], up to 9 stacks. At 3 stacks, increase Crit by 30%. At 6 stacks, increase Crit DMG by 15%. At the start of the battle, gain 1 stacks of [Rotational Acceleration].
+  - At the start of the turn, Garcia gains 1 stack of [Rotational Acceleration], up to 9 stacks. At 3 stacks, increase Crit by 30%. At 6 stacks, increase Crit DMG by 30%. At the start of the battle, gain 2 stacks of [Rotational Acceleration].
+  - At the start of the turn, Garcia gains 1 stack of [Rotational Acceleration], up to 9 stacks. At 3 stacks, increase Crit by 30%. At 6 stacks, increase Crit DMG by 30%. At 9 stacks, ignore the target's [Block] and 40% of DEF. At the start of the battle, gain 2 stacks of [Rotational Acceleration].
 
 Gloria:
   name: Flag of Justice
@@ -56,11 +82,20 @@ Maitha:
 Nergal:
   name: Luxite Gauntlet
   description:
-  - Mergal possesses [Block]. At the end of the turn, he gains [Shield Charge]. After performing a [Block], he gains [Bayonet Charge].
-  - Mergal possesses [Block]. At the end of the turn, he gains [Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge].
-  - Mergal possesses [Block]. At the end of the turn, he gains [Powerful Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge].
-  - Mergal possesses [Block]. At the end of the turn, he gains [Powerful Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge], up to 2 stacks.
-  - Mergal possesses [Block]. At the end of the turn, he gains [Powerful Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge], up to 2 stacks. The first [Block] of each turn decreases the cooldown of all skills by 1 turn.
+  - Nergal possesses [Block]. At the end of the turn, he gains [Shield Charge]. After performing a [Block], he gains [Bayonet Charge].
+  - Nergal possesses [Block]. At the end of the turn, he gains [Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge].
+  - Nergal possesses [Block]. At the end of the turn, he gains [Powerful Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge].
+  - Nergal possesses [Block]. At the end of the turn, he gains [Powerful Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge], up to 2 stacks.
+  - Nergal possesses [Block]. At the end of the turn, he gains [Powerful Shield Charge], up to 2 stacks. After performing a [Block], he gains [Bayonet Charge], up to 2 stacks. The first [Block] of each turn decreases the cooldown of all skills by 1 turn.
+
+Nungal:
+  name: Luxite Crossbow
+  description:
+  - Changes Nungal's [Physical DMG] into [Magical DMG]. For each 1 tile between her and the target (adjacent tiles counts as 0), DMG increases by 3%, up to 30%. If Nungal does not move before attacking, increases the maximum range by 1 tile.
+  - Changes Nungal's [Physical DMG] into [Magical DMG]. For each 1 tile between her and the target (adjacent tiles counts as 0), DMG increases by 4%, up to 40%. If Nungal does not move before attacking, increases the maximum range by 1 tile.
+  - Changes Nungal's [Physical DMG] into [Magical DMG] and increases Crit by 15%. For each 1 tile between her and the target (adjacent tiles counts as 0), DMG increases by 4%, up to 40%. If Nungal does not move before attacking, increases the maximum range by 1 tile.
+  - Changes Nungal's [Physical DMG] into [Magical DMG] and increases Crit by 15%. For each 1 tile between her and the target (adjacent tiles counts as 0), DMG increases by 5%, up to 45%. If Nungal does not move before attacking, increases the maximum range by 1 tile.
+  - Changes Nungal's [Physical DMG] into [Magical DMG] and increases Crit by 15%. For each 1 tile between her and the target (adjacent tiles counts as 0), DMG increases by 5%, up to 45%. If Nungal does not move before attacking, increases the maximum range by 1 tile. When attacking enemies outside of 5 tiles, she ignores the target's [Reaction Skill], [Preempt], and [Strike Back].
 
 Rawiyah:
   name: Bottoms Up

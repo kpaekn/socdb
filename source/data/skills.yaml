@@ -82,7 +82,7 @@ Gash:
 Gale Breach:
   type: Skill
   rarity: legendary
-  description: (Physical DMG) [Instant] Charges at 1 enemy within a cross-shaped range, dealing 30% [AoE] DMG. Afterward, the skill switches to [Tropical Cyclone] for 2 turns. When [Tipsy] is active, inflict [xReaction Skills] on the target after the attack for 2 turns.
+  description: (Physical DMG) [Instant] Charges at 1 enemy within a cross-shaped range, dealing 30% [AoE DMG]. Afterward, the skill switches to [Tropical Cyclone] for 2 turns. When [Tipsy] is active, inflict [xReaction Skills] on the target after the attack for 2 turns.
   cost: 1
   cooldown: 3
   range: charge-3
@@ -116,7 +116,7 @@ Another Pint!:
 Screw Off!:
   type: Reaction
   rarity: epic
-  description: When hit by an active attack, perform a [Strike Back], dealing 70% Physical DMG to the enemy. When [Tipsy] is active, knock the enemy back 2 tiles. This effect can be triggered up to 1 time per round.
+  description: (Reaction) When hit by an active attack, perform a [Strike Back], dealing 70% Physical DMG to the enemy. When [Tipsy] is active, knock the enemy back 2 tiles. This effect can be triggered up to 1 time per round.
 Guardian's Heart:
   type: Reaction
   rarity: legendary
@@ -144,12 +144,9 @@ Dispelling Strike:
 Gale Spin Attack:
   type: Skill
   rarity: legendary
-  description: (Physical DMG) Deals 50% [AoE] DMG to all enemies within a 2-tile radius. After dealing DMG, inflicts [-P.DEF II] on the target for 2 turns. Then deals an additional 50% [AoE] DMG to all enemies.
+  description: (Physical DMG) Deals 50% [AoE DMG] to all enemies within a 2-tile radius. After dealing DMG, inflicts [-P.DEF II] on the target for 2 turns. Then deals an additional 50% [AoE DMG] to all enemies.
   cost: 4
-  range: 
-    image: aoe-2
-    tags: [AoE, Unit]
-    effectHeight: [2, 2]
+  range: aoe-2
 Legacy of Comrades:
   type: Skill
   rarity: epic
@@ -173,7 +170,7 @@ Chuu Chuu Chuu!:
 Wall of Flame:
   type: Skill
   rarity: epic
-  description: (Magical DMG) Select 1 spot within a cross-shaped range around the character. Deals ~70% [AoE] DMG to all enemies in a horizontal row of 5 tiles, and changes the tiles into [Burning] for 2 turns.
+  description: (Magical DMG) Select 1 spot within a cross-shaped range around the character. Deals ~70% [AoE DMG] to all enemies in a horizontal row of 5 tiles, and changes the tiles into [Burning] for 2 turns.
   cost: 3
   range:
     image: cross-1-3-aoe-5x1
@@ -210,11 +207,11 @@ Firewalking:
 Cutie:
   type: Reaction
   rarity: legendary
-  description: Decreases [Ranged DMG] taken by 25% and [AoE] DMG taken by 40%.
+  description: Decreases [Ranged DMG] taken by 25% and [AoE DMG] taken by 40%.
 Flaming Meteor:
   type: Skill
   rarity: epic
-  description: (Magical DMG) Prepares for 1 turn. Once casting the skill, deals 140% fire [AoE] DMG to all enemies within ~3 tiles around the target, and [Skips the Turn].
+  description: (Magical DMG) Prepares for 1 turn. Once casting the skill, deals 140% fire [AoE DMG] to all enemies within ~3 tiles around the target, and [Skips the Turn].
   cost: 4
   range:
     image: 2-3-aoe-3
@@ -247,7 +244,7 @@ Bang!:
 BOOOOOM!:
   type: Skill
   rarity: legendary
-  description: (Magical DMG) Prepares for 1 turn. Deals DMG to random enemies within 2 tiles 5 times. Every hit deals ~30% fire [AoE] DMG to all enemies within 1 tile of the target, with a 50% chance of inflicting [Scorch].
+  description: (Magical DMG) Prepares for 1 turn. Deals DMG to random enemies within 2 tiles 5 times. Every hit deals ~30% fire [AoE DMG] to all enemies within 1 tile of the target, with a 50% chance of inflicting [Scorch].
   cost: 5
   range:
     image: 3-5-aoe-2
@@ -320,15 +317,20 @@ Rapid Fire:
   rarity: epic
   description: (Basic Attack) Performs 2 consecutive attacks, each dealing 55% Physical DMG.
   range: ranged-2-3
-Fatal Attack (Ranged):
+Fatal Attack (Curved):
   type: Basic Attack
-  rarity: legendary
+  rarity: rare
   description: (Basic Attack) Fires a [Curved Shot] which deals 85% Physical DMG and increases Crit DMG by 15%.
   range: curved-2-3
+Fatal Attack (Ranged):
+  type: Basic Attack
+  rarity: rare
+  description: (Basic Attack) Deals 100% Physical DMG and increases Crit DMG by 15%.
+  range: ranged-2-3
 Gale-Billow Volley:
   type: Skill
   rarity: legendary
-  description: (Physical DMG) Deals 60% [AoE] DMG to random enemies within 2 tiles 5 times. DMG he deals to the same target repeatedly will be decreased by 50%.
+  description: (Physical DMG) Deals 60% [AoE DMG] to random enemies within 2 tiles 5 times. DMG he deals to the same target repeatedly will be decreased by 50%.
   cost: 4
   range: 
     image: 3-4-aoe-2
@@ -456,7 +458,7 @@ Survival Master:
 Shooting Stars:
   type: Skill
   rarity: epic
-  description: (Physical DMG) Deals 75% [AoE] DMG to all enemies within a 2-tile radius of the target and inflicts [-P.DEF II] for 2 turns.
+  description: (Physical DMG) Deals 75% [AoE DMG] to all enemies within a 2-tile radius of the target and inflicts [-P.DEF II] for 2 turns.
   cost: 2
   cooldown: 4
   range:
@@ -523,7 +525,7 @@ Longinus - Brilliance:
 Lance of Longinus:
   type: Skill
   rarity: legendary
-  description: (Physical DMG) Deals 80% [AoE] DMG to all enemies within 2 tiles around the target [empty tile]. Summons a [Flag] at the cost of the [Flag Waving] aura. If there is no [Flag Waving] aura, the skill switches to [Longinus - Flag Waving]
+  description: (Physical DMG) Deals 80% [AoE DMG] to all enemies within 2 tiles around the target [empty tile]. Summons a [Flag] at the cost of the [Flag Waving] aura. If there is no [Flag Waving] aura, the skill switches to [Longinus - Flag Waving]
   cost: 1
   cooldown: 4
   range:
@@ -535,12 +537,9 @@ Lance of Longinus:
 Sword - Full Moon:
   type: Skill
   rarity: legendary
-  description: (Physical DMG) Deals 90% [AoE] DMG to all enemies within 2 tiles of the character. Increase DMG dealt by 30% to [Injured] targets. Gain [DMG Reduction II] for 2 turns. If [Flag Waving] aura is active, the skill switches to [Longinus - Brilliance].
+  description: (Physical DMG) Deals 90% [AoE DMG] to all enemies within 2 tiles of the character. Increase DMG dealt by 30% to [Injured] targets. Gain [DMG Reduction II] for 2 turns. If [Flag Waving] aura is active, the skill switches to [Longinus - Brilliance].
   cost: 3
-  range:
-    image: aoe-2
-    tags: [AoE, Ground]
-    effectHeight: [2, 2]
+  range:  aoe-2
 Longinus - Flag Waving:
   type: skill
   rarity: legendary
@@ -661,7 +660,7 @@ Absolute Domain:
 Close Quarter Release:
   type: Skill
   rarity: legendary
-  description: (Physical DMG) Single-target attack. Nergal deals 110% DMG and knocks the target back by 4 tiles. Then, he deals 50% [AoE] DMG to all enemies withing a 3x3 area in the target direction, and inflicts [-SPD I] for 1 turn.
+  description: (Physical DMG) Single-target attack. Nergal deals 110% DMG and knocks the target back by 4 tiles. Then, he deals 50% [AoE DMG] to all enemies withing a 3x3 area in the target direction, and inflicts [-SPD I] for 1 turn.
   cost: 3
   cooldown: 5
   range:
@@ -669,3 +668,277 @@ Close Quarter Release:
     tags: [Melee, Unit]
     range: 1 - 1
     heightRange: [2, 2]
+
+Whirlwind Axe:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG) Deals 90% DMG to all enemies within 2 tiles. Every enemy defeated by this skill reduces the cooldown of [Brutebear Blood] by 1 turn.
+  cost: 3
+  range: aoe-2
+Fight to the Death:
+  type: Skill
+  rarity: epic
+  description: (Passive) When [Dying], increase ATK and DEF by 20%.
+Wild Howl:
+  type: Skill
+  rarity: legendary
+  description: (Piercing DMG) Deals DMG equal to ~40% of M.ATK and inflicts [-Move II] and [-ATK III] to all enemiies within a 3-tile radius for 2 turns.
+  cost: 1
+  cooldown: 5
+  range: aoe-3
+Curse:
+  type: Reaction
+  rarity: rare
+  description: (Reaction) When hit by an active attack, the DMG taken iss decreased by 8%. Upon receiving an active attack, inflict [Vulnerable II] on the attacker for 2 turns.
+Brutebear Counter:
+  type: Reaction
+  rarity: epic
+  description: (Reaction) Performs a [Strike Back] when hit by an active attack from the [Front or Side], dealing 70% physical DMG to the attacker. The effect can be activated up to 2 times per round.
+Goredrinker:
+  type: Skill
+  rarity: legendary
+  description: (Passive) After being attacked, gains [Goredrinker] for 2 turns.
+Anger of Icefield:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG) Select 1 enemy within a cross-shaped range to charge at, dealing 50% DMG, and inflicts [Stun] for 1 turn. Additionally, deals 50% [Ice] [Aoe DMG] to all enemies withing 2 tiles around the target.
+  cost: 2
+  cooldown: 4
+  range: charge-3-aoe-2
+Ice Attack:
+  type: Basic Attack
+  rarity: rare
+  description: (Basic Attack) Deals 100% Physical DMG and inflicts [-Move I] on [Healthy] targets for 1 turn.
+  range: melee-1
+Frenzied Slash:
+  type: Basic Attack
+  rarity: epic
+  description: (Basic Attack) Deals 110% Physical DMG. If the target is defeated, recover +1 NRG.
+  range: melee-1
+Counterattack Storm:
+  type: Skill
+  rarity: epic
+  description: (Support) [Strike Back] range is increased by 2 tiles. When performing a [Strike Back], physical DMG is increased by 85%, and gains 1 [Strike Back] count and [Counterattack]. This effect lasts for 2 turns.
+  range: self
+
+Dawnlight:
+  type: Skill
+  rarity: legendary
+  description: (Magical DMG) Single-target attack. Deals Magical DMG equal to 130% of his P.ATK. Before attacking, convert 2 random [Buffs] on the target into [Level 1 Attribute Debuffs] for 1 turn.
+  cost: 3
+  range: ranged-1-3
+Inspired Healing:
+  type: Skill
+  rarity: rare
+  description: (Passive) After initiating an Active Attack, heal the ally with the lowest HP in battle by +20% of the character's P.ATK.
+Unsheathe: 
+  type: Skill 
+  rarity: legendary
+  description: (Passive) Before initiating an active melee attack, deals Magical DMG equal to ~40% of P.ATK. If the target has a [Shield], inflicts [Vulnerable II] for 2 turns. Can be trigger 1 time per round.
+Daybreak: 
+  type: Skill 
+  rarity: legendary
+  description: (Mixed DMG) Deals 40% Physical DMG to all enemies in the target direction within a range of 3x2 tiles and inflicts [xHealing Received] for 2 turns. Another attack is then initiated which deals Magical DMG equal to 40% of his P.ATK and spels 2 [Buffs].
+  cost: 2
+  cooldown: 2
+  range:
+    image: area-3x2
+    tags: [AoE, Ground]
+    range: 1 - 2
+    heightRange: [2, 2]
+    effectHeight: [2, 2]
+NRG-Depleting Blow: 
+  type: Skill 
+  rarity: epic
+  description: (Physical DMG) Single-target attack. Deals 130% DMG and depletes of the targets's NRG.
+  cost: 1
+  cooldown: 4
+  range: melee-1
+Air of Royalty: 
+  type: Reaction
+  rarity: legendary
+  description: (Reaction) DMG taken from Melee attacks decreases by 30%.
+Tenacity: 
+  type: Reaction 
+  rarity: rare
+  description: (Reaction) When hit by an active attack from a [Counter Role] character, the DMG taken is decreased by 25%.
+Destructive Storm: 
+  type: Skill
+  rarity: epic
+  description: (Physical DMG) Deals 50% [AoE DMG] to all enemies within a 4-tile radious and inflicts 2 random [Level 2 Attribute Debuffs] for 2 turns.
+  cost: 3
+  cooldown: 2
+  range: aoe-4
+For Iria!: 
+  type: Skill
+  rarity: legendary
+  description: (Leader's Aura) For all "Iria" allies, increase their ATK by 10% and DEF by 20%. Allies' attacks deal 20% more DMG to enemies affected by 3 or more [Debuffs].
+White Sword:
+  type: Basic Attack
+  rarity: legendary
+  description: (Basic Attack) Single-target attack. Deals Magical DMG equal to ~90% of his P.ATK.
+  range: ranged-1-2
+Shield-Break Attack:
+  type: Basic Attack
+  rarity: rare
+  description: (Basic Attack) Deals 100% physical DMG and gains [Shield Break I] before attacking.
+  range: melee-1
+Endless Dawn:
+  type: Skill
+  rarity: legendary
+  description: (Mixed DMG) Dantalion deals 40% Physical DMG 3 times. He deals Magical DMG equal to ~50% P.ATK to the first enemy in each column within a 3x3 area in the target direction, knocks them back by 2 tiles, and dispels 1 [Buff].
+  cost: 4
+  range:
+    image: area-3x3
+    tags: [Melee, Unit]
+    range: 1 - 1
+    heightRange: [2, 2]
+
+Execution Time:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG)
+  cost: 2
+  range: melee-1
+Lock-On:
+  type: Skill
+  rarity: rare
+  description: (Passive) At the start of the turn, inflicts [-P.DEF II] on the enemy with the highest P.ATK within a 6-tile radius around the character for 1 turn.
+Battle Fever:
+  type: Skill
+  rarity: epic
+  description: (Passive) After initiating an Active Attack, the character takes 15% less DMG for 1 turn. Dealing Crit DMG decreases DMG taken by an additional 25%.
+Hookshot:
+  type: Skill
+  rarity: epic
+  description: (Debuff) [Instant] Select 1 enemy within a cross-shaped range, drags them to the character, and inflicts [xReaction Skills] for 1 turn.
+  cooldown: 4
+  range:
+    image: cross-1-4
+    tags: [Unit]
+    range: 1 - 4
+    heightRange: [2, 2]
+Taste of Blood:
+  type: Skill
+  rarity: legendary
+  description: (Support) [Instant] Dispel 3 [Debuffs], recover +30% HP, and gains [Potential Burst] for 1 turn.
+  cost: 1
+  cooldown: 4
+  range: self
+Fatal Reaping:
+  type: Reaction
+  rarity: epic
+  description: (Reaction) Performs [Assisting Attack] if any enemy within 3 tiles of a cross-shaped range around the character is [Dying] after being attacked by the character's allies. The Assiting Attack deals [Piercing DMG] equal to 50% of the targets' lost HP. The effect can be activated up to 1 time per round.
+Spinning Blade:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG) [Instant] Select 1 enemy within a cross-shaped range and drags them to the character, dealing 70% DMG and recovering +2 NRG when defeating any target.
+  cost: 3
+  range:
+    image: cross-1-3
+    tags: [Ranged, Unit]
+    range: 1 - 3
+    heightRange: [2, 2]
+Lone Ranger:
+  type: Skill
+  rarity: rare
+  description: (Passive) When there are no allies within 2 tiles around the character, ATK and DEF increase by 8%, and Crit by 10%.
+Painful Cutting:
+  type: Basic Attack
+  rarity: epic
+  description: (Basic Attack) Single-target attack. Deals 33% Physical DMG 3 times. If the target is [Injured], increase Crit by 25%.
+  range: melee-1
+Sealing Attack:
+  type: Basic Attack
+  rarity: epic
+  description: (Basic Attack) Deals 100% Physical DMG and inflicts [xPassive Skills] on [Injured] targets before attack for 2 turns.
+  range: melee-1
+Gale Dance:
+  type: Skill
+  rarity: epic
+  description: (Physical DMG) Deals 75% [AoE DMG] to all enemies within a 2-tile radius around the character. Before attacking, gains [+Crit II] for 2 turns.
+  cost: 2
+  cooldown: 5
+  range: aoe-2
+Hidden Executioner:
+  type: Skill
+  rarity: legendary
+  description: (Passive) If there is no ally within 1 tile of the target before attacking, inflicts [Isolate] and [xDodge] on the target for 2 turns. The effect can be activated 1 time per round.
+
+Straight Shot:
+  type: Basic Attack
+  rarity: common
+  description: (Basic Attack) Deals 100% Physical DMG.
+  range: ranged-2-3
+Powerful Shot:
+  type: Skill
+  rarity: rare
+  description: (Physical DMG) Single-target attack. Deals 130% DMG. When the target is [Healthy], ATK increases by 15%.
+  cost: 2
+  range: ranged-1-3
+Full Draw:
+  type: Skill
+  rarity: rare
+  description: (Support) After using this skill, [Basic Attack] DMG increases by 30%. At the end of the turn, NRG is not recovered.
+  range: self
+Deadly Aim:
+  type: Skill
+  rarity: legendary
+  description: (Physical DMG) Single-target attack. Prepare for 1 turn and then deals 160% DMG to the enemy, which ingores [Block]. When attacking enemies with [The Hanged Men's Mark], increases Crit by 60%. [The Hanged men's Mark] is cleared after landing a Critical Hit.
+  cost: 4
+  cooldown: 2
+  range:
+    image: 3-5
+    tags: [Unit]
+    range: 3 - 5
+    heightRange: [7, 3]
+Sniping Stance:
+  type: Skill
+  rarity: legendary
+  description: (Support) [Instant] Gain [Sniping Stance] and the skill switches to [Moving Stance]
+  cost: 1
+  cooldown: 3
+  range:
+    image: aoe-6
+    tags: [Unit]
+    effectHeight: [2, 2]
+Moving Stance:
+  type: Skill
+  rarity: legendary
+  description: (Support) Removes [Sniping Stance] an gain [+SPD II] for 1 turn and the ability to move again.
+  range: self
+Sniper's Intuition:
+  type: Reaction
+  rarity: epic
+  description: (Reaction) Decreases the [Ranged DMG] taken by 20%. At the start of the turn, if the character is within the enemy's [Threat Range], gain [+Move II] for 1 turn.
+Highland Advantage:
+  type: Reaction
+  rarity: epic
+  description: (Reaction) When hit by an active attack, the DMG taken is decreased by 8%. When attacked by an enemy from [Lowland], the DMG take is additionally decrease by 30%.
+  cost:
+  cooldown:
+  range:
+Shattering Arrow:
+  type: Skill
+  rarity: epic
+  description: (Passive) [Basic Attack] ignores 40% of the target's DEF.
+Sense of Purpose:
+  type: Skill
+  rarity: legendary
+  description: (Passive) When attacking enemies who have [The Hanged Men's Mark], increase Crit by 30%, Crit DMG by 30%, and recover +1 NRG when landing a Critical Hit.
+Marking Bullet:
+  type: Basic Attack
+  rarity: epic
+  description: (Basic Attack) Single-target attack. Deals 85% Physical DMG and inflicts [-Move I] and [The Hanged Men's Mark] for 2 turns.
+  range: ranged-2-3
+Quick Reload:
+  type: Skill
+  rarity: legendary
+  description: (Support) [Instant] Recovers +3 NRG and reduces skill cooldown by 1 turn. For 3 turns, [Deadly Aim] does not need to be prepared.
+  cooldown: 4
+  range: self
+Eagle Eye:
+  type: Skill
+  rarity: epic
+  description: (Support) [Instant] Increases [Basic Attack] range by 1 tile and P.ATK by 10%. Before attacking, gains [Highland] advantage for 3 turns.
+  range: self
