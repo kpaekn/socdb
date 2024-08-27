@@ -1,27 +1,3 @@
-// .section-container {
-//   background-color: #e5e0d4;
-//   border: 1px solid #cdc2ab;
-//   border-radius: 0.5em;
-//   box-shadow: 0 0 3px #343742;
-//   padding: 0.25em;
-
-//   .section {
-//     background-color: #e5e0d4;
-//     border: 3px solid #cdc2ab;
-//     border-radius: 0.3em;
-//     padding: 0.5em;
-
-//     .skill-image {
-//       border: 6px solid transparent;
-//       border-radius: 999px;
-
-//       &:first-child {
-//         border-color: #404b63;
-//       }
-//     }
-//   }
-// }
-
 .skill-section {
   .ui.grid .column.is-hidden {
     display: none;
@@ -85,7 +61,7 @@
       border-radius: 0.5em;
       font-size: 9pt;
       margin: 0.5em 0.5em 0 0;
-      padding: 0.15em 0.65em 0.1em 0.5em;
+      padding: 0 0.65em 0 0.5em;
 
       .label {
         display: inline-block;
@@ -130,22 +106,44 @@
     .skill-range {
       border: 2px solid rgba(194, 182, 126, 0.3);
       margin: 0.5em;
-      padding: 0.5em;
+
+      .flex-box-left {
+        padding: 0.5em 0 0.5em 0.5em;
+      }
+
+      .flex-box-right {
+        padding: 0.5em;
+      }
 
       .range-image {
         width: 88px;
         height: 88px;
       }
 
+      .skill-tags {
+        .label {
+          display: inline-block;
+          margin-right: 0.5em;
+          padding: 0 1em;
+
+          background-color: rgba(194, 182, 126, 0.3);
+          border-radius: 0.5em;
+          color: white;
+          font-size: 9pt;
+          font-weight: bold;
+        }
+      }
+
       table {
         border-spacing: 0;
-        margin-left: 0.5em;
+        width: 100%;
 
         tr {
           td {
             border-bottom: 1px solid #c2b67e;
             color: white;
             padding: 0.2em 0.4em;
+            font-size: 9pt;
 
             &:last-child {
               text-align: right;

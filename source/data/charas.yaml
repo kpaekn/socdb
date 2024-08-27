@@ -95,7 +95,7 @@
     Rank 11: [Maitha's Combo, Invulnerable]
 
 - name: Nergal
-  image: [14, 360]
+  image: [25, 460]
   title: H.M. Praetorian
   rarity: Legendary
   role: Defender
@@ -107,7 +107,7 @@
     Rank 3: [Mark Illumination, Charged Bayonet]
     Rank 5: [Critical Moment, Counterattack]
     Rank 7: [Alacrity, Burning Bridges]
-    Rank 9: [Silencing Attack, Fatal Attack]
+    Rank 9: [Silencing Attack, Fatal Attack (Melee)]
     Rank 11: [Absolute Domain, Close Quarter Release]
 
 - name: Rawiyah

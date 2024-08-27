@@ -10,6 +10,7 @@ var characters = [].concat(...charactersLegendary);
 var stats = yaml.load(fs.readFileSync(__dirname + '/stats.yaml'));
 var traits = yaml.load(fs.readFileSync(__dirname + '/traits.yaml'));
 var skills = yaml.load(fs.readFileSync(__dirname + '/skills.yaml'));
+var skillRanges = yaml.load(fs.readFileSync(__dirname + '/skill-ranges.yaml'));
 var glossary = yaml.load(fs.readFileSync(__dirname + '/glossary.yaml'));
 var blueKeywords = yaml.load(fs.readFileSync(__dirname + '/blue-keywords.yaml'));
 blueKeywords = blueKeywords.concat(Object.keys(skills));
@@ -151,6 +152,18 @@ for (const skillName in skills) {
   skills[skillName].keywords = getKeywords(skills[skillName].description);
   skills[skillName].description = decorateV2(skills[skillName].description);
   // skills[skillName].rarity = getSkillRarity(skillName);
+}
+
+// map skill ranges into skills object
+for (const key in skills) {
+  if (typeof skills[key].range === 'string') {
+    if (skillRanges[skills[key].range]) {
+      skills[key].range = skillRanges[skills[key].range];
+    } else {
+      // temp while converting data structure
+      delete skills[key].range
+    }
+  }
 }
 
 // map trait/skill objects into characters object
