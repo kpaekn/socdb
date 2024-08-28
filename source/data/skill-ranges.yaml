@@ -104,3 +104,7 @@ self-3:
   image: aoe-3
   tags: [Unit]
   effectHeight: [2, 2]
+self-3:
+  image: aoe-4
+  tags: [Unit]
+  effectHeight: [2, 2]

@@ -1,0 +1,70 @@
+Endurance Activation:
+  rarity: rare
+  description: (Reaction) When receiving healing, gain [DMG Reduction II] for 2 turns.
+Fleeing Hare:
+  rarity: rare
+  description: (Reaction) When hit by an active attack, reduce the DMG taken by 8%. After being attacked, gain [+Move II] for 2 turns.
+Counterattack:
+  rarity: rare
+  description: (Reaction) When attacked from the [Front or Side], [Strike Back], dealing 70% DMG. This can activate up to 1 time per round.
+Survival Master:
+  rarity: rare
+  description: (Reaction) When hit by an active attack, the DMG taken is decreased by 8%, and [Environmental DMG] taken is decreased by 70%.
+Front Defense:
+  rarity: rare
+  description: (Reaction) When hit by an active attack from the [Front], the DMG taken is decreased by 30%.
+Curse:
+  rarity: rare
+  description: (Reaction) When hit by an active attack, the DMG taken iss decreased by 8%. Upon receiving an active attack, inflict [Vulnerable II] on the attacker for 2 turns.
+Tenacity: 
+  rarity: rare
+  description: (Reaction) When hit by an active attack from a [Counter Role] character, the DMG taken is decreased by 25%.
+
+Screw Off!:
+  rarity: epic
+  description: (Reaction) When hit by an active attack, perform a [Strike Back], dealing 70% Physical DMG to the enemy. When [Tipsy] is active, knock the enemy back 2 tiles. This effect can be triggered up to 1 time per round.
+Firewalking:
+  rarity: epic
+  description: (Reaction) Become immune to [Scorch] and burning tiles. When on a burning tile, the DMG taken is decreased by 10%. At the end of the turn, recovers +20% HP.
+Eye for an Eye:
+  rarity: epic
+  description: (Reaction) When attacked from the [[Front or Side]] by enemies who are not on adjacent tiles, [Strike Back], dealing 100% Physical DMG.
+Gale Footwork:
+  rarity: epic
+  description: (Reaction) When attacked by a melee attack from the [Front or Side], the character can interrupt the enemy's action, dealing 50% Physical DMG and teleporting behind the closest ally within 3 tiles.
+  cooldown: 4
+Critical Moment:
+  rarity: epic
+  description: (Reaction) When the character is [Dying], [Dodges] all single-target attacks for 1 turn. At the start of the turn, recovers +50% HP.
+  cooldown: 7
+Brutebear Counter:
+  rarity: epic
+  description: (Reaction) Performs a [Strike Back] when hit by an active attack from the [Front or Side], dealing 70% physical DMG to the attacker. The effect can be activated up to 2 times per round.
+Fatal Reaping:
+  rarity: epic
+  description: (Reaction) Performs [Assisting Attack] if any enemy within 3 tiles of a cross-shaped range around the character is [Dying] after being attacked by the character's allies. The Assiting Attack deals [Piercing DMG] equal to 50% of the targets' lost HP. The effect can be activated up to 1 time per round.
+Sniper's Intuition:
+  rarity: epic
+  description: (Reaction) Decreases the [Ranged DMG] taken by 20%. At the start of the turn, if the character is within the enemy's [Threat Range], gain [+Move II] for 1 turn.
+Highland Advantage:
+  rarity: epic
+  description: (Reaction) When hit by an active attack, the DMG taken is decreased by 8%. When attacked by an enemy from [Lowland], the DMG take is additionally decrease by 30%.
+
+Block Counter:
+  rarity: legendary
+  description: (Reaction) When receiving a [melee] attack from the [Front or Side], 100% chance to [Block] and [Strike Back], dealing 70% Physical DMG. Can be triggered 1 time per round.
+Guardian's Heart:
+  rarity: legendary
+  description: (Reaction) Takes [Physical Attacks] for all other allies within 1 tile and performs a [Strike Back] on the attacker, dealing 70% DMG and knocking them back 1 tile. This effect can be triggered 1 time per round.
+Cutie:
+  rarity: legendary
+  description: (Reaction) Decreases [Ranged DMG] taken by 25% and [AoE DMG] taken by 40%.
+Eerie Footwork:
+  rarity: legendary
+  description: (Reaction) When [Healthy] and receiving a single-target attack, teleport behind the attacker and [Strike Back], dealing 70% DMG. Then gain [Dodge] for 1 turn. When [Injured], trigger [Dodge].
+Air of Royalty: 
+  rarity: legendary
+  description: (Reaction) DMG taken from Melee attacks decreases by 30%.
+Shelter Advantage:
+  rarity: legendary
+  description: (Reaction) Decreases the DMG taken by 40% if there is any [Item] within 1 tile around the character.

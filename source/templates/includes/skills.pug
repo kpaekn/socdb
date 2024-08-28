@@ -59,31 +59,31 @@
                     if skill.range
                       .skill-range.flex-box
                         .flex-box-left
-                          img.range-image(src='images/range/' + slug(skill.range.image) + '.png')
-                        .flex-box-right
-                          if skill.range.tags
-                            .skill-tags
-                              each tag in skill.range.tags
-                                .label #{tag}
-                          table
-                            tbody
-                              if skill.range.range
-                                tr
-                                  td Range
-                                  td #{skill.range.range}
-                              if skill.range.heightRange
-                                tr
-                                  td Height Range
-                                  td 
-                                    i.ri-arrow-down-fill
-                                    | #{skill.range.heightRange[0]} - 
-                                    i.ri-arrow-up-fill
-                                    | #{skill.range.heightRange[1]}
-                              if skill.range.effectHeight
-                                tr
-                                  td Effect Height
-                                  td 
-                                    i.ri-arrow-down-fill
-                                    | #{skill.range.effectHeight[0]} - 
-                                    i.ri-arrow-up-fill
-                                    | #{skill.range.effectHeight[1]}
+                          img.range-image(src='images/range/' + slug(skill.range) + '.png')
+                        //- .flex-box-right
+                        //-   if skill.range.tags
+                        //-     .skill-tags
+                        //-       each tag in skill.range.tags
+                        //-         .label #{tag}
+                        //-   table
+                        //-     tbody
+                        //-       if skill.range.range
+                        //-         tr
+                        //-           td Range
+                        //-           td #{skill.range.range}
+                        //-       if skill.range.heightRange
+                        //-         tr
+                        //-           td Height Range
+                        //-           td 
+                        //-             i.ri-arrow-down-fill
+                        //-             | #{skill.range.heightRange[0]} - 
+                        //-             i.ri-arrow-up-fill
+                        //-             | #{skill.range.heightRange[1]}
+                        //-       if skill.range.effectHeight
+                        //-         tr
+                        //-           td Effect Height
+                        //-           td 
+                        //-             i.ri-arrow-down-fill
+                        //-             | #{skill.range.effectHeight[0]} - 
+                        //-             i.ri-arrow-up-fill
+                        //-             | #{skill.range.effectHeight[1]}
