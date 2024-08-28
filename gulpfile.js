@@ -61,7 +61,7 @@ function watch() {
 exports.watch = watch;
 
 function cleanDist() {
-  return gulp.src('./dist', {read: false})
+  return gulp.src('./dist', { read: false })
     .pipe(clean());
 }
 exports.clean = cleanDist;

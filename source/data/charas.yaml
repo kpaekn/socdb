@@ -59,8 +59,24 @@
     Rk 3: [Daybreak, NRG-Depleting Blow]
     Rk 5: [Air of Royalty, Tenacity]
     Rk 7: [Destructive Storm, For Iria!]
-    Rk 9: [White Sword, Shield-Break Attack]
+    Rk 9: [White Sword, Shield-Break Attack (Melee)]
     Rk 11: [Legacy of Comrades, Endless Dawn]
+
+- name: Edda
+  image: [15, 420]
+  title: Rebel Maiden
+  rarity: Legendary
+  role: Watcher
+  factions: [Iria, Drifter, Discipline]
+  skills:
+    Trait: Catching Fire
+    Init: [Straight Shot, Shield Break Shot]
+    Rk 1: [Fortification, Shield Break - Enhanced]
+    Rk 3: [Guiding Gleam, Wine Barrel Casting]
+    Rk 5: [Shelter Advantage, Counterattack]
+    Rk 7: [Rupture Armor, Barricade Fight]
+    Rk 9: [Shield-Break Attack (Ranged), Dispelling Strike (Ranged)]
+    Rk 11: [Take Arms!, Storm Sniping]
 
 - name: Faycal
   image: [10, 610]
@@ -187,5 +203,5 @@
     Rk 3: [Piercing Bash, Another Pint!]
     Rk 5: [Screw Off!, Guardian's Heart]
     Rk 7: [Mania Smash, Sword of Convallaria]
-    Rk 9: [Fatal Attack (Melee), Dispelling Strike]
+    Rk 9: [Fatal Attack (Melee), Dispelling Strike (Melee)]
     Rk 11: [Gale Spin Attack, Legacy of Comrades]

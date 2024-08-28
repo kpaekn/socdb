@@ -34,6 +34,15 @@ Dantalion:
   - Increases Dantalion's ATK and DEF by 15%. For every 1 character defeated in battle, he recovers +30% HP and +1 NRG.
   - Increases Dantalion's ATK and DEF by 15%. For every 1 character defeated in battle, he recovers +35% HP and +1 NRG.
 
+Edda:
+  name: Catching Fire
+  description:
+  - Edda performs [Assisting Attack] against all enemies within 4 tiles of herself, dealing 30% Physical DMG. The skill can be activated 1 time per round.
+  - Increase Edda's ATK by 6%. Edda performs [Assisting Attack] against all enemies within 4 tiles of herself, dealing 30% Physical DMG. The skill can be activated 1 time per round.
+  - Increase Edda's ATK by 6%. Edda performs [Assisting Attack] against all enemies within 4 tiles of herself, dealing 30% Physical DMG. The skill can be activated 2 time per round.
+  - Increase Edda's ATK by 12%. Edda performs [Assisting Attack] against all enemies within 4 tiles of herself, dealing 30% Physical DMG. The skill can be activated 2 time per round.
+  - Increase Edda's ATK by 12%. Edda performs [Assisting Attack] against all enemies within 5 tiles of herself, dealing 40% Physical DMG. The skill can be activated 2 time per round.
+
 Faycal:
   name: Faycal's Obsession
   description:
