@@ -7,32 +7,12 @@
 
   .skill-details-section.for-mobile {
     .skill-container {
-      .skill-range {
-        .flex-box-left {
-          padding: 0.25em 0 0.25em 0.25em;
-        }
-
-        .flex-box-right {
-          padding: 0.25em;
-        }
-
-        .range-image {
-          width: 5rem;
-          height: 5rem;
-        }
-
-        .skill-tags {
-          .label {
-            font-size: 8pt;
-          }
-        }
-
-        table {
-          tr {
-            td {
-              font-size: 8pt;
-            }
-          }
+      .skill-description-container {
+        display: block;
+  
+        .skill-range {
+          display: block;
+          margin-top: 0.5rem;
         }
       }
     }
@@ -56,6 +36,68 @@
     height: 66px;
   }
 }
+
+
+.trait-section {
+  margin: 1rem 0;
+
+  .trait-container {
+    background-color: #e5e0d4;
+    border: 2px solid #cdc2ab;
+    box-shadow: 0px 0px 0px 2px #e5e0d4;
+    border-radius: 0.5em;
+
+    &.is-hidden {
+      display: none;
+    }
+
+    .trait-type {
+      background-color: #cdc2ab;
+      border-bottom-right-radius: 1em;
+      color: #584b32;
+      display: inline-block;
+      font-weight: bold;
+      line-height: 1.5;
+      padding: 0 1em;
+      text-align: center;
+    }
+  
+    .trait-stars {
+      display: inline-block;
+      margin-left: 1em;
+      font-size: 15pt;
+      vertical-align: middle;
+  
+      .star {
+        cursor: pointer;
+        color: goldenrod;
+        display: inline-block;
+        margin-right: 0.25em;
+      }
+    }
+  
+    .trait-name {
+      background-color: rgba(194, 182, 126, 0.3);
+      color: #584b32;
+      text-shadow: 0 0 2px #c2b67e;
+      margin: 1em 0;
+      padding: 0.5em 0.25em;
+      line-height: 1em;
+    }
+  
+    .skill-image {
+      float: left;
+      margin-top: -22px;
+      margin-right: 0.5em;
+    }
+  
+    .trait-description {
+      color: black;
+      margin: 1em;
+    }
+  }
+}
+
 
 .skill-selection-menu {
   background-color: #e5e0d4;
@@ -135,17 +177,6 @@
       text-align: center;
     }
 
-    .skill-stars {
-      display: inline-block;
-      margin-left: 1em;
-
-      .star {
-        color: goldenrod;
-        display: inline-block;
-        margin-right: 0.35em;
-      }
-    }
-
     .skill-cost,
     .skill-cooldown {
       float: right;
@@ -186,62 +217,25 @@
 
       .skill-border {
         position: absolute;
-        top: 0;
-        left: 0;
       }
     }
 
-    .skill-description {
-      margin: 1em;
-    }
+    .skill-description-container {
+      display: flex;
+      margin: 1rem;
 
-    .skill-range {
-      border: 2px solid rgba(194, 182, 126, 0.3);
-      margin: 0.5em;
-
-      .flex-box-left {
-        padding: 0.5em 0 0.5em 0.5em;
-      }
-
-      .flex-box-right {
-        padding: 0.5em;
-      }
-
-      .range-image {
-        width: 6.5rem;
-        height: 6.5rem;
-      }
-
-      .skill-tags {
-        .label {
-          display: inline-block;
-          margin-right: 0.5em;
-          padding: 0 1em;
-
-          background-color: rgba(194, 182, 126, 0.3);
-          border-radius: 0.5em;
-          color: white;
-          font-size: 10pt;
-          font-weight: bold;
-          line-height: 1.5;
-        }
-      }
-
-      table {
-        border-spacing: 0;
+      .skill-description {
+        margin-right: 0.5rem;
         width: 100%;
+      }
 
-        tr {
-          td {
-            border-bottom: 1px solid #c2b67e;
-            color: white;
-            padding: 0.2em 0.4em;
-            font-size: 10pt;
+      .skill-range {
+        border: 2px solid rgba(194, 182, 126, 0.3);
+        padding: 0.5rem;
 
-            &:last-child {
-              text-align: right;
-            }
-          }
+        img {
+          width: 6.5rem;
+          height: 6.5rem;
         }
       }
     }

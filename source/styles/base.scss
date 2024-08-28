@@ -4,6 +4,14 @@ html * {
 
 body {
   background-color: #d1c7b3;
+  background-image: 
+    linear-gradient(
+      to bottom, 
+      #343742,
+      #343742 27rem,
+      #d1c7b3 27rem
+    );
+  background-repeat: no-repeat;
 }
 
 .ui.label img {
@@ -31,7 +39,7 @@ body {
 }
 
 .blue {
-  color: skyblue;
+  color: deepskyblue;
 }
 
 .bold {

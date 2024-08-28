@@ -159,40 +159,24 @@ for (const skillName in skills) {
 // map trait/skill objects into characters object
 characters.forEach(character => {
   character.stats = getStats(character);
+  if (character.factions) character.factions = character.factions.sort((a, b) => (a < b) ? -1 : 1);
+  if (traits[character.name]) character.trait = traits[character.name];
 
-  character.factions = character.factions.sort((a, b) => (a < b) ? -1 : 1);
   for (const rank in character.skills) {
-    if (rank === 'Trait') {
-      var trait = traits[character.name];
-      if (trait) {
-        character.skills[rank] = trait.description.map((description, i) => {
-          return {
-            name: trait.name,
-            type: 'Trait',
-            keywords: trait.keywords,
-            rarity: 'epic',
-            description,
-            tabs: [1, 2, 3, 4, 5],
-            tabId: i + 1
-          };
-        })
+    character.skills[rank] = character.skills[rank].map(skillName => {
+      if (!skillName) {
+        return null;
       }
-    } else {
-      character.skills[rank] = character.skills[rank].map(skillName => {
-        if (!skillName) {
-          return null;
-        }
-        if (!skills[skillName]) {
-          console.log('missing skill:', skillName);
-        }
-        return {
-          ...{
-            name: skillName
-          },
-          ...skills[skillName]
-        };
-      });
-    }
+      if (!skills[skillName]) {
+        console.log('missing skill:', skillName);
+      }
+      return {
+        ...{
+          name: skillName
+        },
+        ...skills[skillName]
+      };
+    });
   }
 });
 

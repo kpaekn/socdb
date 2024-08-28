@@ -4,8 +4,8 @@
   rarity: Legendary
   role: Defender
   factions: [Drifter, Aggression]
+  trait: Brutebear Blood
   skills:
-    Trait: Brutebear Blood
     Init: [Slash, Whirlwind Axe]
     Rk 1: [Fight to the Death, Leg Slam]
     Rk 3: [Wild Howl, Burning Bridges]
@@ -20,8 +20,8 @@
   rarity: Legendary
   role: Destroyer
   factions: [Papal States, Sword of Convallaria, Aggression]
+  trait: I'm a Genius!
   skills:
-    Trait: I'm a Genius!
     Init: [Energy Wave, Chuu Chuu Chuu!]
     Rk 1: [Wall of Flame, Casual Search]
     Rk 3: [ATK Boost, NRG Restoration]
@@ -36,8 +36,8 @@
   rarity: Legendary
   role: Seeker
   factions: [Papal States, Drifter, Alacrity]
+  trait: Killer Instinct
   skills:
-    Trait: Killer Instinct
     Init: [Dual Blade Strike, Flurry of Stabs]
     Rk 1: [Ambush, Shadow Gait]
     Rk 3: [Assult, Mask]
@@ -52,8 +52,8 @@
   rarity: Legendary
   role: Destroyer
   factions: [Iria, Fortitude]
+  trait: Path of Kingship
   skills:
-    Trait: Path of Kingship
     Init: [Slash, Dawnlight]
     Rk 1: [Inspired Healing, Unsheathe]
     Rk 3: [Daybreak, NRG-Depleting Blow]
@@ -68,8 +68,8 @@
   rarity: Legendary
   role: Watcher
   factions: [Iria, Drifter, Discipline]
+  trait: Catching Fire
   skills:
-    Trait: Catching Fire
     Init: [Straight Shot, Shield Break Shot]
     Rk 1: [Fortification, Shield Break - Enhanced]
     Rk 3: [Guiding Gleam, Wine Barrel Casting]
@@ -84,8 +84,8 @@
   rarity: Legendary
   role: Watcher
   factions: [Iria, Sword of Convallaria, Alacrity]
+  trait: Faycal's Obsession
   skills:
-    Trait: Faycal's Obsession
     Init: [Curved Shot, Foot Sniping]
     Rk 1: [Dharana, Rock-Climbing]
     Rk 3: [Precise Shot, Arrow of Guardian Convallaria]
@@ -100,8 +100,8 @@
   rarity: Legendary
   role: Seeker
   factions: [Papal States, Fortitude]
+  trait: Executioner
   skills:
-    Trait: Executioner
     Init: [Slash, Execution Time]
     Rk 1: [Lock-On, Battle Fever]
     Rk 3: [Hookshot, Taste of Blood]
@@ -116,8 +116,8 @@
   rarity: Legendary
   role: Watcher
   factions: [The Union, Fortitude]
+  trait: Flag of Justice
   skills:
-    Trait: Flag of Justice
     Init: [Slash, Longinus - Thrust, null, Sword - Gale]
     Rk 1: [Knightly Spirit, Solemnity]
     Rk 3: [Longinus - Brilliance, Lance of Longinus, Sword - Full Moon, Longinus - Flag Waving]
@@ -132,8 +132,8 @@
   rarity: Legendary
   role: Watcher
   factions: [Vlder, Alacrity]
+  trait: Vltar Guardian
   skills:
-    Trait: Vltar Guardian
     Init: [Curved Shot, Cloud-Piercing Arrow]
     Rk 1: [Guerrilla, Aim]
     Rk 3: [Arrow of Aeolus, Windwalking]
@@ -148,8 +148,8 @@
   rarity: Legendary
   role: Defender
   factions: [Iria, Sword of Convallaria]
+  trait: Shield of Convallaria
   skills:
-    Trait: Shield of Convallaria
     Init: [Slash, Leg Slam]
     Rk 1: [Guard, Co-Defense]
     Rk 3: ["Come On, Everybody!", Maitha's Charge]
@@ -164,8 +164,8 @@
   rarity: Legendary
   role: Defender
   factions: [Iria, Alacrity]
+  trait: Luxite Gauntlet
   skills:
-    Trait: Luxite Gauntlet
     Init: [Slash, Knockback Combo]
     Rk 1: [Fast Cover, Crippling Blow]
     Rk 3: [Mark Illumination, Charged Bayonet]
@@ -180,8 +180,8 @@
   rarity: Legendary
   role: Destroyer
   factions: [Iria, Alacrity]
+  trait: Luxite Crossbow
   skills:
-    Trait: Luxite Crossbow
     Init: [Straight Shot, Powerful Shot]
     Rk 1: [Dharana, Full Draw]
     Rk 3: [Deadly Aim, Sniping Stance, null, Moving Stance]
@@ -196,8 +196,8 @@
   rarity: Legendary
   role: Breaker
   factions: [Iria, Sword of Convallaria, Alacrity]
+  trait: Bottoms Up
   skills:
-    Trait: Bottoms Up
     Init: [Gash, Gale Breach, null, Tropical Cyclone]
     Rk 1: [Co-Attack, Toughness]
     Rk 3: [Piercing Bash, Another Pint!]
