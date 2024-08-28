@@ -1,4 +1,4 @@
-.chara-top(style={
+.chara-top.for-mobile(style={
   'background-image':`url(images/skin/${slug(name)}.webp)`,
   'background-position-y': `${image[0]}px`,
   'background-size': `${image[1]}px`
@@ -15,8 +15,8 @@
   .factions
     each faction in factions
       .faction 
-        span.label #{faction}
         img(src='images/faction/' + slug(faction) + '.webp')
+        span.label #{faction}
 
   if stats
     .chara-stats

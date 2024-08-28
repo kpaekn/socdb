@@ -1,8 +1,16 @@
+@media only screen and (max-width: 991px) {
+  .chara-top.for-mobile {
+    background-position-x: center;
+  }
+}
+
 @media only screen and (max-width: 767px) {
-  .factions {
-    .faction {
-      .label {
-        display: none;
+  .chara-top.for-mobile {
+    .factions {
+      .faction {
+        .label {
+          display: none;
+        }
       }
     }
   }
@@ -19,6 +27,7 @@
 
   background-repeat: no-repeat;
   background-position: center;
+  background-position-x: right;
   background-position-y: 10%;
 
   .face-template {
@@ -52,8 +61,7 @@
     text-shadow: 0 0 1px #cdc2ab;
     white-space: nowrap;
     position: relative;
-    padding: 1rem;
-    padding-right: 5.5rem;
+    margin: 1rem;
 
     .rarity-image {
       float: left;
@@ -74,7 +82,7 @@
       line-height: 2rem;
 
       .role-image {
-        margin-right: 0.25em;
+        margin-right: 0.25rem;
         margin-bottom: -3px;
         width: 1.5rem;
         height: 1.5rem;
@@ -83,21 +91,18 @@
   }
 
   .factions {
-    padding: 0.25em;
-    position: absolute;
-    top: 1em;
-    right: 1em;
+    margin-left: 1rem;
 
     .faction {
+      display: inline-block;
       font-size: 10pt;
       font-weight: bold;
-      text-align: right;
-      margin-bottom: 0.2em;
+      margin-right: 0.5rem;
 
       img {
         border: 2px solid #c2b67e;
         border-radius: 99px;
-        margin-left: 0.25em;
+        margin-right: 0.25rem;
         width: 28px;
         height: 28px;
         vertical-align: middle;
