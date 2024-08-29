@@ -41,6 +41,12 @@
 .trait-section {
   margin: 1rem 0;
 
+  h4 {
+    color: white;
+    font-size: 14pt;
+    margin: 1rem 0;
+  }
+
   .trait-container {
     background-color: #e5e0d4;
     border: 2px solid #cdc2ab;
@@ -53,18 +59,19 @@
 
     .trait-type {
       background-color: #cdc2ab;
-      border-bottom-right-radius: 1em;
+      border-bottom-right-radius: 1rem;
       color: #584b32;
       display: inline-block;
       font-weight: bold;
       line-height: 1.5;
-      padding: 0 1em;
+      padding: 0 1rem;
       text-align: center;
     }
   
     .trait-stars {
       display: inline-block;
-      margin-left: 1em;
+      margin-left: 1rem;
+      margin-bottom: -0.5rem;
       font-size: 15pt;
       vertical-align: middle;
   
@@ -72,7 +79,7 @@
         cursor: pointer;
         color: goldenrod;
         display: inline-block;
-        margin-right: 0.25em;
+        margin-right: 0.25rem;
       }
     }
   
@@ -94,54 +101,7 @@
     .trait-description {
       color: black;
       margin: 1em;
-    }
-  }
-}
-
-
-.skill-selection-menu {
-  background-color: #e5e0d4;
-  border: 2px solid #cdc2ab;
-  border-radius: 0.5em;
-  box-shadow: 0 0 0px 2px #e5e0d4;
-  margin-right: 1em;
-  padding: 0.15em;
-
-  h4 {
-    margin: 0;
-    white-space: nowrap;
-
-    i {
-      font-size: 0.9em;
-      vertical-align: middle;
-    }
-  }
-
-  .skill-image-container {
-    display: inline-block;
-    border-radius: 2.25em;
-    margin-bottom: 0.5em;
-    padding: 0.25em;
-    white-space: nowrap;
-
-    .skill-image {
-      display: inline-block;
-      cursor: pointer;
-      margin: 0.15em;
-
-      img {
-        width: 52px;
-        height: 52px;
-      }
-
-      .skill-border {
-        width: 56px;
-        height: 56px;
-      }
-    }
-
-    &.is-selected {
-      background-color: #343742;
+      text-align: justify;
     }
   }
 }
@@ -156,7 +116,8 @@
   }
 
   h4 {
-    margin-bottom: 1em;
+    font-size: 14pt;
+    margin: 1rem 0;
   }
 
   .skill-container {
@@ -226,6 +187,7 @@
 
       .skill-description {
         margin-right: 0.5rem;
+        text-align: justify;
         width: 100%;
       }
 

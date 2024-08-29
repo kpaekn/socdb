@@ -8,13 +8,13 @@ Come On, Everybody!:
   rarity: legendary
   description: (Support) Restores +20% HP and grants [+ATK I] and [+P.DEF I] to all allies within a 3-tile radius. Takes [Physical Attacks] from the enemy for allies within a 2-tile radius for 2 turns.
   cost: 3
-  range: 0-0-3
+  range: aoe-3
 Maitha's Charge:
   rarity: legendary
   description: (Physical DMG) Charges at 1 enemy, dealing 130% DMG and knocking the target back 2 tiles.
   cost: 1
   cooldown: 5
-  range: charge-3
+  range: cross-1-3
 Bandage:
   rarity: rare
   description: (Healing) [Instant] Heals +30% HP.
@@ -39,7 +39,7 @@ Gale Breach:
   description: (Physical DMG) [Instant] Charges at 1 enemy within a cross-shaped range, dealing 30% [AoE DMG]. Afterward, the skill switches to [Tropical Cyclone] for 2 turns. When [Tipsy] is active, inflict [xReaction Skills] on the target after the attack for 2 turns.
   cost: 1
   cooldown: 3
-  range: charge-3
+  range: cross-1-3
 Tropical Cyclone:
   rarity: legendary
   description: (Physical DMG) Deals 140% DMG. Increase DMG by 10% for each [Debuff] on the target. Afterward, the skill switches back to [Gale Breach].
@@ -78,7 +78,7 @@ Wall of Flame:
   rarity: epic
   description: (Magical DMG) Select 1 spot within a cross-shaped range around the character. Deals ~70% [AoE DMG] to all enemies in a horizontal row of 5 tiles, and changes the tiles into [Burning] for 2 turns.
   cost: 3
-  range: cross-1-3-aoe-5x1
+  range: cross-1-1-3-aoe-5x1
 Casual Search:
   rarity: legendary
   description: (Support) [Instant] Gains 1 random [Luxite Skill]. The skill remains available for 2 turns.
@@ -221,19 +221,19 @@ Longinus - Thrust:
   rarity: legendary
   description: (Physical DMG) Select 1 enemy within a cross-shaped range from herself, charging at them, dealing 120% DMG and knocking the enemy back by 2 tiles. If there is no [Flag Waving] aura, the skill switches to [Sword - Gale].
   cost: 2
-  range: charge-3
+  range: cross-1-3
 Sword - Gale:
   rarity: legendary
   description: (Physical DMG) Deals 120% DMG to an enemy within the cross-shaped range around the character. Before attacking, DMG is increased by 10% for every tile passed, up to 50%.
   cost: 2
-  range: charge-2
+  range: cross-1-2
 Solemnity:
   rarity: rare
   description: (Aura) Decreases ATK of all enemies within the character's 2-tile radius by 10%.
 Longinus - Brilliance:
   rarity: legendary
   description: (Support) Gloria grants all allies within 3 tiles of her [+ATK I] and [DMG Reduction II] for 2 turns, and restores +1 NRG. If there is no [Flag Waving] aura on Gloria, the skill switches to [Sword - Full Moon].
-  range: 0-0-3
+  range: aoe-3
 Lance of Longinus:
   rarity: legendary
   description: (Physical DMG) Deals 80% [AoE DMG] to all enemies within 2 tiles around the target [empty tile]. Summons a [Flag] at the cost of the [Flag Waving] aura. If there is no [Flag Waving] aura, the skill switches to [Longinus - Flag Waving]
@@ -250,7 +250,7 @@ Longinus - Flag Waving:
   description: (Support) [Instant]. Grants [+Move I] to all other allies within 3 tiles of the character for 2 turns. Grants the character [Flag Waving] aura, and switches the skill to [Lance of Longinus].
   cost: 1
   cooldown: 2
-  range: 0-0-3
+  range: aoe-3
 Counterattack Mode:
   rarity: rare
   description: (Support) Adds 20% of P.ATK to P.DEF and M.DEF, increases [Strike Back] DMG by 50%, gains [Preempt], and increases [Strike Back] Range by 2 tiles, lasting for 2 turns.
@@ -299,7 +299,7 @@ Absolute Domain:
   description: (Support) Performs [Alert] on a 1-tile radius around the character, dealing 70% DMG and interrupting actions once an enemy enters this area. Can be activated up to 2 times per round.
   cost: 2
   cooldown: 5
-  range: 0-0-1
+  range: aoe-1
 Close Quarter Release:
   rarity: legendary
   description: (Physical DMG) Single-target attack. Nergal deals 110% DMG and knocks the target back by 4 tiles. Then, he deals 50% [AoE DMG] to all enemies withing a 3x3 area in the target direction, and inflicts [-SPD I] for 1 turn.
@@ -323,7 +323,7 @@ Anger of Icefield:
   description: (Physical DMG) Select 1 enemy within a cross-shaped range to charge at, dealing 50% DMG, and inflicts [Stun] for 1 turn. Additionally, deals 50% [Ice] [Aoe DMG] to all enemies withing 2 tiles around the target.
   cost: 2
   cooldown: 4
-  range: charge-3-aoe-2
+  range: cross-1-3-aoe-2
 
 
 Counterattack Storm:
@@ -373,7 +373,7 @@ Hookshot:
   rarity: epic
   description: (Debuff) [Instant] Select 1 enemy within a cross-shaped range, drags them to the character, and inflicts [xReaction Skills] for 1 turn.
   cooldown: 4
-  range: cross-1-4
+  range: cross-1-1-4
 Taste of Blood:
   rarity: legendary
   description: (Support) [Instant] Dispel 3 [Debuffs], recover +30% HP, and gains [Potential Burst] for 1 turn.
@@ -384,7 +384,7 @@ Spinning Blade:
   rarity: legendary
   description: (Physical DMG) [Instant] Select 1 enemy within a cross-shaped range and drags them to the character, dealing 70% DMG and recovering +2 NRG when defeating any target.
   cost: 3
-  range: cross-1-3
+  range: cross-1-1-3
 
 
 Gale Dance:
@@ -439,21 +439,26 @@ Fortification:
   rarity: epic
   description: (Support) [Instant] skill. Summons a Box at the target tile.
   range: 1-1
+  cooldown: 4
 Guiding Gleam:
   rarity: legendary
-  description: (Support) Grants all allies within 3 tiles of Edda [▲DMG III], [▲M.DEF II], and [▲Move 1], for 3 turns. She dispels [Disruption] from the targets.
-  range: 0-0-3
+  description: (Support) Grants all allies within 3 tiles of Edda [+DMG III], [+M.DEF II], and [+Move 1], for 3 turns. She dispels [Disruption] from the targets.
+  range: aoe-3
+  cost: 1
+  cooldown: 4
 Wine Barrel Casting:
   rarity: epic
   description: (Physical DMG) [Instant] Edda deals 20% DMG to all enemies within 1 tile of the target and changes the tiles into [Liquor].
   range:  2-4-aoe-1.5
-
-
+  cooldown: 4
 Take Arms!:
   rarity: legendary
   description: (Support) Other allies within 4 tiles of Edda restore 1 NRG. When she performs an [Assisting Attack], her DMG increases by 130%. Increases the maximum number of times the effect can be triggered per turn by 2. The effect lasts for 1 turn.
-  range: 0-0-4
+  range: aoe-4
+  cost: 3
+  cooldown: 4
 Storm Sniping:
   rarity: epic
   description: (Physical DMG) Deals 120% DMG to 1 enemy Within a cross-shaped range around the character. For each tile between the character and the target (Distance for Adjacent Tiles counts as 0), deals 10% more DMG.
-  range:  cross-1-4
+  range: cross-1-4
+  cost: 4

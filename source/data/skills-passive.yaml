@@ -75,7 +75,7 @@ Shield Break - Enhanced:
   description: (Passive) Increases ATK by 30% and ignores 40% of the target's DEF when attacking enemies with a [Shield].
 Rupture Armor:
   rarity: rare
-  description: (Passive) Before a single-target attack, gains a 50% chance to inflict [|dwn|P.DEF II] on the target for 2 turns.
+  description: (Passive) Before a single-target attack, gains a 50% chance to inflict [-P.DEF II] on the target for 2 turns.
 Barricade Fight:
   rarity: legendary
   description: (Passive) If there is any [Item] within 1 tile of the character, increases ATK by 15% and allows the character to move again by 2 tiles after initiating an Active Attack.
