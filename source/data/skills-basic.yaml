@@ -8,7 +8,7 @@ Dual Blade Strike:
   range: 1-1
 Energy Wave:
   rarity: common
-  description: (Basic Attack) Deals 80% Magical DMG.
+  description: (Basic Attack) Deals ~80% Magical DMG.
   range: 1-2
 Straight Shot:
   rarity: common
@@ -67,6 +67,14 @@ Fatal Attack (Curved):
   rarity: rare
   description: (Basic Attack) Fires a [Curved Shot] which deals 85% Physical DMG and increases Crit DMG by 15%.
   range: curved-2-3
+Merciful Strike:
+  rarity: rare
+  description: (Basic Attack) Deals ~80% Magical DMG and increases the effect of the next healing skill by 15%, lasting for 2 turns.
+  range: 1-2
+Hypnotic Attack:
+  rarity: rare
+  description: (Basic Attack) Deals ~80% magical DMG and grants a 30% chance to inflict [Sleep] on the target for 1 turn.
+  range: 1-2
 
 Gash:
   rarity: epic
@@ -116,6 +124,10 @@ Shattering Arrow:
   rarity: epic
   description: (Passive) [Basic Attack] ignores 40% of the target's DEF.
   range: 2-3
+Invigorating Strike (Magic):
+  rarity: epic
+  description: (Basic Attack) Deals ~80% magical DMG and additionally recovers 1 NRG.
+  range: 1-2
 
 Sword of Justice:
   rarity: legendary

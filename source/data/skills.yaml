@@ -462,3 +462,75 @@ Storm Sniping:
   description: (Physical DMG) Deals 120% DMG to 1 enemy Within a cross-shaped range around the character. For each tile between the character and the target (Distance for Adjacent Tiles counts as 0), deals 10% more DMG.
   range: cross-1-4
   cost: 4
+
+  
+Soul Soothing:
+  rarity: epic
+  description: (Healing) Heals the target by +75% of M.ATK.
+  range: 1-3
+Light of Judgement:
+  rarity: rare
+  description: (Magical DMG) Single-target attack. Deals ~140% DMG. After attacking, heals the ally with the lowest HP percentage in battle for +50% of the character's M.ATK.
+  cost: 3
+  range: 1-2
+Radiant Stamp:
+  rarity: legendary
+  description: (Healing) Samantha heals all allies within 2 tiles around the target for +40% of her M.ATK. The central target receives an additional +40% of healing. After being healed, all targets gain [+DMG I] and [+P.DEF I] for 2 turns.
+  cost: 1
+  cooldown: 2
+  range: 1-2
+Divine Wrath:
+  rarity: legendary
+  description: (Magical DMG) Deals ~70% DMG to all enemies in a straight line within 5 tiles in the target direction and inflicts [xActive Skills] for 2 turns. Recovers +2 NRG for every 1 enemy hit by the skill.
+  cooldown: 4
+  range: area-1x5
+Light of Celestial Purge:
+  rarity: legendary
+  description: (Magical DMG) Samantha deals ~30% DMG to all enemies within 5 tiles around herself. Additionally dispels 3 [Buffs] from enemies and 3 [Debuffs] from allies.
+  cost: 1
+  cooldown: 3
+  range: aoe-5
+Sacred Sanctuary:
+  rarity: legendary
+  description: (Support) Samantha grants all allies within 5 tiles around herself [DMG Reduction III] and [+Healing Received III] for 2 turns. She gains [Regenerate - Extra], expanding the effect range of her trait to 5 tiles and canceling the NRG consumption when triggering, lasting for 1 turn.
+  cost: 3
+  cooldown: 5
+  range: aoe-5
+
+
+Misfortune Erosion:
+  rarity: legendary
+  description: (Magical DMG) Momo deals ~65% AoE DMG to all enemies within a 3x4 area in the target direction and inflicts 2 stacks of [Infection]. When Momo has [Doom Waken],the target immediately receives [Infection] DMG after being attacked and half of the [Infection] stacks are removed.
+  cost: 3
+  range: area-3x4
+Energy Ray:
+  rarity: rare
+  description: (Magical DMG) Single-target attack Deals ~140% DMG. Before attacking, the character gains [Shield Break I].
+  cooldown: 3
+  range: 1-2
+Field:
+  rarity: epic
+  description: (Aura) Decreases [AoE DMG] taken by all allies within 3 tiles around the character by 25%.
+Erosive Power:
+  rarity: legendary
+  description: (Passive) DMG increases by 10%. After dealing DMG, inflicts 1 stack of [Infection] on the target. After a single- target Active Attack, inflicts 1 additional stack of [Infection].
+Repulsion Application:
+  rarity: legendary
+  description: (Decision) Momo selects to use [Repulsion Purging] or [Reverse Repulsion].
+  range: 0-0
+Dark Ripple:
+  rarity: epic
+  description: (Magical DMG) Deals ~70% [AoE DMG] to all enemies Within a 2-tile radius of the target and inflicts [xPassive Skills] and [xReaction Skills], lasting for 2 turns.
+  cost: 3
+  range: 1-3-aoe-2
+Doom Waken:
+  rarity: legendary
+  description: (Support) [Instant] Momo gains 2 stacks of [Repulsion Barrier] and [Doom Waken] for 3 turns. This effect cannot be dispelled or immunized against.
+  cost: 1
+  cooldown: 5
+  range: 0-0
+Life Devourer:
+  rarity: rare
+  description: (Magic Damage) Single-target attack. Deals ~150% M.DMG. After attacking, gains +45% [Life Steal].
+  cost: 3
+  range: 1-2

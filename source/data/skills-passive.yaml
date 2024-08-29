@@ -79,3 +79,6 @@ Rupture Armor:
 Barricade Fight:
   rarity: legendary
   description: (Passive) If there is any [Item] within 1 tile of the character, increases ATK by 15% and allows the character to move again by 2 tiles after initiating an Active Attack.
+The Protected:
+  rarity: epic
+  description: (Passive) The character gains 15% bonus ATK and 30% bonus DEF while not affected by any [Debuff] and affected by at least 3 [buffs].

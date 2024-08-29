@@ -88,6 +88,15 @@ Maitha:
   - Maitha has [Block] and her DMG taken is reduced by 15%. At the end of the turn, heal 2 allies with the lowest HP percentage, restoring +20% of their lost HP.
   - Maitha has [Block] and her DMG taken is reduced by 20%. At the end of the turn, heal 2 allies with the lowest HP percentage, restoring +20% of their lost HP.
 
+Momo:
+  name: Shield of Convallaria
+  description:
+  - "All enemies within 3 tiles of Momo take 15% more [DoT]. At the end of Momo's turn, she gains 2 stacks of [Repulsion Barrier], up to 5 stacks. CD: 2 turns."
+  - "All enemies within 3 tiles of Momo take 20% more [DoT]. At the end of Momo's turn, she gains 2 stacks of [Repulsion Barrier], up to 5 stacks. CD: 2 turns."
+  - "All enemies within 3 tiles of Momo take 20% more [DoT]. At the end of Momo's turn, she gains 2 stacks of [Repulsion Barrier], up to 5 stacks. At the start of the battle, gain 1 stack of [Repulsion Barrier]. CD: 2 turns."
+  - "All enemies within 3 tiles of Momo take 25% more [DoT]. At the end of Momo's turn, she gains 2 stacks of [Repulsion Barrier], up to 5 stacks. At the start of the battle, gain 2 stacks of [Repulsion Barrier]. CD: 2 turns."
+  - "All enemies within 4 tiles of Momo take 35% more [DoT]. At the end of Momo's turn, she gains 2 stacks of [Repulsion Barrier], up to 5 stacks. At the start of the battle, gain 3 stacks of [Repulsion Barrier]."
+
 Nergal:
   name: Luxite Gauntlet
   description:
@@ -114,3 +123,12 @@ Rawiyah:
   - Rawiyah's DMG delt is increased by 16%. At the start of the turn and before a [Strike Back], there is a 70% chance to recover +40% of lost HP and gain 1 stack of [Tipsy]. This can activate up to 1 time per round.
   - Rawiyah's DMG delt is increased by 25%. At the start of the turn and before a [Strike Back], there is a 70% chance to recover +40% of lost HP and gain 1 stack of [Tipsy]. This can activate up to 1 time per round.
   - Rawiyah's DMG delt is increased by 25%. At the start of the turn and before a [Strike Back], there is a 80% chance to recover +40% of lost HP and gain 1 stack of [Tipsy]. This can activate up to 2 time per round.
+
+Samantha:
+  name: Pious Prayer
+  description:
+  - The healing received by all other allies within 3 tiles around Samantha increases by +10%. If an ally is [Injured] after being attacked, she consumes 1 NRG to heal them for +40% of her M.ATK. The effect can be triggered up to 2 times per round.
+  - The healing received by all other allies within 3 tiles around Samantha increases by +20%. If an ally is [Injured] after being attacked, she consumes 1 NRG to heal them for +40% of her M.ATK. The effect can be triggered up to 2 times per round.
+  - The healing received by all other allies within 3 tiles around Samantha increases by +20%. If an ally is [Injured] after being attacked, she consumes 1 NRG to heal them for +40% of her M.ATK. The effect can be triggered up to 3 times per round.
+  - The healing received by all other allies within 3 tiles around Samantha increases by +30%. If an ally is [Injured] after being attacked, she consumes 1 NRG to heal them for +40% of her M.ATK. The effect can be triggered up to 3 times per round.
+  - The healing received by all other allies within 3 tiles around Samantha increases by +30%. If an ally is [Injured] after being attacked, she consumes 1 NRG to heal them for +50% of her M.ATK. The effect can be triggered up to 3 times per round.

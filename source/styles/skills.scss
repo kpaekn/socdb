@@ -9,7 +9,7 @@
     .skill-container {
       .skill-description-container {
         display: block;
-  
+
         .skill-range {
           display: block;
           margin-top: 0.5rem;
@@ -67,14 +67,14 @@
       padding: 0 1rem;
       text-align: center;
     }
-  
+
     .trait-stars {
       display: inline-block;
       margin-left: 1rem;
       margin-bottom: -0.5rem;
       font-size: 15pt;
       vertical-align: middle;
-  
+
       .star {
         cursor: pointer;
         color: goldenrod;
@@ -82,7 +82,7 @@
         margin-right: 0.25rem;
       }
     }
-  
+
     .trait-name {
       background-color: rgba(194, 182, 126, 0.3);
       color: #584b32;
@@ -91,13 +91,13 @@
       padding: 0.5em 0.25em;
       line-height: 1em;
     }
-  
+
     .skill-image {
       float: left;
       margin-top: -22px;
       margin-right: 0.5em;
     }
-  
+
     .trait-description {
       color: black;
       margin: 1em;
@@ -116,6 +116,7 @@
   }
 
   h4 {
+    color: black;
     font-size: 14pt;
     margin: 1rem 0;
   }

@@ -19,6 +19,9 @@ Curse:
 Tenacity: 
   rarity: rare
   description: (Reaction) When hit by an active attack from a [Counter Role] character, the DMG taken is decreased by 25%.
+Defense (Ranged Attack):
+  rarity: rare
+  description: (Reaction) When hit by a ranged attack, the DMG taken is decreased by 25%.
 
 Screw Off!:
   rarity: epic
@@ -49,6 +52,9 @@ Sniper's Intuition:
 Highland Advantage:
   rarity: epic
   description: (Reaction) When hit by an active attack, the DMG taken is decreased by 8%. When attacked by an enemy from [Lowland], the DMG take is additionally decrease by 30%.
+Erosive Force Field:
+  rarity: epic
+  description: (Reaction) When [Repulsion Barrier] blocks a melee attack, Momo performs a [Strike Back], which deals ~70% M.DMG and inflicts 1 stack of [Infection].
 
 Block Counter:
   rarity: legendary
@@ -68,3 +74,10 @@ Air of Royalty:
 Shelter Advantage:
   rarity: legendary
   description: (Reaction) Decreases the DMG taken by 40% if there is any [Item] within 1 tile around the character.
+
+Devout Faith:
+  rarity: epic
+  description: (Reaction) Gains [Resolve] if the character has 3 NRG. When [Resolve] is triggered, consumes 3 NRG to heal the character's HP to +70%. Can be activated up to 2 times per battle.
+Defense (AoE):
+  rarity: rare
+  description: (Reaction) When hit by an active AOE Attack, the DMG taken is decreased by 30%.

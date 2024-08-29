@@ -160,7 +160,7 @@ for (const skillName in skills) {
 characters.forEach(character => {
   character.stats = getStats(character);
   if (character.factions) character.factions = character.factions.sort((a, b) => (a < b) ? -1 : 1);
-  if (traits[character.name]) character.trait = traits[character.name];
+  character.trait = traits[character.name];
 
   for (const rank in character.skills) {
     character.skills[rank] = character.skills[rank].map(skillName => {

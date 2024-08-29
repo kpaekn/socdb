@@ -158,6 +158,22 @@
     Rank 9: [Armor-Piercing Strike, Powerful Attack]
     Rank 11: [Maitha's Combo, Invulnerable]
 
+- name: Momo
+  image: [-20, 800]
+  title: Luxite Resonant
+  rarity: Legendary
+  role: Destroyer
+  factions: [Vlder, Sword of Convallaria, Fortitude]
+  trait: Doom Resonance
+  skills:
+    Starting Skills: [Energy Wave, Misfortune Erosion]
+    Rank 1: [Energy Ray, Field]
+    Rank 3: [Erosive Power, Repulsion Application]
+    Rank 5: [Erosive Force Field, Defense (Ranged Attack)]
+    Rank 7: [Dark Ripple, Toughness]
+    Rank 9: [Invigorating Strike (Magic), Hypnotic Attack]
+    Rank 11: [Doom Waken, Life Devourer]
+
 - name: Nergal
   image: [5, 480]
   title: H.M. Praetorian
@@ -205,3 +221,19 @@
     Rank 7: [Mania Smash, Sword of Convallaria]
     Rank 9: [Fatal Attack (Melee), Dispelling Strike (Melee)]
     Rank 11: [Gale Spin Attack, Legacy of Comrades]
+
+- name: Samantha
+  image: [5, 540]
+  title: Saintess
+  rarity: Legendary
+  role: Watcher
+  factions: [Papal States, Aggression]
+  trait: Pious Prayer
+  skills:
+    Starting Skills: [Energy Wave, Soul Soothing]
+    Rank 1: [NRG Restoration, Light of Judgement]
+    Rank 3: [Radiant Stamp, Divine Wrath]
+    Rank 5: [Devout Faith, Defense (AoE)]
+    Rank 7: [Battle Flag of Papal States, Light of Celestial Purge]
+    Rank 9: [Invigorating Strike (Magic), Merciful Strike]
+    Rank 11: [Sacred Sanctuary, The Protected]
