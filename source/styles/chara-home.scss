@@ -1,0 +1,58 @@
+.chara-container {
+  text-align: center;
+
+  .chara-item {
+    background-color: #e5e0d4;
+    border: 2px solid #cdc2ab;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0px 2px #e5e0d4;
+
+    position: relative;
+    display: inline-block;
+    width: 8rem;
+    margin: 1rem;
+
+    .image-left {
+      position: absolute;
+      left: -1.5rem;
+      text-align: center;
+      width: 3rem;
+
+      img {
+        display: inline;
+
+        &.rarity-image {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+
+        &.role-image {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+
+    }
+
+    img.chara-image {
+      display: block;
+      margin: 0.5rem 0;
+      width: 100%;
+    }
+
+    a {
+      display: block;
+
+      background-color: #343742;
+      border: 2px solid #c2b67e;
+      box-shadow: 0px 0px 0px 2px #343742;
+      border-radius: 0.5rem;
+
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      margin: -0.25rem -0.5rem;
+      padding: 0.25rem;
+    }
+  }
+}

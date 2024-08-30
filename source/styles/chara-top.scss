@@ -1,6 +1,13 @@
 @media only screen and (max-width: 991px) {
   .chara-top.for-mobile {
     background-position-x: center;
+
+
+    .chara-name-container {
+      background-color: rgba(229, 224, 212, 0.4);
+      padding-right: 5rem;
+      text-shadow: 0 0 2px #cdc2ab;
+    }
   }
 }
 
@@ -58,7 +65,6 @@
   .chara-name-container {
     display: inline-block;
     font-weight: bold;
-    text-shadow: 0 0 1px #cdc2ab;
     white-space: nowrap;
     position: relative;
     margin: 1rem;

@@ -34,7 +34,21 @@ var templateTasks = data.characters.map((character) => {
   };
   return tmp[fnName];
 });
-exports.template = gulp.series(...templateTasks);
+function charaHome() {
+  return gulp.src('./source/templates/chara-home.pug')
+    .pipe(
+      pug({
+        locals: {
+          slug: slugFn,
+          characters: data.characters
+        },
+        basedir: './source/templates'
+      })
+    )
+    .pipe(rename('characters.html'))
+    .pipe(gulp.dest('./dist'));
+}
+exports.template = gulp.series(...templateTasks, charaHome);
 
 // static
 function static() {
@@ -54,7 +68,7 @@ exports.style = style;
 
 // watch
 function watch() {
-  gulp.watch('./source/templates/**/*.pug', gulp.series(...templateTasks));
+  gulp.watch('./source/templates/**/*.pug', gulp.series(...templateTasks, charaHome));
   gulp.watch('./source/static/**/*', static);
   gulp.watch('./source/styles/**/*.scss', style);
 }
@@ -66,4 +80,4 @@ function cleanDist() {
 }
 exports.clean = cleanDist;
 
-exports.default = gulp.series(...templateTasks, static, style, watch);
+exports.default = gulp.series(...templateTasks, charaHome, static, style, watch);

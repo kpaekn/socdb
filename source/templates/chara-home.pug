@@ -1,0 +1,18 @@
+<html data-theme="light">
+
+include includes/head.pug
+
+body.chara-home
+  .ui.container
+    h3 Characters
+    .chara-container
+      each chara in characters
+        .chara-item
+          .image-left
+            img.rarity-image(src=`images/rarity/${slug(chara.rarity)}.webp`)
+            br
+            img.role-image(src=`images/role/${slug(chara.role)}.webp`)
+          img.chara-image(src=`images/sprite/${chara.name}.webp`)
+          a(href=slug(chara.name) + '.html') #{chara.name}
+
+</html>

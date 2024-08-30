@@ -2,16 +2,18 @@ html * {
   font-family: "Merriweather", serif;
 }
 
-body {
+body.chara {
   background-color: #d1ccc3;
-  background-image: 
-    linear-gradient(
-      to bottom, 
+  background-image:
+    linear-gradient(to bottom,
       #343742,
       #343742 30rem,
-      #d1ccc3 30rem
-    );
+      #d1ccc3 30rem);
   background-repeat: no-repeat;
+}
+
+body.chara-home {
+  background-color: #e5e5e5;
 }
 
 .ui.label img {
