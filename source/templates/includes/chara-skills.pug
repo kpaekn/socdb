@@ -4,7 +4,7 @@ if trait
       i.gold.ri-gemini-fill
       | &nbsp;Trait
     each traitDescription, idx in trait.description
-      .trait-container(class={'is-hidden': (idx > 0)}, data-tab=`trait-${idx}`, data-tab-group=slug(trait.name))
+      .trait-container(class={'is-hidden': (idx < 4)}, data-tab=`trait-${idx}`, data-tab-group=slug(trait.name))
         .trait-type Trait
         .trait-stars
           each _, starIdx in trait.description
@@ -15,8 +15,8 @@ if trait
               })
         h3.trait-name
           .skill-image
-            img(src='images/skill/' + slug(trait.name) + '.png')
-            img.skill-border(src='images/skill-border/epic.png')
+            img(src='images/skill/' + slug(trait.name) + '.webp')
+            img.skill-border(src='images/skill-border/epic.webp')
           | #{trait.name}
           | (Lv.#{idx+1})
         .trait-description
@@ -52,8 +52,8 @@ if trait
                     span.value #{skill.cooldown}
                 h3.skill-name
                   .skill-image
-                    img(src='images/skill/' + slug(skill.name) + '.png')
-                    img.skill-border(src='images/skill-border/' + skill.rarity + '.png')
+                    img(src='images/skill/' + slug(skill.name) + '.webp')
+                    img.skill-border(src='images/skill-border/' + skill.rarity + '.webp')
                   | #{skill.name}
                 .skill-description-container
                   .skill-description
@@ -61,4 +61,4 @@ if trait
                   if skill.range
                     div
                       .skill-range
-                        img(src='images/range/' + slug(skill.range) + '.png')
+                        img(src='images/range/' + slug(skill.range) + '.webp')

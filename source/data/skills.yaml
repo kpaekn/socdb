@@ -78,7 +78,7 @@ Wall of Flame:
   rarity: epic
   description: (Magical DMG) Select 1 spot within a cross-shaped range around the character. Deals ~70% [AoE DMG] to all enemies in a horizontal row of 5 tiles, and changes the tiles into [Burning] for 2 turns.
   cost: 3
-  range: cross-1-1-3-aoe-5x1
+  range: cross-1-3-aoe-5x1
 Casual Search:
   rarity: legendary
   description: (Support) [Instant] Gains 1 random [Luxite Skill]. The skill remains available for 2 turns.
@@ -534,3 +534,49 @@ Life Devourer:
   description: (Magic Damage) Single-target attack. Deals ~150% M.DMG. After attacking, gains +45% [Life Steal].
   cost: 3
   range: 1-2
+
+Ice Lance:
+  rarity: rare
+  description: (Magical DMG) Single-target attack. Deals ~130% DMG and inflicts [-SPD 1] and [-Move 1] for 2 turns.
+  cost: 1
+  range:  1-2
+Icy Blast:
+  rarity: rare
+  description: (Magical DMG) Deals ~75% [AoE DMG] to the first enemy in each line within a 2×3 area, inflicting [-SPD 1] and [-Move 1] for 2 turns. Knocks the targets back by 2 tiles.
+  cost: 2
+  cooldown: 3
+  range: area-3x2
+Ice Cone:
+  rarity: rare
+  description: (Magical DMG) Selects a location and deals ~80% [Ice] [AoE DMG] to all enemies within a 1-tile radius of the target location.
+  cost: 2
+  range: 1-3-aoe-1
+Ice Assault:
+  rarity: legendary
+  description: (Magical DMG) [Instant] Simona selects 1 tile within a cross-shaped range around her and charges to the location, attacking all enemies along the line. She deals [Ice] DMG equal to 100% of the [Physical Shield] value. Simona gains [Warrior of Frost] for 2 turns.
+  cost: 1
+  cooldown: 4
+  range: charge-2-3
+Ice-made Armor:
+  rarity: legendary
+  description: (Support) Simona selects a target direction, and all allies within a 3×4 area in that direction and all allies within the 3 tiles to the left and right of the tile occupied by Simona gain [Armor of Ice] and [Regeneration 1] for 2 turns. If she already had [Armor of Ice], decreases NRG consumption by 1 point.
+  cost: 2
+  cooldown: 4
+  range: area-3x4-aoe-1.5
+Flash Freezing:
+  rarity: rare
+  description: (Magical DMG) Single-target attack Deals !80% DMG and inflicts [-Move 3] for 2 turns. If the targets have [-Move], additionally inflicts [Frozen] for 2 turns.
+  cost: 2
+  cooldown: 3
+  range: 1-3
+Winter Doomsday:
+  rarity: legendary
+  description: (Magical DMG) Simona selects 1 tile within a cross-shaped range around her, and deals ~70% [Ice] DMG to all enemies within a 5x3 area in the target direction. Simona summons an [Ice Wall] in the 3 center tiles. If a tile is occupied, she inflicts [Frozen] on the target for 1 turn.
+  cost: 3
+  cooldown: 5
+  preCooldown: 1
+  range: cross-1-3-aoe-5x3
+Will to Survive:
+  rarity: rare
+  description: (Passive) If the character is [Dying] at the start of the turn, recovers +50% HP and +2 NRG.
+  cooldown: 2

@@ -11,7 +11,7 @@
     Rank 3: [Wild Howl, Burning Bridges]
     Rank 5: [Curse, Brutebear Counter]
     Rank 7: [Goredrinker, Anger of Icefield]
-    Rank 9: [Ice Attack, Frenzied Slash]
+    Rank 9: [Ice Attack (Melee), Frenzied Slash]
     Rank 11: [Guard, Counterattack Storm]
 
 - name: Beryl
@@ -237,3 +237,19 @@
     Rank 7: [Battle Flag of Papal States, Light of Celestial Purge]
     Rank 9: [Invigorating Strike (Magic), Merciful Strike]
     Rank 11: [Sacred Sanctuary, The Protected]
+
+- name: Simona
+  image: [25, 600]
+  title: Ice Knight
+  rarity: Legendary
+  role: Watcher
+  factions: [The Union, Discipline]
+  trait: Winter is Coming
+  skills:
+    Starting Skills: [Energy Wave, Ice Lance]
+    Rank 1: [Icy Blast, Ice Cone]
+    Rank 3: [Ice Assault, Ice-made Armor]
+    Rank 5: [Iceshards, Protection of Ice]
+    Rank 7: [Flash Freezing, Battle Flag of the Union]
+    Rank 9: [Ice-made Sword, Ice Attack (Magic)]
+    Rank 11: [Winter Doomsday, Will to Survive]

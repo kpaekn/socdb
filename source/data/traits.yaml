@@ -132,3 +132,12 @@ Samantha:
   - The healing received by all other allies within 3 tiles around Samantha increases by +20%. If an ally is [Injured] after being attacked, she consumes 1 NRG to heal them for +40% of her M.ATK. The effect can be triggered up to 3 times per round.
   - The healing received by all other allies within 3 tiles around Samantha increases by +30%. If an ally is [Injured] after being attacked, she consumes 1 NRG to heal them for +40% of her M.ATK. The effect can be triggered up to 3 times per round.
   - The healing received by all other allies within 3 tiles around Samantha increases by +30%. If an ally is [Injured] after being attacked, she consumes 1 NRG to heal them for +50% of her M.ATK. The effect can be triggered up to 3 times per round.
+
+Simona:
+  name: Winter is Coming
+  description:
+  - "Increases Simona's ATK and DEF by 5%. At the start of the turn, she gains [Armor of Ice]. CD: 2 turns."
+  - "Increases Simona's ATK and DEF by 10%. At the start of the turn, she gains [Armor of Ice]. CD: 2 turns."
+  - Increases Simona's ATK and DEF by 10%. At the start of the turn, she gains [Armor of Ice]. If she is [Dying] after being attacked, she immediately gains [Armor of Ice]. Can be activated up to 1 time per battle.
+  - Increases Simona's ATK and DEF by 15%. At the start of the turn, she gains [Armor of Ice]. If she is [Dying] after being attacked, she immediately gains [Armor of Ice]. Can be activated up to 1 time per battle.
+  - Increases Simona's ATK and DEF by 15%. When she has a [shield], ATK and DEF are additionally increased by 10% and she becomes immune to [Attribute Debuff]. At the start of the turn, she gains [Armor of Ice]. If she is [Dying] after being attacked, she immediately gains [Armor of Ice]. Can be activated up to 1 time per battle.

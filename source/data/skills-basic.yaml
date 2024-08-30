@@ -43,10 +43,14 @@ Critical Strike:
   rarity: rare
   description: (Basic Attack) Deals 50% Physical DMG 2 times. Increases Crit by 15%.
   range: 1-1
-Ice Attack:
+Ice Attack (Melee):
   rarity: rare
   description: (Basic Attack) Deals 100% Physical DMG and inflicts [-Move I] on [Healthy] targets for 1 turn.
   range: 1-1
+Ice Attack (Magic):
+  rarity: rare
+  description: (Basic Attack) Deals ~80% Magical DMG and inflicts [-Move I] on [Healthy] targets for 1 turn.
+  range: 1-2
 Shield-Break Attack (Melee):
   rarity: rare
   description: (Basic Attack) Deals 100% physical DMG and gains [Shield Break I] before attacking.
@@ -140,4 +144,8 @@ White Sword:
 Lance of Justice:
   rarity: legendary
   description: (Basic Attack) Deals 70% Physical DMG to all enemies within 1 tile of the target. If [Flag Waving] aura is active, the skill switches to [Sword of Justice].
-  range:
+  range: 1-1-aoe-1.5
+Ice-made Sword:
+  rarity: rare
+  description: (Magical DMG) Single-target attack. Simona deals ~110% DMG. If she is attacking enemies with [-Move], or who are currently on [Frosty] tiles, the DMG she deals is increased by ~30%.
+  range: 1-1

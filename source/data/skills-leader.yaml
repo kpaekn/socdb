@@ -22,3 +22,6 @@ For Iria!:
 Battle Flag of Papal States:
   rarity: legendary
   description: (Leader's Aura) For all "Papal States" allies in battle, increases ATK by 10% and DEF by 20%.
+Battle Flag of the Union:
+  rarity: epic
+  description: (Leader's Aura) For all "The Union" allies in battle, increases ATK by 10% and DEF by 20%.
