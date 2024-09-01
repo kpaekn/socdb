@@ -1,14 +1,33 @@
 @media only screen and (max-width: 767px) {
-  .filter {
-    display: block !important;
-    margin-bottom: 1rem;
-    margin-right: 0 !important;
+  .for-mobile {
+    .filter {
+      display: block;
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+
+    .chara-container {
+      .chara-item {
+        width: 9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .for-mobile {
+    .chara-container {
+      .chara-item {
+        width: 9rem;
+      }
+    }
   }
 }
 
 .chara-home {
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -23,32 +42,22 @@
 
   p {
     color: #e5e0d4;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
   }
 
   a {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.6;
 
     &.is-selected {
       opacity: 1;
     }
   }
 
-  &.rarity {
-    img {
-      margin: 0.25rem;
-      width: 2.5rem;
-      height: 2.5rem;
-    }
-  }
-
-  &.role {
-    img {
-      margin: 0.25rem;
-      width: 2.5rem;
-      height: 2.5rem;
-    }
+  img {
+    margin: 0.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
@@ -72,6 +81,7 @@
 
     .image-left {
       position: absolute;
+      top: 0;
       left: -1.5rem;
       text-align: center;
       width: 3rem;
@@ -84,7 +94,8 @@
           height: 2.5rem;
         }
 
-        &.role-image {
+        &.role-image,
+        &.faction-image {
           width: 1.6rem;
           height: 1.6rem;
         }

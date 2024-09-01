@@ -2,7 +2,7 @@
 
 include includes/head.pug
 
-body.chara-home
+body.chara-home.for-mobile
   .ui.container
     h2 Characters
 
@@ -17,6 +17,12 @@ body.chara-home
       each role in ['Breaker', 'Seeker', 'Defender', 'Destroyer', 'Watcher']
         a(data-role=role)
           img(src=`images/role/${slug(role)}.webp`)
+    
+    .faction.filter
+      p Faction Filter
+      each faction in ['Aggression', 'Alacrity', 'Discipline', 'Drifter', 'Fortitude', 'Iria', 'Papal States', 'Sword ' + 'of Convallaria', 'The Union', 'Vlder']
+        a(data-faction=faction)
+          img(src=`images/faction/${slug(faction)}.webp`)
 
     .chara-container
       each chara in characters
