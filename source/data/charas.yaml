@@ -126,6 +126,38 @@
     Rank 9: [Lance of Justice, Silencing Attack, Sword of Justice]
     Rank 11: [Fair Duel, Knight's Glory]
 
+- name: Guzman
+  image: [-225, 750]
+  title: Nightmare
+  rarity: Legendary
+  role: Destroyer
+  factions: [Aggression, Drifter]
+  trait: Undead Corpse
+  skills:
+    Starting Skills: [Slash, Furious Pursuit]
+    Rank 1: [Soul Reaping, Coercion]
+    Rank 3: [Soul Catcher, Earthshaker]
+    Rank 5: [Survival Instinct, Counterattack]
+    Rank 7: [Evil Luxite Intensification, Protective Counterattack]
+    Rank 9: [Shield-Break Attack (Melee), Armor-Piercing Strike]
+    Rank 11: [Lives Devouring, Darkest Blade]
+
+- name: Iggy
+  image: [-90, 600]
+  title: Guerrilla Fighter
+  rarity: Legendary
+  role: Breaker
+  factions: [Alacrity, Vlder]
+  trait: Gray Wolf
+  skills:
+    Starting Skills: [Slash, Mountain Alert]
+    Rank 1: [Powerful Throw, Mountain People]
+    Rank 3: [Gray Wolf's Leap, Hunting Preparation]
+    Rank 5: [Preemptive, Alertness of Wolf]
+    Rank 7: [Luxite-Dust Smoke Bomb, missing]
+    Rank 9: [Powerful Attack, Invigorating Strike]
+    Rank 11: [Behemoth Hunting, missing]
+
 - name: LilyWill
   image: [-235, 610]
   title: Gale Archer

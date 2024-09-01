@@ -576,7 +576,60 @@ Winter Doomsday:
   cooldown: 5
   preCooldown: 1
   range: cross-1-3-aoe-5x3
-Will to Survive:
+
+Furious Pursuit:
+  rarity: epic
+  description: (Physical DMG) Single-target attack. Deals 120% DMG. If the target isn't defeated, performs [Pursuit] at the cost of 20% of current HP and deals an additional 60% DMG.
+  cost: 2
+  range: 1-1
+Soul Catcher:
+  rarity: legendary
+  description: (Physical DMG) Guzman selects 1 enemy within a cross-shaped range around himself and drags them to his side, dealing 100% [AoE DMG] and inflicting [-Move II] for 2 turns.
+  cost: 2
+  range: cross-1-4
+Earthshaker:
+  rarity: legendary
+  description: (Physical DMG) Deals 50% [AoE DMG] to all enemies within a 3-tile straight line in the target direction, inflicting [Stunned] for 1 turn.
+  cost: 3
+  cooldown: 3
+  range: area-1x3
+Evil Luxite Intensification:
+  rarity: legendary
+  description: (Support) [Instant]. Guzman sacrifices 45% of his current HP to gain [+ATK II], [+Move I], and [Regeneration III] for 3 turns.
+Protective Counterattack:
   rarity: rare
-  description: (Passive) If the character is [Dying] at the start of the turn, recovers +50% HP and +2 NRG.
-  cooldown: 2
+  description: (Support) Takes 30% less Magical DMG. Takes [magical attacks] for all other allies within the character's 2-tile radius. When attacked by an enemy within a 3-tile radius of the character, [Strike Back] and deals 70% Physical DMG. can be activated up to 2 times per round. This effect lasts for 3 turns.
+Lives Devouring:
+  rarity: legendary
+  description: (Physical DMG) Prepares for 1 turn and takes 60% less DMG during this period. After casting the skill, deals 105% AoE DMG to all enemies within 4 tiles. Before attacking, grants +20% [Life Steal] for 1 turn.
+  cost: 2
+  cooldown: 5
+  range: aoe-4
+Darkest Blade:
+  rarity: epic
+  description: (Physical DMG) Single-target attack. Deals 130% DMG. Before attacking, the character gains [Mana Conversion] and [Will] for 2 turns.
+  cost: 3
+  cooldown: 3
+  range: 1-1
+Powerful Throw:
+  rarity: rare
+  description: (Physical DMG) Single-target attack. Deals 150% DMG.
+  cost: 2
+  cooldown: 3
+  range: 1-2
+Gray Wolf's Leap:
+  rarity: legendary
+  description: (Support) [Instant] Iggy jumps to the target location and gains [+Crit DMG I] for 1 turn.
+  cooldown: 3
+  range: 1-3
+Luxite-Dust Smoke Bomb:
+  rarity: legendary
+  description: (Magical DMG) Iggy deals Magical DMG equal to 50% of his P.ATK to all enemies within 2 tiles of him and inflicts 3 stacks of [Infection] and [-Move II] for 1 turn. After attacking, Iggy can inherit the remaning Movement and Move Again.
+  cost: 1
+  cooldown: 3
+  range: aoe-2
+Behemoth Hunting:
+  rarity: legendary
+  description: (Physical DMG) Single-target attack. Iggy deals 170% DMG. If the target's max HP is higher than Iggy's max HP, increases his Crit by 60% and he gains [Shield Break II] before attacking.
+  cooldown: 4
+  range: 1-2

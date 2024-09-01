@@ -149,3 +149,7 @@ Ice-made Sword:
   rarity: rare
   description: (Magical DMG) Single-target attack. Simona deals ~110% DMG. If she is attacking enemies with [-Move], or who are currently on [Frosty] tiles, the DMG she deals is increased by ~30%.
   range: 1-1
+Invigorating Strike:
+  rarity: rare
+  description: (Basic Attack) Deals 100% physical DMG and additionally recovers 1 NRG.
+  range: 1-1

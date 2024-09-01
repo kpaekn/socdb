@@ -82,3 +82,16 @@ Barricade Fight:
 The Protected:
   rarity: epic
   description: (Passive) The character gains 15% bonus ATK and 30% bonus DEF while not affected by any [Debuff] and affected by at least 3 [buffs].
+Will to Survive:
+  rarity: rare
+  description: (Passive) If the character is [Dying] at the start of the turn, recovers +50% HP and +2 NRG.
+  cooldown: 2
+Soul Reaping:
+  rarity: rare
+  description: (Passive) If the character defeats an enemy in this turn, recovers 20% HP and 1 NRG at the end of the turn.
+Coercion:
+  rarity: epic
+  description: (Passive) At the end of the turn, inflicts [-DMG I] and [Vulnerable I] on all enemies within the character's 2-tile radius, lasting for 2 turns.
+Hunting Preparation:
+  rarity: legendary
+  description: (Passive) At the end of the turn, recovers +10% HP and gains [Hunting Preparation]. Gains [Highland] Advantage before attacking. If the target is defeated, recovers +1 NRG. The effect lasts until the start of the turn.

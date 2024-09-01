@@ -84,3 +84,10 @@ Iceshards:
 Protection of Ice:
   rarity: epic
   description: (Reaction) When hit by an active attack from an enemy with [-Move], the DMG taken is decreased by 30%.
+Survival Instinct:
+  rarity: rare
+  description: (Reaction) Gains 8% DMG reduction before being attacked, 15% additional DMG reduction when [Injured], and 50% additional DMG reduction when [Dying].
+Alertness of Wolf:
+  rarity: epic
+  description: (Reaction) If there is any enmy within 6 tiles of the character at the end of the turn, the character gains [+Move I] and DMG Reduction III] for 2 turns.
+  cooldown: 4  

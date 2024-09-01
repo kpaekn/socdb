@@ -70,6 +70,24 @@ Gloria:
   - Gloria's ATK is increased by 20%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns and her Movement increases by 2 tiles. At the start of the battle, Gloria will use [Longinus - Flag Waving] which grants [Flag Waving] aura.
   - Gloria's ATK is increased by 20%. When she loses [Flag Waving] aura, she gains [Potential Burst] for 2 turns, her Movement increases by 2 tiles, and she ignores 50% of the target's DEF. At the start of the battle, Gloria will use [Longinus - Flag Waving] which grants [Flag Waving] aura.
 
+Guzman:
+  name: Undead Corpse
+  description:
+  - Guzman becomes immune to [xResolve]. He possesses [Toughness] and when [Injured], his ATK is increased by 5%. When [Dying], his ATK is additionally increased by 10%. When defeated, Guzman transforms into a [Corpse] with 100% decreased DEF. This lasts until the end of the battle and can be activated up to 1 time per battle.
+  - Guzman becomes immune to [xResolve]. He possesses [Toughness] and when [Injured], his ATK is increased by 7%. When [Dying], his ATK is additionally increased by 15%. When defeated, Guzman transforms into a [Corpse] with 100% decreased DEF. This lasts until the end of the battle and can be activated up to 1 time per battle.
+  - Guzman becomes immune to [xResolve]. He possesses [Toughness] and when [Injured], his ATK is increased by 7%. When [Dying], his ATK is additionally increased by 15%. When defeated, Guzman transforms into a [Corpse] with 80% decreased DEF. This lasts until the end of the battle and can be activated up to 1 time per battle.
+  - Guzman becomes immune to [xResolve]. He possesses [Toughness] and when [Injured], his ATK is increased by 10%. When [Dying], his ATK is additionally increased by 20%. When defeated, Guzman transforms into a [Corpse] with 80% decreased DEF. This lasts until the end of the battle and can be activated up to 1 time per battle.
+  - Guzman becomes immune to [xResolve]. He possesses [Toughness] and when [Injured], his ATK is increased by 10%. When [Dying], his ATK is additionally increased by 20%. When defeated, Guzman transforms into a [Corpse] with 50% decreased DEF. This lasts until the end of the battle and can be activated up to 1 time per battle.
+
+Iggy:
+  name: Gray Wolf
+  description:
+  - Iggy possesses [Jump] and 7% bonus ATK. When attacking from a [Highland] position, the ATK boost effect of the trait is doubled.
+  -
+  -
+  -
+  - Iggy possesses [Jump], [Climb] and 16% bonus ATK. When attacking from a [Highland] position, the ATK boost effect of the trait is doubled, and he gains [Armor Piercing].
+
 LilyWill:
   name: Vltar Guardian
   description:
