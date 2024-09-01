@@ -1,6 +1,54 @@
+@media only screen and (max-width: 767px) {
+  .filter {
+    display: block !important;
+    margin-bottom: 1rem;
+    margin-right: 0 !important;
+  }
+}
+
 .chara-home {
   h2 {
     font-size: 2rem;
+  }
+}
+
+.filter {
+  display: inline-block;
+  background-color: #343742;
+  border: 2px solid #c2b67e;
+  box-shadow: 0px 0px 0px 2px #343742;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 1rem;
+
+  p {
+    color: #e5e0d4;
+    margin-bottom: 0.25rem;
+  }
+
+  a {
+    cursor: pointer;
+    opacity: 0.5;
+
+    &.is-selected {
+      opacity: 1;
+    }
+  }
+
+  &.rarity {
+    img {
+      margin: 0.25rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  &.role {
+    img {
+      margin: 0.25rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 }
 
@@ -17,6 +65,10 @@
     display: inline-block;
     width: 8rem;
     margin: 1rem;
+
+    &.is-hidden {
+      display: none !important;
+    }
 
     .image-left {
       position: absolute;
@@ -48,7 +100,6 @@
 
     a {
       display: block;
-
       background-color: #343742;
       border: 2px solid #c2b67e;
       box-shadow: 0px 0px 0px 2px #343742;

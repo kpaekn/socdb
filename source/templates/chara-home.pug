@@ -5,9 +5,22 @@ include includes/head.pug
 body.chara-home
   .ui.container
     h2 Characters
+
+    .rarity.filter
+      p Filter Rarity
+      each rarity in ['Legendary', 'Epic', 'Rare', 'Common']
+        a(data-rarity=rarity)
+          img(src=`images/rarity/${slug(rarity)}.webp`)
+
+    .role.filter
+      p Filter Role
+      each role in ['Breaker', 'Seeker', 'Defender', 'Destroyer', 'Watcher']
+        a(data-role=role)
+          img(src=`images/role/${slug(role)}.webp`)
+
     .chara-container
       each chara in characters
-        .chara-item
+        .chara-item(data-rarity=chara.rarity, data-role=chara.role, data-factions=chara.factions.join(','))
           .image-left
             img.rarity-image(src=`images/rarity/${slug(chara.rarity)}.webp`)
             br
