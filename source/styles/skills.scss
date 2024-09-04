@@ -73,7 +73,7 @@
     margin: 1em 0;
     padding: 0.5em 0.25em;
     line-height: 1em;
-    
+
     .skill-image-container {
       float: left;
       margin-top: -22px;
@@ -128,7 +128,7 @@
           tbody tr td {
             color: white;
             font-size: 10pt;
-  
+
             &:last-child {
               text-align: right;
             }
@@ -139,14 +139,17 @@
   }
 }
 
-.trait-section {
-  margin: 1rem 0;
-
+.trait-section,
+.skill-section {
   h4 {
     color: white;
     font-size: 14pt;
     margin: 1rem 0;
   }
+}
+
+.trait-section {
+  margin: 1rem 0;
 
   .skill-container {
     background-color: #e5e0d4;
@@ -192,11 +195,5 @@
 .skill-section {
   .ui.grid .column.is-hidden {
     display: none;
-  }
-
-  h4 {
-    color: black;
-    font-size: 14pt;
-    margin: 1rem 0;
   }
 }
