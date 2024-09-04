@@ -1,13 +1,14 @@
 const fs = require('fs');
 const webp = require('webp-converter');
 
-const files = fs.readdirSync(__dirname + '/source/static/images/skill');
+const dir = __dirname + '/source/static/images2/skill';
+const files = fs.readdirSync(dir);
 const tasks = [];
 files.forEach(file => {
     if (file.endsWith('.png')) {
         tasks.push(webp.cwebp(
-            __dirname + "/source/static/images/skill/" + file,
-            __dirname + "/source/static/images/skill/" + file.replace('.png', '.webp'),
+            dir + '/' + file,
+            dir + '/' + file.replace('.png', '.webp'),
             "-q 80",
             logging = "-v",
         ));

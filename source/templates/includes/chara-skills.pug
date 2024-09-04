@@ -3,26 +3,38 @@ if trait
     h4
       i.gold.ri-gemini-fill
       | &nbsp;Trait
-    each traitDescription, idx in trait.description
-      .trait-container(class={'is-hidden': (idx < 4)}, data-tab=`trait-${idx}`, data-tab-group=slug(trait.name))
-        .trait-type Trait
-        .trait-stars
-          each _, starIdx in trait.description
-            a.star(data-tab=`trait-${starIdx}`, data-tab-group=slug(trait.name))
-              i(class={
-                'ri-star-fill': idx >= starIdx,
-                'ri-star-line': idx < starIdx
-              })
-        h3.trait-name
+    .skill-container
+      .skill-type Trait
+      h3.skill-name
+        .skill-image-container
           .skill-image
-            img(src='images/skill/' + slug(trait.name) + '.webp')
-            img.skill-border(src='images/skill-border/epic.webp')
-          | #{trait.name}
-          | (Lv.#{idx+1})
-        .trait-description
-          p !{traitDescription}
+            img(src='images2/skill/' + slug(trait.name) + '.webp')
+          img.skill-border(src='images/skill-border/epic.webp')
+        .skill-name-text #{trait.name}
+      .skill-description-container
+        .skill-description
+          p !{trait.desc}
 
-.skill-details-section.for-mobile
+    //- each traitDescription, idx in trait.description
+    //-   .trait-container(class={'is-hidden': (idx < 4)}, data-tab=`trait-${idx}`, data-tab-group=slug(trait.name))
+    //-     .trait-type Trait
+    //-     .trait-stars
+    //-       each _, starIdx in trait.description
+    //-         a.star(data-tab=`trait-${starIdx}`, data-tab-group=slug(trait.name))
+    //-           i(class={
+    //-             'ri-star-fill': idx >= starIdx,
+    //-             'ri-star-line': idx < starIdx
+    //-           })
+    //-     h3.trait-name
+    //-       .skill-image
+    //-         img(src='images/skill/' + slug(trait.name) + '.webp')
+    //-         img.skill-border(src='images/skill-border/epic.webp')
+    //-       | #{trait.name}
+    //-       | (Lv.#{idx+1})
+    //-     .trait-description
+    //-       p !{traitDescription}
+
+.skill-section.for-mobile
   each skillsByRank, rankName in skills
     .trait-group(data-rank=rankName)
       h4
@@ -38,27 +50,47 @@ if trait
             .sixteen.wide.tablet.column.eight.wide.computer.column
               .skill-container
                 .skill-type #{skill.type}
-                if skill.cost
-                  .skill-cost
-                    span.label
-                      i.ri-gemini-fill 
-                      | Cost:
-                    span.value #{skill.cost}
                 if skill.cooldown 
                   .skill-cooldown
                     span.label
                       i.ri-hourglass-2-fill
                       | Cooldown:
                     span.value #{skill.cooldown}
+                if skill.cost
+                  .skill-cost
+                    span.label
+                      i.ri-gemini-fill 
+                      | Cost:
+                    span.value #{skill.cost}
                 h3.skill-name
-                  .skill-image
-                    img(src='images/skill/' + slug(skill.name) + '.webp')
-                    img.skill-border(src='images/skill-border/' + skill.rarity + '.webp')
-                  | #{skill.name}
+                  .skill-image-container 
+                    .skill-image
+                      img(src='images2/skill/' + slug(skill.name) + '.webp')
+                  .skill-name-text #{skill.name}
                 .skill-description-container
                   .skill-description
-                    p !{skill.description}
-                  if skill.range
+                    p !{skill.desc}
+                  if skill.rangeImage
                     div
                       .skill-range
-                        img(src='images/range/' + slug(skill.range) + '.webp')
+                        .skill-range-image
+                          img(src='images2/range/' + slug(skill.rangeImage) + '.webp')
+                        .skill-range-info
+                          if skill.rangeTags
+                            .skill-range-tags
+                              each tag in skill.rangeTags
+                                .skill-range-tag #{tag}
+                          if skill.rangeInfo
+                            table
+                              tbody
+                                each range, name in skill.rangeInfo
+                                  tr
+                                    td #{name}
+                                    if name == 'Range'
+                                      td #{range[0]} - #{range[1]}
+                                    else
+                                      td 
+                                        i.ri-arrow-down-fill
+                                        | #{range[0]} -
+                                        i.ri-arrow-up-fill
+                                        | #{range[1]}

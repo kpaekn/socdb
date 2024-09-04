@@ -5,7 +5,7 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var clean = require('gulp-clean');
 
-var data = require('./source/data/data');
+var data = require('./source/data2/data');
 
 var slugFn = (text) => {
   if (!text) {

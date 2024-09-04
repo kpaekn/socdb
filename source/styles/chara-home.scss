@@ -74,6 +74,7 @@
     display: inline-block;
     width: 8rem;
     margin: 1rem;
+    vertical-align: top;
 
     &.is-hidden {
       display: none !important;
@@ -107,6 +108,7 @@
       display: block;
       margin: 0.5rem 0;
       width: 100%;
+      max-height: 9rem;
     }
 
     a {
