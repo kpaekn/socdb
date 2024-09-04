@@ -1,0 +1,125 @@
+- name: Abyss
+  subName: Dawn Maidservant
+  rarity: Epic
+  role: Destroyer
+  factions: [Drifter, Fortitude]
+  trait: Depression
+  skills:
+    Starting Skills: [Energy Wave, Erosion]
+    Rank 1: [Hypnosis, Dark Withering]
+    Rank 3: [NRG Restoration, Corruption]
+    Rank 5: [Defense (Ranged Attack), Protection of Darkness]
+    Rank 7: [Dark Ripple, Crumbled Order]
+    Rank 9: [Sealing Attack (Magic), Invigorating Strike (Magic)]
+
+- name: Agile Eye
+  subName: Vlderian Mountain Archer
+  rarity: Epic
+  role: Watcher
+  factions: [Vlder, Alacrity]
+  trait: Highland Archer
+  skills:
+    Starting Skills: [Curved Shot, Place Trap]
+    Rank 1: [Powerful Shot, Aim]
+    Rank 3: [Guerrilla, Mountain Tribes]
+    Rank 5: [Fleeing Hare, Highland Advantage]
+    Rank 7: [Anesthetic, Battle Flag of Vlder]
+    Rank 9: [Surefire Attack (Curved), Charged Attack (Curved)]
+
+- name: Angel
+  subName: Radiant Maidservant
+  rarity: Epic
+  role: Watcher
+  factions: [Papal States, Aggression]
+  trait: Angel
+  skills:
+    Starting Skills: [Energy Wave, Healing Spell]
+    Rank 1: [Sanction, Light of Healing]
+    Rank 3: [Flagellant, Regenerate]
+    Rank 5: [Endurance Activation, Protection of Light]
+    Rank 7: [M.DEF Command, The Protected]
+    Rank 9: [Dispelling Strike (Magic), Merciful Strike (Magic)]
+
+- name: Butterfly
+  subName: Vlderian Dancer
+  rarity: Epic
+  role: Watcher
+  factions: [Vlder, Alacrity]
+  trait: Dance of the Butterfly
+  skills:
+    Starting Skills: [Slash, Cure Blow]
+    Rank 1: [Suppressive Blow, Inspired Healing]
+    Rank 3: [Enchanting Dance, Blessing]
+    Rank 5: [Counterattack, Defense (Back Attack)]
+    Rank 7: [Fair Duel, Dance of Encouragement]
+    Rank 9: [Fatal Attack (Melee), Invigorating Strike (Melee)]
+
+- name: Flare
+  subName: Radiant Knight
+  rarity: Epic
+  role: Watcher
+  factions: [The Union, Fortitude]
+  trait: Dazzling Light
+  skills:
+    Starting Skills: [Slash, Cure Blow]
+    Rank 1: [Suppressive Blow, Blessing]
+    Rank 3: [Dedication, Survivalist]
+    Rank 5: [Battlefield Healing, Front Defense]
+    Rank 7: [Battle Flag of the Union, Thunderbolt Assault]
+    Rank 9: [Feverish Attack (Melee), Merciful Strike (Melee)]
+
+- name: Nightingale
+  subName: Mercenary Pharmacist
+  rarity: Epic
+  role: Watcher
+  factions: [Fortitude, Drifter]
+  trait: Volunteer
+  skills:
+    Starting Skills: [Energy Wave, First Aid]
+    Rank 1: [Bandage, Weapon Eroder]
+    Rank 3: [Regenerate, Tranquilizer]
+    Rank 5: [Protection of Light, Endure]
+    Rank 7: [Painkiller, Burning Grenade]
+    Rank 9: [Merciful Strike (Magic), Silencing Attack (Magic)]
+
+- name: Stormbreaker
+  subName: Recruited Axeman
+  rarity: Epic
+  role: Breaker
+  factions: [Sword of Convallaria, Aggression, Drifter]
+  trait: Divine Storm Axe
+  skills:
+    Starting Skills: [Slash, Tearing Whirlwind]
+    Rank 1: [Damage Enhancement, Toughness]
+    Rank 3: [Inertial Chop, Charge Pursuit]
+    Rank 5: [Storm Counter, Hardening]
+    Rank 7: [Tiger Charge, Execute]
+    Rank 9: [Charged Attack (Melee), Powerful Attack]
+
+- name: Suppression
+  subName: Papal Radiant Guard
+  rarity: Epic
+  role: Defender
+  factions: [Fortitude, Papal States]
+  trait: Magic Suppression
+  skills:
+    Starting Skills: [Slash, Knockback Combo]
+    Rank 1: [Resolve, Sharpened Blade]
+    Rank 3: [Devout Guard, Demonshear]
+    Rank 5: [Defense (Magical), Counterattack]
+    Rank 7: [Flagellant, Battle Flag of Papal States]
+    Rank 9: [Invigorating Strike (Melee), Armor-Piercing Strike (Melee)]
+
+- name: Tempest
+  subName: Knighted Lancer
+  rarity: Epic
+  role: Breaker
+  factions: [The Union, Fortitude]
+  trait: Stormage
+  skills:
+    Starting Skills: [Slash, Knockback Bash]
+    Rank 1: [Knightly Spirit, Inertial Chop]
+    Rank 3: [Stormrage Strike, Knight's Glory]
+    Rank 5: [NRG Recovery, Storm Trample]
+    Rank 7: [Will to Survive, Crescendo Combo]
+    Rank 9: [Dispelling Strike (Melee), Charged Attack (Melee)]

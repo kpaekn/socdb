@@ -2,9 +2,10 @@ var fs = require('fs');
 var yaml = require('js-yaml');
 
 var charaLegendary = yaml.load(fs.readFileSync(__dirname + '/charas.yaml'));
+var charaEpic = yaml.load(fs.readFileSync(__dirname + '/charas-epic.yaml'));
 var charaRare = yaml.load(fs.readFileSync(__dirname + '/charas-rare.yaml'));
 var charaCommon = yaml.load(fs.readFileSync(__dirname + '/charas-common.yaml'));
-var characters = [].concat(...charaLegendary, ...charaRare, ...charaCommon);
+var characters = [].concat(...charaLegendary, ...charaEpic, ...charaRare, ...charaCommon);
 var stats = yaml.load(fs.readFileSync(__dirname + '/stats.yaml'));
 var skills = require('./skills');
 

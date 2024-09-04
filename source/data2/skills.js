@@ -10,4 +10,8 @@ skills.forEach(skill => {
   mappedSkills[skill.name] = skill;
 });
 
+for (const name in mappedSkills) {
+  mappedSkills[name].name = mappedSkills[name].name.replaceAll(/ \((Melee|Magic|Ranged|Curved)\)/g, '');
+}
+
 module.exports = mappedSkills;
