@@ -11,7 +11,7 @@ var slugFn = (text) => {
   if (!text) {
     return 'slug-unknown';
   }
-  return text.toLowerCase().replaceAll(/['"!\(\),]/g, '').replaceAll(/[\s-]+/g, '-');
+  return text.toLowerCase().replaceAll(/['"!.\(\),]/g, '').replaceAll(/[\s-]+/g, '-');
 };
 
 // template
