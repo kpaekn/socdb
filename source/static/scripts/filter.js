@@ -21,19 +21,19 @@ $(document).ready(function () {
         charaItems.each((_, el) => {
             var rarity = $(el).data('rarity');
             var role = $(el).data('role')
-            var factions = $(el).data('factions').split(/[\s,]/);
+            var factions = $(el).data('factions').split(/\s*,\s*/);
             var hasRarity = (selectedRarities.length === 0) || selectedRarities.indexOf(rarity) !== -1;
             var hasRole = (selectedRoles.length === 0) || selectedRoles.indexOf(role) !== -1;
-            var hasFaction = (selectedFactions.length === 0) || (() => {
-                var found = selectedFactions.find(selectedFaction => {
-                    if (factions.indexOf(selectedFaction) !== -1) {
-                        return true;
-                    }
-                    return false;
+            console.log(factions, selectedFactions);
+            [].every
+            var hasAllFactions = (selectedFactions.length === 0) || (() => {
+                var hasAll = selectedFactions.every(selectedFaction => {
+                    return factions.indexOf(selectedFaction) !== -1;
                 });
-                return !!found;
+                return hasAll;
             })();
-            if (hasRarity && hasRole && hasFaction) {
+            console.log(hasAllFactions);
+            if (hasRarity && hasRole && hasAllFactions) {
                 $(el).removeClass('is-hidden');
             } else {
                 $(el).addClass('is-hidden');
