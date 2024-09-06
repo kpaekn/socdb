@@ -11,7 +11,7 @@
     Rank 3: [Wild Howl, Burning Bridges]
     Rank 5: [Curse, Brutebear Counter]
     Rank 7: [Goredrinker, Anger of Icefield]
-    Rank 9: [Ice Attack (Melee), Frenzied Slash]
+    Rank 9: [Ice Attack (Melee), Frenzied Slash (Melee)]
     Rank 11: [Guard, Counterattack Storm]
 
 - name: Beryl
@@ -27,7 +27,7 @@
     Rank 3: [ATK Boost, NRG Restoration]
     Rank 5: [Firewalking, Cutie]
     Rank 7: [Flaming Meteor, Try This!]
-    Rank 9: [Scorching Attack, Bang!]
+    Rank 9: [Scorching Attack (Magic), Bang! (Magic)]
     Rank 11: [BOOOOOM!, First Aid]
 
 - name: Col
@@ -43,7 +43,7 @@
     Rank 3: [Assault, Mask]
     Rank 5: [Eerie Footwork, Counterattack]
     Rank 7: [Perfect Assassin, Omen of Death]
-    Rank 9: [Hidden Thorn, Critical Strike]
+    Rank 9: [Hidden Thorn (Melee), Critical Strike (Melee)]
     Rank 11: [Wipe Out, Traceless Shadow]
 
 - name: Dantalion
@@ -59,7 +59,7 @@
     Rank 3: [Daybreak, NRG-Depleting Blow]
     Rank 5: [Air of Royalty, Tenacity]
     Rank 7: [Destructive Storm, For Iria!]
-    Rank 9: [White Sword, Shield-Break Attack (Melee)]
+    Rank 9: [White Sword (Ranged), Shield-Break Attack (Melee)]
     Rank 11: [Legacy of Comrades, Endless Dawn]
 
 - name: Edda
@@ -91,7 +91,7 @@
     Rank 3: [Precise Shot, Arrow of Guardian Convallaria]
     Rank 5: [Eye for an Eye, Fleeing Hare]
     Rank 7: [Cloud-Piercing Arrow, Alert Shot]
-    Rank 9: [Rapid Fire, Fatal Attack (Curved)]
+    Rank 9: [Rapid Fire (Ranged), Fatal Attack (Curved)]
     Rank 11: [Gale-Billow Volley, Heart of Alert]
 
 - name: Garcia
@@ -107,7 +107,7 @@
     Rank 3: [Hookshot, Taste of Blood]
     Rank 5: [Counterattack, Fatal Reaping]
     Rank 7: [Spinning Blade, Lone Ranger]
-    Rank 9: [Painful Cutting, Sealing Attack]
+    Rank 9: [Painful Cutting (Melee), Sealing Attack (Melee)]
     Rank 11: [Gale Dance, Hidden Executioner]
 
 - name: Gloria
@@ -123,7 +123,7 @@
     Rank 3: [Longinus - Brilliance, Lance of Longinus, Sword - Full Moon, Longinus - Flag Waving]
     Rank 5: [Front Defense, Counterattack]
     Rank 7: [Counterattack Mode, Vow of Justice]
-    Rank 9: [Lance of Justice, Silencing Attack, Sword of Justice]
+    Rank 9: [Lance of Justice (Melee), Silencing Attack (Melee), Sword of Justice (Melee)]
     Rank 11: [Fair Duel, Knight's Glory]
 
 - name: LilyWill
@@ -139,7 +139,7 @@
     Rank 3: [Arrow of Aeolus, Windwalking]
     Rank 5: [Gale Footwork, Survival Master]
     Rank 7: [Shooting Stars, Resonance of Blood]
-    Rank 9: [Infectious Attack, Gale Shooting]
+    Rank 9: [Infectious Attack (Curved), Gale Shooting (Ranged)]
     Rank 11: [Arrow of Aeolus - Gale Break, Marksman]
 
 - name: Maitha
@@ -155,7 +155,7 @@
     Rank 3: ["Come On, Everybody!", Maitha's Charge]
     Rank 5: [Endurance Activation, Block Counter]
     Rank 7: [Battle Flag of Convallaria, Bandage]
-    Rank 9: [Armor-Piercing Strike, Powerful Attack]
+    Rank 9: [Armor-Piercing Strike (Melee), Powerful Attack (Melee)]
     Rank 11: [Maitha's Combo, Invulnerable]
 
 - name: Momo
@@ -169,9 +169,9 @@
     Starting Skills: [Energy Wave, Misfortune Erosion]
     Rank 1: [Energy Ray, Field]
     Rank 3: [Erosive Power, Repulsion Application]
-    Rank 5: [Erosive Force Field, Defense (Ranged Attack)]
+    Rank 5: [Erosive Force Field, Defense (Ranged)]
     Rank 7: [Dark Ripple, Toughness]
-    Rank 9: [Invigorating Strike (Magic), Hypnotic Attack]
+    Rank 9: [Invigorating Strike (Magic), Hypnotic Attack (Magic)]
     Rank 11: [Doom Waken, Life Devourer]
 
 - name: Nergal
@@ -187,7 +187,7 @@
     Rank 3: [Mark Illumination, Charged Bayonet]
     Rank 5: [Critical Moment, Counterattack]
     Rank 7: [Alacrity, Burning Bridges]
-    Rank 9: [Silencing Attack, Fatal Attack (Melee)]
+    Rank 9: [Silencing Attack (Melee), Fatal Attack (Melee)]
     Rank 11: [Absolute Domain, Close Quarter Release]
 
 - name: Nungal
@@ -203,7 +203,7 @@
     Rank 3: [Deadly Aim, Sniping Stance, null, Moving Stance]
     Rank 5: [Sniper's Intuition, Highland Advantage]
     Rank 7: [Shattering Arrow, Sense of Purpose]
-    Rank 9: [Fatal Attack (Ranged), Marking Bullet]
+    Rank 9: [Fatal Attack (Ranged), Marking Bullet (Ranged)]
     Rank 11: [Quick Reload, Eagle Eye]
 
 - name: Rawiyah
@@ -235,7 +235,7 @@
     Rank 3: [Radiant Stamp, Divine Wrath]
     Rank 5: [Devout Faith, Defense (AoE)]
     Rank 7: [Battle Flag of Papal States, Light of Celestial Purge]
-    Rank 9: [Invigorating Strike (Magic), Merciful Strike]
+    Rank 9: [Invigorating Strike (Magic), Merciful Strike (Magic)]
     Rank 11: [Sacred Sanctuary, The Protected]
 
 - name: Simona
@@ -251,5 +251,5 @@
     Rank 3: [Ice Assault, Ice-made Armor]
     Rank 5: [Iceshards, Protection of Ice]
     Rank 7: [Flash Freezing, Battle Flag of the Union]
-    Rank 9: [Ice-made Sword, Ice Attack (Magic)]
+    Rank 9: [Ice-made Sword (Melee), Ice Attack (Magic)]
     Rank 11: [Winter Doomsday, Will to Survive]
