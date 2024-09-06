@@ -32,6 +32,13 @@ characters.forEach(character => {
         return null;
       }
       if (!skills[skillName]) {
+        const typedNames = ['Melee', 'Ranged', 'Curved', 'Magic'];
+        for (let i = 0; i < typedNames.length; i++) {
+          var typedName = skillName + ` (${typedNames[i]})`;
+          if (skills[typedName]) {
+            return skills[typedName];
+          }
+        }
         console.log('missing skill:', skillName);
         return null;
       }

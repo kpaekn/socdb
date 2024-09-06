@@ -82,6 +82,20 @@
     Rank 7: [Painkiller, Burning Grenade]
     Rank 9: [Merciful Strike (Magic), Silencing Attack (Magic)]
 
+- name: Lightning
+  subName: Assault Knight
+  rarity: Epic
+  role: Seeker
+  factions: [The Union, Fortitude]
+  trait: Disdain
+  skills:
+    Starting Skills: [Slash, Phantom Storm]
+    Rank 1: [Will to Survive, Knight's Glory]
+    Rank 3: [Crit Command, Battle Fever]
+    Rank 5: [Front Defense, Hardening]
+    Rank 7: [Gale Dance, Lightning]
+    Rank 9: [Armor-Piercing Strike (Melee), Feverish Attack (Melee)]
+
 - name: Stormbreaker
   subName: Recruited Axeman
   rarity: Epic
