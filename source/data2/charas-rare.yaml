@@ -80,7 +80,7 @@
 - name: Knighted Guard
   rarity: Rare
   role: Defender
-  factions: [Union]
+  factions: [The Union]
   trait: Focused Defense
   skills: 
     Starting Skills: [Slash, Global Guard]
@@ -91,7 +91,7 @@
 - name: Knighted Pikeman
   rarity: Rare
   role: Breaker
-  factions: [Union]
+  factions: [The Union]
   trait: Chargin Spear
   skills: 
     Starting Skills: [Slash, Crescendo Combo]

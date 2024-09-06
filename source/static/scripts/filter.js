@@ -50,4 +50,14 @@ $(document).ready(function () {
         }
         showHideCharaItems();
     });
+
+    var factionImages = $('.faction-image');
+    $('input#faction-checkbox').change((e) => {
+        var checked = e.currentTarget.checked;
+        if (checked) {
+            factionImages.addClass('show-faction-image');
+        } else {
+            factionImages.removeClass('show-faction-image');
+        }
+    });
 });

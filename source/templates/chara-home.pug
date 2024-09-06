@@ -24,6 +24,11 @@ body.chara-home.for-mobile
         a(data-faction=faction)
           img(src=`images/faction/${slug(faction)}.webp`)
 
+    .filter
+      .ui.checkbox
+        input(id='faction-checkbox', type='checkbox')
+        label Show factions
+
     .chara-container
       each chara in characters
         .chara-item(data-rarity=chara.rarity, data-role=chara.role, data-factions=chara.factions.join(','))
@@ -31,6 +36,9 @@ body.chara-home.for-mobile
             img.rarity-image(src=`images/rarity/${slug(chara.rarity)}.webp`)
             br
             img.role-image(src=`images/role/${slug(chara.role)}.webp`)
+            each faction in chara.factions
+              br
+              img.faction-image(src=`images/faction/${slug(faction)}.webp`)
           img.chara-image(src=`images2/sprite/${slug(chara.name)}.webp`)
           a(href=slug(chara.name) + '.html') #{chara.name}
 
