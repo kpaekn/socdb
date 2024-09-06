@@ -22,12 +22,12 @@
   factions: [Papal States, Sword of Convallaria, Aggression]
   trait: I'm a Genius!
   skills:
-    Starting Skills: [Energy Wave, Chuu Chuu Chuu!]
+    Starting Skills: [Energy Wave (Magic), Chuu Chuu Chuu!]
     Rank 1: [Wall of Flame, Casual Search]
     Rank 3: [ATK Boost, NRG Restoration]
     Rank 5: [Firewalking, Cutie]
     Rank 7: [Flaming Meteor, Try This!]
-    Rank 9: [Scorching Attack (Magic), Bang! (Magic)]
+    Rank 9: [Scorching Attack (Magic), Bang! (Ranged)]
     Rank 11: [BOOOOOM!, First Aid]
 
 - name: Col
@@ -38,7 +38,7 @@
   factions: [Papal States, Drifter, Alacrity]
   trait: Killer Instinct
   skills:
-    Starting Skills: [Dual Blade Strike, Flurry of Stabs]
+    Starting Skills: [Dual Blade Strike (Melee), Flurry of Stabs]
     Rank 1: [Ambush, Shadow Gait]
     Rank 3: [Assault, Mask]
     Rank 5: [Eerie Footwork, Counterattack]
@@ -70,7 +70,7 @@
   factions: [Iria, Drifter, Discipline]
   trait: Catching Fire
   skills:
-    Starting Skills: [Straight Shot, Shield Break Shot]
+    Starting Skills: [Straight Shot (Ranged), Shield Break Shot]
     Rank 1: [Fortification, Shield Break - Enhanced]
     Rank 3: [Guiding Gleam, Wine Barrel Casting]
     Rank 5: [Shelter Advantage, Counterattack]
@@ -86,7 +86,7 @@
   factions: [Iria, Sword of Convallaria, Alacrity]
   trait: Faycal's Obsession
   skills:
-    Starting Skills: [Curved Shot, Foot Sniping]
+    Starting Skills: [Curved Shot (Curved), Foot Sniping]
     Rank 1: [Dharana, Rock-Climbing]
     Rank 3: [Precise Shot, Arrow of Guardian Convallaria]
     Rank 5: [Eye for an Eye, Fleeing Hare]
