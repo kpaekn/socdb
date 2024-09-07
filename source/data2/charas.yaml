@@ -123,7 +123,7 @@
     Rank 3: [Longinus - Brilliance, Lance of Longinus, Sword - Full Moon, Longinus - Flag Waving]
     Rank 5: [Front Defense, Counterattack]
     Rank 7: [Counterattack Mode, Vow of Justice]
-    Rank 9: [Lance of Justice (Melee), Silencing Attack (Melee), Sword of Justice (Melee)]
+    Rank 9: [Lance of Justice, Silencing Attack (Melee), Sword of Justice (Melee)]
     Rank 11: [Fair Duel, Knight's Glory]
 
 - name: LilyWill
@@ -134,7 +134,7 @@
   factions: [Vlder, Alacrity]
   trait: Vltar Guardian
   skills:
-    Starting Skills: [Curved Shot, Cloud-Piercing Arrow]
+    Starting Skills: [Curved Shot (Curved), Cloud-Piercing Arrow]
     Rank 1: [Guerrilla, Aim]
     Rank 3: [Arrow of Aeolus, Windwalking]
     Rank 5: [Gale Footwork, Survival Master]
@@ -198,7 +198,7 @@
   factions: [Iria, Alacrity]
   trait: Luxite Crossbow
   skills:
-    Starting Skills: [Straight Shot, Powerful Shot]
+    Starting Skills: [Straight Shot (Ranged), Powerful Shot]
     Rank 1: [Dharana, Full Draw]
     Rank 3: [Deadly Aim, Sniping Stance, null, Moving Stance]
     Rank 5: [Sniper's Intuition, Highland Advantage]
@@ -214,7 +214,7 @@
   factions: [Iria, Sword of Convallaria, Alacrity]
   trait: Bottoms Up
   skills:
-    Starting Skills: [Gash, Gale Breach, null, Tropical Cyclone]
+    Starting Skills: [Gash (Melee), Gale Breach, null, Tropical Cyclone]
     Rank 1: [Co-Attack, Toughness]
     Rank 3: [Piercing Bash, Another Pint!]
     Rank 5: [Screw Off!, Guardian's Heart]
