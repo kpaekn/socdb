@@ -2,6 +2,8 @@
 
 include includes/head.pug
 
+include includes/nav.pug
+
 body.chara-home.for-mobile
   .ui.container
     h2 Characters
@@ -24,10 +26,11 @@ body.chara-home.for-mobile
         a(data-faction=faction)
           img(src=`images/faction/${slug(faction)}.webp`)
 
-    .filter
-      .ui.checkbox
-        input(id='faction-checkbox', type='checkbox')
-        label Show factions
+    div
+      .filter
+        .ui.checkbox
+          input(id='faction-checkbox', type='checkbox')
+          label Show factions
 
     .chara-container
       each chara in characters
